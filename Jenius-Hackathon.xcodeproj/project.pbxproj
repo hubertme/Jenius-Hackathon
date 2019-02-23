@@ -23,6 +23,8 @@
 		E436FD6A2220FF6E00122A17 /* PaymentViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD672220FF6E00122A17 /* PaymentViewController-ViewProperties.swift */; };
 		E436FD6B2220FF6E00122A17 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD682220FF6E00122A17 /* PaymentViewController.swift */; };
 		E436FD6D222100EB00122A17 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD6C222100EB00122A17 /* Functions.swift */; };
+		E436FD702221179200122A17 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD6E2221179200122A17 /* RegisterViewController.swift */; };
+		E436FD712221179200122A17 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD6F2221179200122A17 /* RegisterViewController.xib */; };
 		ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		E436FD672220FF6E00122A17 /* PaymentViewController-ViewProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaymentViewController-ViewProperties.swift"; sourceTree = "<group>"; };
 		E436FD682220FF6E00122A17 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		E436FD6C222100EB00122A17 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		E436FD6E2221179200122A17 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E436FD6F2221179200122A17 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		F06DF6DC3BC5CACC1CFA3995 /* Pods_Jenius_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jenius_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D517AD29A2B856A3AA5C30 /* Pods-Jenius-Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jenius-Hackathon.debug.xcconfig"; path = "Target Support Files/Pods-Jenius-Hackathon/Pods-Jenius-Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				E436FD592220EF7500122A17 /* LoginViewController.xib */,
+				E436FD6F2221179200122A17 /* RegisterViewController.xib */,
 			);
 			name = View;
 			path = Controller;
@@ -163,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				E436FD582220EF7500122A17 /* LoginViewController.swift */,
+				E436FD6E2221179200122A17 /* RegisterViewController.swift */,
 			);
 			name = Controller;
 			path = View;
@@ -260,6 +266,7 @@
 				E436FD512220EA6A00122A17 /* GoogleService-Info.plist in Resources */,
 				E436FD4C2220E7C100122A17 /* ViewController.xib in Resources */,
 				E436FD412220E54A00122A17 /* Assets.xcassets in Resources */,
+				E436FD712221179200122A17 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +331,7 @@
 				E436FD3F2220E54800122A17 /* Jenius_Hackathon.xcdatamodeld in Sources */,
 				E436FD692220FF6E00122A17 /* PaymentViewController-Layout.swift in Sources */,
 				E436FD632220F35900122A17 /* UITextField.swift in Sources */,
+				E436FD702221179200122A17 /* RegisterViewController.swift in Sources */,
 				E436FD392220E54800122A17 /* ViewController.swift in Sources */,
 				E436FD6D222100EB00122A17 /* Functions.swift in Sources */,
 				E436FD602220F1B300122A17 /* Variables.swift in Sources */,
