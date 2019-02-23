@@ -27,6 +27,7 @@
 		E436FD7922213F2F00122A17 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD7822213F2E00122A17 /* Functions.swift */; };
 		E436FD7F2221570300122A17 /* MerchantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD7D2221570300122A17 /* MerchantViewController.swift */; };
 		E436FD802221570300122A17 /* MerchantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD7E2221570300122A17 /* MerchantViewController.xib */; };
+		E436FD8522215F2300122A17 /* LogoAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E436FD8422215F2300122A17 /* LogoAnimation.json */; };
 		ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B92220F95D00DEC9D1 /* Extensions.swift */; };
 		ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */; };
 		ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */; };
@@ -60,6 +61,7 @@
 		E436FD7822213F2E00122A17 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		E436FD7D2221570300122A17 /* MerchantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantViewController.swift; sourceTree = "<group>"; };
 		E436FD7E2221570300122A17 /* MerchantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantViewController.xib; sourceTree = "<group>"; };
+		E436FD8422215F2300122A17 /* LogoAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LogoAnimation.json; sourceTree = "<group>"; };
 		ED0299B92220F95D00DEC9D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmatioViewController.swift; sourceTree = "<group>"; };
 		ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-ViewProperties.swift"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		E436FD352220E54800122A17 /* Jenius-Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				E436FD8122215D3F00122A17 /* LottieJson */,
 				E436FD612220F34900122A17 /* Extension */,
 				E436FD5E2220F1A200122A17 /* Global */,
 				E436FD572220EF5200122A17 /* Landing */,
@@ -235,6 +238,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E436FD8122215D3F00122A17 /* LottieJson */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD8422215F2300122A17 /* LogoAnimation.json */,
+			);
+			path = LottieJson;
+			sourceTree = "<group>";
+		};
 		ED0299BB2221015800DEC9D1 /* Confirmation */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E436FD5B2220EF7500122A17 /* LoginViewController.xib in Resources */,
+				E436FD8522215F2300122A17 /* LogoAnimation.json in Resources */,
 				E436FD442220E54A00122A17 /* LaunchScreen.storyboard in Resources */,
 				E436FD512220EA6A00122A17 /* GoogleService-Info.plist in Resources */,
 				E436FD802221570300122A17 /* MerchantViewController.xib in Resources */,
