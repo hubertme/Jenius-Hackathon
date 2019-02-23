@@ -47,6 +47,8 @@ class RegisterViewController: UIViewController {
             textField.delegate = self
             textField.makeSingleLine()
         }
+        
+        self.registerButton.setTitleColor(mainColor, for: .normal)
     }
 }
 
