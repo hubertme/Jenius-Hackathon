@@ -68,7 +68,11 @@ extension MerchantViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let headerCell = contentTableView.dequeueReusableCell(withIdentifier: HeaderCell.cellDescription, for: indexPath) as! HeaderCell
+            headerCell.merchantNameLabel.text = "Jenius Café"
+            headerCell.merchantIdLabel.text = "50024014069"
+            headerCell.selectionStyle = .none
             return headerCell
+            
         } else if indexPath.row == 0 {
             let sectionHeaderCell = UITableViewCell(style: .default, reuseIdentifier: "sectionHeaderCell")
             sectionHeaderCell.textLabel?.textColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
@@ -85,6 +89,7 @@ extension MerchantViewController: UITableViewDataSource {
             }
             
             return sectionHeaderCell
+            
         } else {
             let contentCell = contentTableView.dequeueReusableCell(withIdentifier: ContentCell.cellDescription, for: indexPath) as! ContentCell
             contentCell.selectionStyle = .none
@@ -103,6 +108,7 @@ extension MerchantViewController: UITableViewDataSource {
             }
             
             return contentCell
+            
         }
     }
     
