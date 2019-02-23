@@ -7,10 +7,16 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class MerchantViewController: UIViewController {
     
     // MARK: - Attributes
+    let contentTitle: [[String]] = [
+        ["Email", "Phone"],
+        ["Change password", "Authorized devices"],
+        ["Log out"],
+    ]
     
     // MARK: - Outlets
     @IBOutlet weak var contentTableView: UITableView!
@@ -45,11 +51,11 @@ extension MerchantViewController: UITableViewDataSource {
         case 0:
             return 1
         case 1:
-            return 3
+            return contentTitle[0].count + 1
         case 2:
-            return 5
+            return contentTitle[1].count + 1
         case 3:
-            return 2
+            return contentTitle[2].count + 1
         default:
             return 0
         }
@@ -81,13 +87,19 @@ extension MerchantViewController: UITableViewDataSource {
             return sectionHeaderCell
         } else {
             let contentCell = contentTableView.dequeueReusableCell(withIdentifier: ContentCell.cellDescription, for: indexPath) as! ContentCell
+            contentCell.selectionStyle = .none
             
             if indexPath.section == 1 {
-                
+                contentCell.criteriaLabel.text = contentTitle[0][indexPath.row-1]
+                contentCell.contentLabel.text = indexPath.row == 1 ? (Auth.auth().currentUser?.email ?? "No email found") : "628123456789"
             } else if indexPath.section == 2 {
-                
+                contentCell.contentLabel.alpha = 0
+                contentCell.criteriaLabel.text = contentTitle[1][indexPath.row-1]
+                contentCell.accessoryType = .disclosureIndicator
             } else if indexPath.section == 3 {
-                
+                contentCell.contentLabel.alpha = 0
+                contentCell.criteriaLabel.text = contentTitle[2][indexPath.row-1]
+                contentCell.criteriaLabel.textColor = .red
             }
             
             return contentCell
