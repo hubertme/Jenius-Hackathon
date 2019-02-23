@@ -34,6 +34,8 @@ class MerchantViewController: UIViewController {
     private func setupElements() {
         self.contentTableView.delegate = self
         self.contentTableView.dataSource = self
+        self.contentTableView.tableFooterView = UIView()
+        self.contentTableView.bounces = false
         
         self.contentTableView.register(HeaderCell.nib, forCellReuseIdentifier: HeaderCell.cellDescription)
         self.contentTableView.register(ContentCell.nib, forCellReuseIdentifier: ContentCell.cellDescription)
