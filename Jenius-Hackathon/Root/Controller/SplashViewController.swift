@@ -17,7 +17,7 @@ class SplashViewController: UIViewController {
         self.view.backgroundColor = mainColor
         addLottieAnimation()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.9) {
             let loginVC = LoginViewController()
             let navigationController = UINavigationController(rootViewController: loginVC)
             self.present(navigationController, animated: true, completion: nil)
@@ -27,9 +27,10 @@ class SplashViewController: UIViewController {
     private func addLottieAnimation() {
         let animationView = LOTAnimationView(name: "LogoAnimation")
         animationView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        animationView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
         animationView.contentMode = .scaleAspectFit
         animationView.center = self.view.center
-        animationView.loopAnimation = true
+        animationView.loopAnimation = false
         
         self.view.addSubview(animationView)
         animationView.play()
