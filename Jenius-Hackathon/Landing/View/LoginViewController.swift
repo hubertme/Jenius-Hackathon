@@ -76,6 +76,8 @@ class LoginViewController: UIViewController {
         self.passwordTextField.delegate = self
         
         self.signInButton.setTitleColor(mainColor, for: .normal)
+        self.signInButton.clipsToBounds = true
+        self.signInButton.layer.cornerRadius = 8
     }
     
     @objc private func dismissAllTextFieldsKeyboard() {

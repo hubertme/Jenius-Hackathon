@@ -57,6 +57,8 @@ class RegisterViewController: UIViewController {
         textFields[TextFieldOrder.phone.rawValue].inputAccessoryView = toolbar
         
         self.registerButton.setTitleColor(mainColor, for: .normal)
+        self.registerButton.clipsToBounds = true
+        self.registerButton.layer.cornerRadius = 8
     }
     
     @objc private func dismissPhoneTextFieldKeyboard() {
