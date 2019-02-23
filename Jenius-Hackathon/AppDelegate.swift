@@ -21,8 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupFirebase()
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        let rootVC = MainTabBarController() //Test
-        window?.rootViewController = rootVC
+        let rootVC = LoginViewController()
+        let navigationController = UINavigationController(rootViewController: rootVC)
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         return true
     }
