@@ -35,7 +35,21 @@ class LoginViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func handleSignInButtonTapped(_ sender: UIButton) {
-        self.handleSignInWith(email: self.emailTextField.text!, password: self.passwordTextField.text!)
+        if self.emailTextField.text == "" {
+            let emptyEmailAlert = createAlertWithOkAction(title: "Empty email", message: "Please enter your registered email") { (_) in
+                self.emailTextField.becomeFirstResponder()
+            }
+            self.present(emptyEmailAlert, animated: true, completion: nil)
+            
+        } else if self.passwordTextField.text == "" {
+            let emptyPasswordAlert = createAlertWithOkAction(title: "Empty password", message: "Please enter your password in order to sign in") { (_) in
+                self.passwordTextField.becomeFirstResponder()
+            }
+            self.present(emptyPasswordAlert, animated: true, completion: nil)
+            
+        } else {
+            self.handleSignInWith(email: self.emailTextField.text!, password: self.passwordTextField.text!)
+        }
     }
     
     @IBAction func handleRegisterButtonTapped(_ sender: UIButton) {
@@ -64,7 +78,7 @@ class LoginViewController: UIViewController {
     
     private func handleSignInWith(email: String, password: String) {
 //        Auth.auth().signIn(withEmail: <#T##String#>, password: <#T##String#>, completion: <#T##AuthDataResultCallback?##AuthDataResultCallback?##(AuthDataResult?, Error?) -> Void#>)
-//        createAlertWithOkAction(title: <#T##String#>, message: <#T##String#>)
+        print("Test sign in with email \(email) and password \(password)")
     }
 }
 
