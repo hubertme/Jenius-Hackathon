@@ -42,6 +42,8 @@ class RegisterViewController: UIViewController {
     private func setupElements() {
         self.view.backgroundColor = mainColor
         self.containerView.backgroundColor = self.view.backgroundColor
+        let tapGestureDismissKeyboard = UITapGestureRecognizer(target: self, action: #selector(dismissAllTextFieldsKeyboard))
+        self.containerView.addGestureRecognizer(tapGestureDismissKeyboard)
         
         for textField in textFields {
             textField.delegate = self
@@ -58,14 +60,26 @@ class RegisterViewController: UIViewController {
     }
     
     @objc private func dismissPhoneTextFieldKeyboard() {
-        textFields[TextFieldOrder.phone.rawValue].resignFirstResponder()
+        let _ = textFieldShouldReturn(textFields[TextFieldOrder.phone.rawValue])
+    }
+    
+    @objc private func dismissAllTextFieldsKeyboard() {
+        for textField in textFields {
+            textField.resignFirstResponder()
+        }
     }
 }
 
 // MARK: - Extensions
 extension RegisterViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
+        for idx in textField.tag+1 ..< textFields.count {
+            if textFields[idx].text == "" {
+                textFields[idx].becomeFirstResponder()
+                return true
+            }
+            textField.resignFirstResponder()
+        }
         return true
     }
 }
