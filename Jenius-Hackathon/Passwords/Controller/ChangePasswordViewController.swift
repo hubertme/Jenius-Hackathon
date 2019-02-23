@@ -32,8 +32,15 @@ class ChangePasswordViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func handleDoneButtonTapped(_ sender: UIButton) {
-        if isValidDataInputted() {
-            
+        
+        let oldPassword = self.currentPasswordTextField.text!
+        let newPassword = self.newPasswordTextField.text!
+        let reNewPassword = self.reNewPasswordTextField.text!
+        
+        if isValidDataInputted(oldPassword: oldPassword, newPassword: newPassword, reNewPassword: reNewPassword) {
+            if let email = Auth.auth().currentUser?.email {
+                changeUserPassword(email: email, oldPassword: oldPassword, newPassword: newPassword)
+            }
         }
     }
     
@@ -55,10 +62,7 @@ class ChangePasswordViewController: UIViewController {
         self.reNewPasswordTextField.makeSingleLine()
     }
     
-    private func isValidDataInputted() -> Bool {
-        let oldPassword = self.currentPasswordTextField.text!
-        let newPassword = self.newPasswordTextField.text!
-        let reNewPassword = self.reNewPasswordTextField.text!
+    private func isValidDataInputted(oldPassword: String, newPassword: String, reNewPassword: String) -> Bool {
         
         if newPassword == oldPassword {
             self.present(createAlertWithOkAction(title: "Same password", message: "Please input a new password that is different from your old one") { (_) in
@@ -107,6 +111,31 @@ class ChangePasswordViewController: UIViewController {
                 self.doneButton.isUserInteractionEnabled = false
             }
         }
+    }
+    
+    private func changeUserPassword(email: String, oldPassword: String, newPassword: String) {
+        let credential = EmailAuthProvider.credential(withEmail: email, password: oldPassword)
+        Auth.auth().currentUser?.reauthenticateAndRetrieveData(with: credential, completion: { (userAuth, error) in
+            if let error = error {
+                print("Error reauthenticating user with error: \(error.localizedDescription)")
+                self.present(createAlertWithOkAction(title: "Wrong credential", message: "Please enter your old password correctly") { (_) in
+                    self.currentPasswordTextField.text = ""
+                    self.currentPasswordTextField.becomeFirstResponder()
+                }, animated: true, completion: nil)
+                
+                return
+            }
+            Auth.auth().currentUser?.updatePassword(to: newPassword, completion: { (error) in
+                if let error = error {
+                    print("Error in changing password with error: \(error.localizedDescription)")
+                    self.present(createAlertWithOkAction(title: "An unknown error occured", message: "Please try again later"), animated: true, completion: nil)
+                    return
+                }
+                self.present(createAlertWithOkAction(title: "Success changed password!", message: "We recommend you to sign out and sign in again") { (_) in
+                    self.navigationController?.popViewController(animated: true)
+                }, animated: true, completion: nil)
+            })
+        })
     }
 
 }
