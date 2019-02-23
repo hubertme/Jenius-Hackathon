@@ -23,6 +23,8 @@
 		ED0299B82220EEAC00DEC9D1 /* PaymentViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B72220EEAC00DEC9D1 /* PaymentViewController-Layout.swift */; };
 		ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B92220F95D00DEC9D1 /* Extensions.swift */; };
 		ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */; };
+		ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */; };
+		ED0299C22221098E00DEC9D1 /* ConfirmationViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299C12221098E00DEC9D1 /* ConfirmationViewController-Layout.swift */; };
 		ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */; };
 		ED8938612220EC22009A6C5A /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8938602220EC22009A6C5A /* PaymentViewController.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +48,8 @@
 		ED0299B72220EEAC00DEC9D1 /* PaymentViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentViewController-Layout.swift"; sourceTree = "<group>"; };
 		ED0299B92220F95D00DEC9D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmatioViewController.swift; sourceTree = "<group>"; };
+		ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-ViewProperties.swift"; sourceTree = "<group>"; };
+		ED0299C12221098E00DEC9D1 /* ConfirmationViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-Layout.swift"; sourceTree = "<group>"; };
 		ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		ED8938602220EC22009A6C5A /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		F06DF6DC3BC5CACC1CFA3995 /* Pods_Jenius_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jenius_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */,
+				ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */,
+				ED0299C12221098E00DEC9D1 /* ConfirmationViewController-Layout.swift */,
 			);
 			path = Confirmation;
 			sourceTree = "<group>";
@@ -331,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E436FD3F2220E54800122A17 /* Jenius_Hackathon.xcdatamodeld in Sources */,
+				ED0299C22221098E00DEC9D1 /* ConfirmationViewController-Layout.swift in Sources */,
 				E436FD632220F35900122A17 /* UITextField.swift in Sources */,
 				ED0299B82220EEAC00DEC9D1 /* PaymentViewController-Layout.swift in Sources */,
 				E436FD392220E54800122A17 /* ViewController.swift in Sources */,
@@ -342,6 +349,7 @@
 				ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */,
 				E436FD372220E54800122A17 /* AppDelegate.swift in Sources */,
 				ED0299B62220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift in Sources */,
+				ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

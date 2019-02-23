@@ -32,7 +32,7 @@ class PaymentViewController: UIViewController {
     
     @objc func handleNextButton() {
         if enteredAmountIsValid() {
-            let confirmationVC = ConfirmationViewController()
+            let confirmationVC = ConfirmationViewController() //Should pass the entered amount as parameter ❗️
             self.navigationController?.pushViewController(confirmationVC, animated: true)
             
         }
