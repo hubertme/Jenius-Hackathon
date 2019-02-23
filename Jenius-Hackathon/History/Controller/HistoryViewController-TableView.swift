@@ -14,8 +14,12 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: HistoryCell.descriptionString, for: indexPath) as! HistoryCell
+        return cell
     }
     
     
+    
+    
 }
+

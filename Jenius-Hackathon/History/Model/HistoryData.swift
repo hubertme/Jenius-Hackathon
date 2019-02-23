@@ -16,6 +16,15 @@ struct HistoryData {
         self.month = month
         self.transactions = transactions
     }
+    
+    func dateString() -> String {
+        guard let transactionDate = self.month else {
+            return ""
+        }
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM yyyy"
+        return dateFormatter.string(from: transactionDate)
+    }
 }
 
 struct Transaction {
@@ -29,7 +38,7 @@ struct Transaction {
         self.total = total
     }
     
-    func getDateString() -> String {
+    func dateString() -> String {
         guard let transactionDate = self.date else {
             return ""
         }

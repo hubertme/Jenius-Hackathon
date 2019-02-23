@@ -17,6 +17,8 @@ extension HistoryViewController {
         self.layoutHistoryAmountLabel()
         self.layoutDownloadButton()
         self.layoutDownloadImage()
+        
+//        self.layoutHistoryTableView()
     }
     
     private func layoutTransactionContainer() {
@@ -51,5 +53,12 @@ extension HistoryViewController {
         downloadImage.widthAnchor.constraint(equalToConstant: 15),
         downloadImage.heightAnchor.constraint(equalToConstant: 15),
         downloadImage.centerYAnchor.constraint(equalTo: downloadButton.centerYAnchor)].forEach({$0.isActive = true})
+    }
+    
+    private func layoutHistoryTableView() {
+        [historyTableView.topAnchor.constraint(equalTo: historyAmountLabel.bottomAnchor, constant: 15),
+        historyTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+        historyTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+        historyTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)].forEach({$0.isActive = true})
     }
 }

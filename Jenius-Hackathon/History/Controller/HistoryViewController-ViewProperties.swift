@@ -89,7 +89,7 @@ extension HistoryViewController {
         historyTableView.delegate = self
         historyTableView.dataSource = self
         
-//        historyTableView.register(FormCell.self, forCellReuseIdentifier: "formCell")
+        historyTableView.register(HistoryCell.self, forCellReuseIdentifier: HistoryCell.descriptionString)
         historyTableView.translatesAutoresizingMaskIntoConstraints = false
         
         
