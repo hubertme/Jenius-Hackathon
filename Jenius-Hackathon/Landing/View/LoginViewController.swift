@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
@@ -35,7 +34,7 @@ class LoginViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func handleSignInButtonTapped(_ sender: UIButton) {
-        self.handleSignInWith(email: self.emailTextField.text!, password: self.passwordTextField.text!)
+        print("Sign in button tapped!")
     }
     
     @IBAction func handleRegisterButtonTapped(_ sender: UIButton) {
@@ -60,11 +59,6 @@ class LoginViewController: UIViewController {
     @objc private func dismissAllTextFieldsKeyboard() {
         self.emailTextField.resignFirstResponder()
         self.passwordTextField.resignFirstResponder()
-    }
-    
-    private func handleSignInWith(email: String, password: String) {
-//        Auth.auth().signIn(withEmail: <#T##String#>, password: <#T##String#>, completion: <#T##AuthDataResultCallback?##AuthDataResultCallback?##(AuthDataResult?, Error?) -> Void#>)
-//        createAlertWithOkAction(title: <#T##String#>, message: <#T##String#>)
     }
 }
 
