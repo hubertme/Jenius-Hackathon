@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MerchantViewController" customModule="Jenius_Hackathon" customModuleProvider="target">
             <connections>
+                <outlet property="contentTableView" destination="fzx-C7-W6M" id="9hL-CU-TAd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,8 +20,21 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fzx-C7-W6M">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fzx-C7-W6M" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JiS-zE-Cxn"/>
+                <constraint firstItem="fzx-C7-W6M" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="doM-6F-9ab"/>
+                <constraint firstItem="fzx-C7-W6M" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="gWB-zm-ryN"/>
+                <constraint firstItem="fzx-C7-W6M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="x0B-aV-PED"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="142.57871064467767"/>
         </view>
     </objects>
 </document>
