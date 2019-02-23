@@ -44,19 +44,19 @@ extension PaymentViewController {
     }
     
     //MARK: Inputs
-    private func layoutInputLabel() {
+    @objc func layoutInputLabel() {
         [inputLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
         inputLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
         inputLabel.topAnchor.constraint(equalTo: titleContainer.bottomAnchor, constant: 30)].forEach({$0.isActive = true})
     }
     
-    private func layoutInputDesc() {
+    @objc func layoutInputDesc() {
         [inputDesc.leadingAnchor.constraint(equalTo: inputLabel.leadingAnchor),
         inputDesc.trailingAnchor.constraint(equalTo: inputLabel.trailingAnchor),
         inputDesc.topAnchor.constraint(equalTo: inputLabel.bottomAnchor, constant: 5)].forEach({$0.isActive = true})
     }
     
-    private func layoutAmountTextField() {
+    @objc func layoutAmountTextField() {
         [amountTextField.leadingAnchor.constraint(equalTo: inputLabel.leadingAnchor),
         amountTextField.trailingAnchor.constraint(equalTo: inputLabel.trailingAnchor),
         amountTextField.topAnchor.constraint(equalTo: inputDesc.bottomAnchor, constant: 15),
