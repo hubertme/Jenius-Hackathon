@@ -75,7 +75,8 @@ class LoginViewController: UIViewController {
         self.passwordTextField.makeSingleLine()
         self.passwordTextField.delegate = self
         
-        self.signInButton.alpha = 0
+        self.signInButton.alpha = 0.2
+        self.signInButton.isUserInteractionEnabled = false
         self.signInButton.setTitleColor(mainColor, for: .normal)
         self.signInButton.clipsToBounds = true
         self.signInButton.layer.cornerRadius = 8
@@ -86,7 +87,13 @@ class LoginViewController: UIViewController {
         self.passwordTextField.resignFirstResponder()
         
         UIView.animate(withDuration: 1) {
-            self.signInButton.alpha = self.checkIfAllTextFieldsFilled() ? 1 : 0
+            if self.checkIfAllTextFieldsFilled() {
+                self.signInButton.alpha = 1
+                self.signInButton.isUserInteractionEnabled = true
+            } else {
+                self.signInButton.alpha = 0.2
+                self.signInButton.isUserInteractionEnabled = false
+            }
         }
     }
     
@@ -124,7 +131,13 @@ extension LoginViewController: UITextFieldDelegate {
         }
         
         UIView.animate(withDuration: 1) {
-            self.signInButton.alpha = self.checkIfAllTextFieldsFilled() ? 1 : 0
+            if self.checkIfAllTextFieldsFilled() {
+                self.signInButton.alpha = 1
+                self.signInButton.isUserInteractionEnabled = true
+            } else {
+                self.signInButton.alpha = 0.2
+                self.signInButton.isUserInteractionEnabled = false
+            }
         }
         return true
     }
