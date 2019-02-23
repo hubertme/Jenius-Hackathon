@@ -48,7 +48,17 @@ class RegisterViewController: UIViewController {
             textField.makeSingleLine()
         }
         
+        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 45))
+        toolbar.backgroundColor = .lightGray
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissPhoneTextFieldKeyboard))
+        toolbar.items = [UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil) ,doneButton]
+        textFields[TextFieldOrder.phone.rawValue].inputAccessoryView = toolbar
+        
         self.registerButton.setTitleColor(mainColor, for: .normal)
+    }
+    
+    @objc private func dismissPhoneTextFieldKeyboard() {
+        textFields[TextFieldOrder.phone.rawValue].resignFirstResponder()
     }
 }
 
