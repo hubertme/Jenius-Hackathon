@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        UIApplication.shared.keyWindow?.rootViewController = self
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
