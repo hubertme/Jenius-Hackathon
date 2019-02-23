@@ -14,6 +14,10 @@ class PaymentViewController: UIViewController {
     var titleLabel: UILabel!
     var merchantIcon: UIImageView!
     
+    var inputLabel: UILabel!
+    var inputDesc: UILabel!
+    var amountTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white

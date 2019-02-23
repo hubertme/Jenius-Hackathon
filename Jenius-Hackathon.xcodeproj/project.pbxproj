@@ -98,7 +98,7 @@
 			children = (
 				E436FD5E2220F1A200122A17 /* Global */,
 				E436FD572220EF5200122A17 /* Landing */,
-				ED8938622220ECBA009A6C5A /* PaymentVC */,
+				ED8938622220ECBA009A6C5A /* Payment */,
 				E436FD4D2220E93000122A17 /* Root */,
 				E436FD362220E54800122A17 /* AppDelegate.swift */,
 				E436FD402220E54A00122A17 /* Assets.xcassets */,
@@ -169,14 +169,14 @@
 			path = Global;
 			sourceTree = "<group>";
 		};
-		ED8938622220ECBA009A6C5A /* PaymentVC */ = {
+		ED8938622220ECBA009A6C5A /* Payment */ = {
 			isa = PBXGroup;
 			children = (
 				ED8938602220EC22009A6C5A /* PaymentViewController.swift */,
 				ED0299B52220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift */,
 				ED0299B72220EEAC00DEC9D1 /* PaymentViewController-Layout.swift */,
 			);
-			path = PaymentVC;
+			path = Payment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

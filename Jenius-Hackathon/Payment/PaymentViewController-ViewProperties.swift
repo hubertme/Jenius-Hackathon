@@ -13,6 +13,8 @@ extension PaymentViewController {
         self.setupTitleContainer()
         self.setupTitleLabel()
         self.setupMerchantIcon()
+        
+        
     }
     
     private func setupTitleContainer() {
