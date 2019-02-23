@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupFirebase()
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        let rootVC = LoginViewController()
+        let rootVC = MainTabBarController() //Test
         window?.rootViewController = rootVC
         window?.makeKeyAndVisible()
         return true
