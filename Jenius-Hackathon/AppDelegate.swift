@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,12 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        setupFirebase()
+        
         window = UIWindow.init(frame: UIScreen.main.bounds)
         let rootVC = ViewController()
         window?.rootViewController = rootVC
         window?.makeKeyAndVisible()
         return true
+    }
+    
+    private func setupFirebase() {
+        FirebaseApp.configure()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
