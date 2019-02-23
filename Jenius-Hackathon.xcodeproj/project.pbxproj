@@ -92,9 +92,17 @@
 			children = (
 				E436FD382220E54800122A17 /* ViewController.swift */,
 				ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */,
-				ED8938602220EC22009A6C5A /* PaymentViewController.swift */,
+				ED8938622220ECBA009A6C5A /* PaymentVC */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		ED8938622220ECBA009A6C5A /* PaymentVC */ = {
+			isa = PBXGroup;
+			children = (
+				ED8938602220EC22009A6C5A /* PaymentViewController.swift */,
+			);
+			path = PaymentVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
