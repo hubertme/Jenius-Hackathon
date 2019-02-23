@@ -17,25 +17,29 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         super.viewWillAppear(animated)
         
         let historyVC = UIViewController() //should be custom class
-        let historyMenuIcon = UIImage(named: "historyIcon")
+        let historyMenuIcon = UIImage(named: "menu_historyBlue")
         historyVC.title = "Transaction History"
-        historyVC.tabBarItem = UITabBarItem(title: "TransactionHistory", image: historyMenuIcon, selectedImage: historyMenuIcon)
+        historyVC.tabBarItem = UITabBarItem(title: "Transaction History", image: historyMenuIcon, selectedImage: historyMenuIcon)
+
         let historyNavCon = UINavigationController(rootViewController: historyVC)
         
         let paymentVC = PaymentViewController()
-        let paymentMenuIcon = UIImage(named: "paymentIcon")
+        let paymentMenuIcon = UIImage(named: "menu_paymentBlue")
         paymentVC.title = "Payment"
         paymentVC.tabBarItem = UITabBarItem(title: "Payment", image: paymentMenuIcon, selectedImage: paymentMenuIcon)
+
         let paymentNavcon = UINavigationController(rootViewController: paymentVC)
         
         let merchantVC = UIViewController() //should be custom class
-        let merchantMenuIcon = UIImage(named: "merchantIcon")
+        let merchantMenuIcon = UIImage(named: "menu_merchantBlue")
         merchantVC.title = "My Merchant"
         merchantVC.tabBarItem = UITabBarItem(title: "My Merchant", image: merchantMenuIcon, selectedImage: merchantMenuIcon)
+        
         let merchantNavCon = UINavigationController(rootViewController: merchantVC)
 
         let viewCons = [historyNavCon, paymentNavcon, merchantNavCon]
-        self.tabBar.tintColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1) //Change accordingly
+        
+        self.tabBar.tintColor = mainColor
         self.viewControllers = viewCons
     }
 }

@@ -41,7 +41,9 @@ class LoginViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func handleSignInButtonTapped(_ sender: UIButton) {
-        self.handleSignInWith(email: self.emailTextField.text!, password: self.passwordTextField.text!)
+        let email = emailTextField.text!
+        let password = passwordTextField.text!
+        self.handleSignInWith(email: email, password: password)
     }
     
     @IBAction func handleRegisterButtonTapped(_ sender: UIButton) {
