@@ -41,21 +41,7 @@ class LoginViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func handleSignInButtonTapped(_ sender: UIButton) {
-        if self.emailTextField.text == "" {
-            let emptyEmailAlert = createAlertWithOkAction(title: "Empty email", message: "Please enter your registered email") { (_) in
-                self.emailTextField.becomeFirstResponder()
-            }
-            self.present(emptyEmailAlert, animated: true, completion: nil)
-            
-        } else if self.passwordTextField.text == "" {
-            let emptyPasswordAlert = createAlertWithOkAction(title: "Empty password", message: "Please enter your password in order to sign in") { (_) in
-                self.passwordTextField.becomeFirstResponder()
-            }
-            self.present(emptyPasswordAlert, animated: true, completion: nil)
-            
-        } else {
-            self.handleSignInWith(email: self.emailTextField.text!, password: self.passwordTextField.text!)
-        }
+        self.handleSignInWith(email: self.emailTextField.text!, password: self.passwordTextField.text!)
     }
     
     @IBAction func handleRegisterButtonTapped(_ sender: UIButton) {
@@ -108,7 +94,6 @@ class LoginViewController: UIViewController {
             }
             strongSelf.present(createAlertWithOkAction(title: "Signing in", message: "Welcome to Jenius merchant!") { (_) in
                 let nextVC = MainTabBarController()
-//                strongSelf.navigationController?.pushViewController(nextVC, animated: true)
                 strongSelf.present(nextVC, animated: true, completion: nil)
             }, animated: true, completion: nil)
         }
