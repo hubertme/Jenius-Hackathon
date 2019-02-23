@@ -33,6 +33,13 @@ class LoginViewController: UIViewController {
     }
     
     // MARK: - Actions
+    @IBAction func handleSignInButtonTapped(_ sender: UIButton) {
+        print("Sign in button tapped!")
+    }
+    
+    @IBAction func handleRegisterButtonTapped(_ sender: UIButton) {
+        print("Register button tapped!")
+    }
     
     // MARK: - Private methods
     private func setupElements() {

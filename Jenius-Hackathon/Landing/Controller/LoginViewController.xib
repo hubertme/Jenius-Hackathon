@@ -76,6 +76,9 @@
                     <state key="normal" title="Log In">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="handleSignInButtonTapped:" destination="-1" eventType="touchUpInside" id="51D-Y0-5vG"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjy-UG-JgO">
                     <rect key="frame" x="40" y="530" width="295" height="33"/>
@@ -83,6 +86,9 @@
                     <state key="normal" title="I don't have an account">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <connections>
+                        <action selector="handleRegisterButtonTapped:" destination="-1" eventType="touchUpInside" id="H12-Wc-Gd1"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
