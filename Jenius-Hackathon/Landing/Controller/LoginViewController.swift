@@ -97,11 +97,15 @@ class LoginViewController: UIViewController {
                 strongSelf.present(createAlertWithOkAction(title: "Error in signing in", message: "Please retry logging in"), animated: true, completion: nil)
                 return
             }
-            strongSelf.present(createAlertWithOkAction(title: "Signing in", message: "Welcome to Jenius merchant!") { (_) in
-                let nextVC = MainTabBarController()
-                nextVC.selectedIndex = 1
-                strongSelf.present(nextVC, animated: true, completion: nil)
-            }, animated: true, completion: nil)
+//            strongSelf.present(createAlertWithOkAction(title: "Signing in", message: "Welcome to Jenius merchant!") { (_) in
+//                let nextVC = MainTabBarController()
+//                nextVC.selectedIndex = 1
+//                strongSelf.present(nextVC, animated: true, completion: nil)
+//            }, animated: true, completion: nil)
+            
+            let nextVC = MainTabBarController()
+            nextVC.selectedIndex = 1
+            strongSelf.present(nextVC, animated: true, completion: nil)
         }
     }
     

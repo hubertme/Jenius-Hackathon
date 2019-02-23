@@ -26,7 +26,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         
         let paymentNavcon = UINavigationController(rootViewController: paymentVC)
         
-        let merchantVC = UIViewController() //should be custom class
+        let merchantVC = MerchantViewController() //should be custom class
         let merchantMenuIcon = UIImage(named: "menu_merchantBlue")
         merchantVC.title = "My Merchant"
         merchantVC.tabBarItem = UITabBarItem(title: "My Merchant", image: merchantMenuIcon, selectedImage: merchantMenuIcon)

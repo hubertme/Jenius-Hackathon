@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		C7CBFD3CE856BCE7110B4F51 /* Pods_Jenius_Hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06DF6DC3BC5CACC1CFA3995 /* Pods_Jenius_Hackathon.framework */; };
 		E436FD372220E54800122A17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD362220E54800122A17 /* AppDelegate.swift */; };
-		E436FD392220E54800122A17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD382220E54800122A17 /* ViewController.swift */; };
+		E436FD392220E54800122A17 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD382220E54800122A17 /* SplashViewController.swift */; };
 		E436FD3F2220E54800122A17 /* Jenius_Hackathon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E436FD3D2220E54800122A17 /* Jenius_Hackathon.xcdatamodeld */; };
 		E436FD412220E54A00122A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E436FD402220E54A00122A17 /* Assets.xcassets */; };
 		E436FD442220E54A00122A17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E436FD422220E54A00122A17 /* LaunchScreen.storyboard */; };
-		E436FD4C2220E7C100122A17 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD4B2220E7C100122A17 /* ViewController.xib */; };
+		E436FD4C2220E7C100122A17 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD4B2220E7C100122A17 /* SplashViewController.xib */; };
 		E436FD512220EA6A00122A17 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E436FD502220EA6A00122A17 /* GoogleService-Info.plist */; };
 		E436FD5A2220EF7500122A17 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD582220EF7500122A17 /* LoginViewController.swift */; };
 		E436FD5B2220EF7500122A17 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD592220EF7500122A17 /* LoginViewController.xib */; };
@@ -27,6 +27,7 @@
 		E436FD7922213F2F00122A17 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD7822213F2E00122A17 /* Functions.swift */; };
 		E436FD7F2221570300122A17 /* MerchantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD7D2221570300122A17 /* MerchantViewController.swift */; };
 		E436FD802221570300122A17 /* MerchantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD7E2221570300122A17 /* MerchantViewController.xib */; };
+		E436FD8522215F2300122A17 /* LogoAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E436FD8422215F2300122A17 /* LogoAnimation.json */; };
 		ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B92220F95D00DEC9D1 /* Extensions.swift */; };
 		ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */; };
 		ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */; };
@@ -38,18 +39,19 @@
 		ED9260022221559B00DFB24E /* HistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9260012221559B00DFB24E /* HistoryData.swift */; };
 		ED9260042221564D00DFB24E /* HistoryViewController-TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9260032221564D00DFB24E /* HistoryViewController-TableView.swift */; };
 		ED9260062221631D00DFB24E /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9260052221631D00DFB24E /* HistoryCell.swift */; };
+		ED92600B22217E5400DFB24E /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92600A22217E5400DFB24E /* HeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C44F77DD340EFA1069A7AB49 /* Pods-Jenius-Hackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jenius-Hackathon.release.xcconfig"; path = "Target Support Files/Pods-Jenius-Hackathon/Pods-Jenius-Hackathon.release.xcconfig"; sourceTree = "<group>"; };
 		E436FD332220E54800122A17 /* Jenius-Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jenius-Hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E436FD362220E54800122A17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E436FD382220E54800122A17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E436FD382220E54800122A17 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E436FD3E2220E54800122A17 /* Jenius_Hackathon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jenius_Hackathon.xcdatamodel; sourceTree = "<group>"; };
 		E436FD402220E54A00122A17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E436FD432220E54A00122A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E436FD452220E54A00122A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E436FD4B2220E7C100122A17 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		E436FD4B2220E7C100122A17 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		E436FD502220EA6A00122A17 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E436FD582220EF7500122A17 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E436FD592220EF7500122A17 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		E436FD7822213F2E00122A17 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		E436FD7D2221570300122A17 /* MerchantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantViewController.swift; sourceTree = "<group>"; };
 		E436FD7E2221570300122A17 /* MerchantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantViewController.xib; sourceTree = "<group>"; };
+		E436FD8422215F2300122A17 /* LogoAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LogoAnimation.json; sourceTree = "<group>"; };
 		ED0299B92220F95D00DEC9D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmatioViewController.swift; sourceTree = "<group>"; };
 		ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-ViewProperties.swift"; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		ED9260012221559B00DFB24E /* HistoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryData.swift; sourceTree = "<group>"; };
 		ED9260032221564D00DFB24E /* HistoryViewController-TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController-TableView.swift"; sourceTree = "<group>"; };
 		ED9260052221631D00DFB24E /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		ED92600A22217E5400DFB24E /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		F06DF6DC3BC5CACC1CFA3995 /* Pods_Jenius_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jenius_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D517AD29A2B856A3AA5C30 /* Pods-Jenius-Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jenius-Hackathon.debug.xcconfig"; path = "Target Support Files/Pods-Jenius-Hackathon/Pods-Jenius-Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +132,7 @@
 		E436FD352220E54800122A17 /* Jenius-Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				E436FD8122215D3F00122A17 /* LottieJson */,
 				E436FD612220F34900122A17 /* Extension */,
 				E436FD5E2220F1A200122A17 /* Global */,
 				E436FD572220EF5200122A17 /* Landing */,
@@ -158,7 +163,7 @@
 		E436FD4E2220E93D00122A17 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E436FD4B2220E7C100122A17 /* ViewController.xib */,
+				E436FD4B2220E7C100122A17 /* SplashViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,7 +171,7 @@
 		E436FD4F2220E94200122A17 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E436FD382220E54800122A17 /* ViewController.swift */,
+				E436FD382220E54800122A17 /* SplashViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -241,6 +246,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E436FD8122215D3F00122A17 /* LottieJson */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD8422215F2300122A17 /* LogoAnimation.json */,
+			);
+			path = LottieJson;
+			sourceTree = "<group>";
+		};
 		ED0299BB2221015800DEC9D1 /* Confirmation */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				ED9260052221631D00DFB24E /* HistoryCell.swift */,
+				ED92600A22217E5400DFB24E /* HeaderCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -361,10 +375,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E436FD5B2220EF7500122A17 /* LoginViewController.xib in Resources */,
+				E436FD8522215F2300122A17 /* LogoAnimation.json in Resources */,
 				E436FD442220E54A00122A17 /* LaunchScreen.storyboard in Resources */,
 				E436FD512220EA6A00122A17 /* GoogleService-Info.plist in Resources */,
 				E436FD802221570300122A17 /* MerchantViewController.xib in Resources */,
-				E436FD4C2220E7C100122A17 /* ViewController.xib in Resources */,
+				E436FD4C2220E7C100122A17 /* SplashViewController.xib in Resources */,
 				E436FD412220E54A00122A17 /* Assets.xcassets in Resources */,
 				E436FD712221179200122A17 /* RegisterViewController.xib in Resources */,
 			);
@@ -389,6 +404,7 @@
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -402,6 +418,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,9 +481,10 @@
 				ED0299C22221098E00DEC9D1 /* ConfirmationViewController-Layout.swift in Sources */,
 				ED925FFD2221369300DFB24E /* HistoryViewController-Layout.swift in Sources */,
 				E436FD632220F35900122A17 /* UITextField.swift in Sources */,
+				ED92600B22217E5400DFB24E /* HeaderCell.swift in Sources */,
 				E436FD702221179200122A17 /* RegisterViewController.swift in Sources */,
 				ED925FF92221368100DFB24E /* HistoryViewController.swift in Sources */,
-				E436FD392220E54800122A17 /* ViewController.swift in Sources */,
+				E436FD392220E54800122A17 /* SplashViewController.swift in Sources */,
 				E436FD7622213F0600122A17 /* PaymentViewController.swift in Sources */,
 				ED9260022221559B00DFB24E /* HistoryData.swift in Sources */,
 				E436FD602220F1B300122A17 /* Variables.swift in Sources */,

@@ -28,6 +28,8 @@ class HistoryViewController: UIViewController {
         
         self.setupUI()
         self.layoutUI()
+        
+        self.setupHistoryData()
     }
     
     func setupHistoryData() {

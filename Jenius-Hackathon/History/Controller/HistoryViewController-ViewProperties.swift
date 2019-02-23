@@ -17,6 +17,8 @@ extension HistoryViewController {
         self.setupHistoryAmountLabel()
         self.setupDownloadButton()
         self.setupDownloadImage()
+        
+        self.setupHistoryTableView()
     }
     
     //MARK: TOP
@@ -82,7 +84,6 @@ extension HistoryViewController {
     private func setupHistoryTableView() {
         historyTableView = UITableView()
         
-        historyTableView.separatorStyle = .none
         historyTableView.allowsSelection = false
         historyTableView.bounces = false
         
@@ -90,6 +91,7 @@ extension HistoryViewController {
         historyTableView.dataSource = self
         
         historyTableView.register(HistoryCell.self, forCellReuseIdentifier: HistoryCell.descriptionString)
+        historyTableView.register(HeaderCell.self, forCellReuseIdentifier: HeaderCell.descriptionString)
         historyTableView.translatesAutoresizingMaskIntoConstraints = false
         
         
