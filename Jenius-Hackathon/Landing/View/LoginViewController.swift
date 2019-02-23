@@ -39,9 +39,18 @@ class LoginViewController: UIViewController {
         self.view.backgroundColor = mainColor
         
         self.emailTextField.makeSingleLine()
+        self.emailTextField.delegate = self
+        self.emailTextField.autocorrectionType = .no
         self.passwordTextField.makeSingleLine()
+        self.passwordTextField.delegate = self
         
         self.signInButton.setTitleColor(mainColor, for: .normal)
     }
-    
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
