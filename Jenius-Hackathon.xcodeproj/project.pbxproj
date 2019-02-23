@@ -15,6 +15,8 @@
 		E436FD442220E54A00122A17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E436FD422220E54A00122A17 /* LaunchScreen.storyboard */; };
 		E436FD4C2220E7C100122A17 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD4B2220E7C100122A17 /* ViewController.xib */; };
 		E436FD512220EA6A00122A17 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E436FD502220EA6A00122A17 /* GoogleService-Info.plist */; };
+		E436FD5A2220EF7500122A17 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD582220EF7500122A17 /* LoginViewController.swift */; };
+		E436FD5B2220EF7500122A17 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD592220EF7500122A17 /* LoginViewController.xib */; };
 		ED0299B62220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B52220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift */; };
 		ED0299B82220EEAC00DEC9D1 /* PaymentViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B72220EEAC00DEC9D1 /* PaymentViewController-Layout.swift */; };
 		ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */; };
@@ -32,6 +34,8 @@
 		E436FD452220E54A00122A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E436FD4B2220E7C100122A17 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		E436FD502220EA6A00122A17 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E436FD582220EF7500122A17 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E436FD592220EF7500122A17 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		ED0299B52220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentViewController-ViewProperties.swift"; sourceTree = "<group>"; };
 		ED0299B72220EEAC00DEC9D1 /* PaymentViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentViewController-Layout.swift"; sourceTree = "<group>"; };
 		ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -90,7 +94,7 @@
 		E436FD352220E54800122A17 /* Jenius-Hackathon */ = {
 			isa = PBXGroup;
 			children = (
-				ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */,
+				E436FD572220EF5200122A17 /* Landing */,
 				ED8938622220ECBA009A6C5A /* PaymentVC */,
 				E436FD4D2220E93000122A17 /* Root */,
 				E436FD362220E54800122A17 /* AppDelegate.swift */,
@@ -106,6 +110,7 @@
 		E436FD4D2220E93000122A17 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */,
 				E436FD4F2220E94200122A17 /* Controller */,
 				E436FD4E2220E93D00122A17 /* View */,
 			);
@@ -126,6 +131,31 @@
 				E436FD382220E54800122A17 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		E436FD572220EF5200122A17 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD5D2220EF7B00122A17 /* View */,
+				E436FD5C2220EF7A00122A17 /* Controller */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		E436FD5C2220EF7A00122A17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD592220EF7500122A17 /* LoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E436FD5D2220EF7B00122A17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD582220EF7500122A17 /* LoginViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		ED8938622220ECBA009A6C5A /* PaymentVC */ = {
@@ -198,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E436FD5B2220EF7500122A17 /* LoginViewController.xib in Resources */,
 				E436FD442220E54A00122A17 /* LaunchScreen.storyboard in Resources */,
 				E436FD512220EA6A00122A17 /* GoogleService-Info.plist in Resources */,
 				E436FD4C2220E7C100122A17 /* ViewController.xib in Resources */,
@@ -265,6 +296,7 @@
 				ED0299B82220EEAC00DEC9D1 /* PaymentViewController-Layout.swift in Sources */,
 				E436FD392220E54800122A17 /* ViewController.swift in Sources */,
 				ED8938612220EC22009A6C5A /* PaymentViewController.swift in Sources */,
+				E436FD5A2220EF7500122A17 /* LoginViewController.swift in Sources */,
 				ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */,
 				E436FD372220E54800122A17 /* AppDelegate.swift in Sources */,
 				ED0299B62220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift in Sources */,
