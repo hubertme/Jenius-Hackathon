@@ -37,6 +37,8 @@ class LoginViewController: UIViewController {
     // MARK: - Private methods
     private func setupElements() {
         self.view.backgroundColor = mainColor
+        let tapGestureDismissKeyboard = UITapGestureRecognizer(target: self, action: #selector(dismissAllTextFieldsKeyboard))
+        self.view.addGestureRecognizer(tapGestureDismissKeyboard)
         
         self.emailTextField.makeSingleLine()
         self.emailTextField.delegate = self
@@ -45,6 +47,11 @@ class LoginViewController: UIViewController {
         self.passwordTextField.delegate = self
         
         self.signInButton.setTitleColor(mainColor, for: .normal)
+    }
+    
+    @objc private func dismissAllTextFieldsKeyboard() {
+        self.emailTextField.resignFirstResponder()
+        self.passwordTextField.resignFirstResponder()
     }
 }
 
