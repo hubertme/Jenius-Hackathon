@@ -42,6 +42,8 @@ class ChangePasswordViewController: UIViewController {
         self.doneButton.clipsToBounds = true
         self.doneButton.layer.cornerRadius = 8
         self.doneButton.setTitleColor(mainColor, for: .normal)
+        self.doneButton.alpha = 0.2
+        self.doneButton.isUserInteractionEnabled = false
         
         self.currentPasswordTextField.delegate = self
         self.currentPasswordTextField.makeSingleLine()
@@ -73,6 +75,17 @@ class ChangePasswordViewController: UIViewController {
 
 extension ChangePasswordViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if self.currentPasswordTextField.text != "" && self.newPasswordTextField.text != "" && self.reNewPasswordTextField.text != "" {
+            UIView.animate(withDuration: 1) {
+                self.doneButton.alpha = 1
+                self.doneButton.isUserInteractionEnabled = true
+            }
+        } else {
+            UIView.animate(withDuration: 1) {
+                self.doneButton.alpha = 0.2
+                self.doneButton.isUserInteractionEnabled = false
+            }
+        }
         textField.resignFirstResponder()
         return true
     }
