@@ -10,11 +10,21 @@ import UIKit
 
 extension HistoryViewController {
     func setupUI() {
+        self.setupTransactionContainer()
+    }
+    
+    func setupTransactionContainer() {
+        transactionContainer = UIView()
+        transactionContainer.backgroundColor = mainColor
+        transactionContainer.translatesAutoresizingMaskIntoConstraints = false
         
+        self.view.addSubview(transactionContainer)
     }
     
     private func setupTransactionDayLabel() {
-    
+        transactionDayLabel = UILabel()
+        transactionDayLabel.text = "Today's Transaction"
+        
     }
     
     private func setupTransactionLabel() {

@@ -8,10 +8,11 @@
 
 import UIKit
 
-class HistoryViewController: UIViewController { //Use uitableviewcontroller
+class HistoryViewController: UIViewController { 
     
-    var todayTransactionLabel: UILabel!
+    var transactionContainer: UIView!
     var transactionDayLabel: UILabel!
+    var transactionAmountLabel: UILabel!
     
     var showingLabel: UILabel!
     var downloadButton: UIButton!
