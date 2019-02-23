@@ -42,8 +42,9 @@ class RegisterViewController: UIViewController {
         let email = textFields[TextFieldOrder.email.rawValue].text!
         let password = textFields[TextFieldOrder.password.rawValue].text!
         let fullName = textFields[TextFieldOrder.fullName.rawValue].text!
+        let phone = textFields[TextFieldOrder.phone.rawValue].text!
         
-        self.handleUserRegistration(email: email, password: password, fullName: fullName)
+        self.handleUserRegistration(email: email, password: password, fullName: fullName, phone: phone)
     }
     
     // MARK: - Private methods
@@ -100,7 +101,7 @@ class RegisterViewController: UIViewController {
         return true
     }
     
-    private func handleUserRegistration(email: String, password: String, fullName: String) {
+    private func handleUserRegistration(email: String, password: String, fullName: String, phone: String) {
         Auth.auth().createUser(withEmail: email, password: password) { (userAuth, error) in
             if let error = error {
                 print("Failed to register with error: \(error.localizedDescription)")
@@ -109,10 +110,23 @@ class RegisterViewController: UIViewController {
             }
             print("Successfully registered user with uid: \(userAuth?.user.uid ?? "N/A"), email: \(userAuth?.user.email ?? "N/A") and name: \(userAuth?.user.displayName ?? "N/A")")
             
-            self.present(createAlertWithOkAction(title: "Hello Onboard", message: "Welcome to Jenius merchant!") { (_) in
-                let nextVC = MainTabBarController()
-                self.present(nextVC, animated: true, completion: nil)
-            }, animated: true, completion: nil)
+            let docData: [String: Any] = [
+                "email": email,
+                "fullName": fullName,
+                "phoneNumber": phone,
+            ]
+            db.collection("users").document(Auth.auth().currentUser?.uid ?? "noIdFound").setData(docData, completion: { (error) in
+                if let error = error {
+                    print("Error adding to firestore with error \(error.localizedDescription)")
+                    // Handle if fail to save to Firestore
+                    return
+                }
+                
+                self.present(createAlertWithOkAction(title: "Hello Onboard", message: "Welcome to Jenius merchant!") { (_) in
+                    let nextVC = MainTabBarController()
+                    self.present(nextVC, animated: true, completion: nil)
+                }, animated: true, completion: nil)
+            })
         }
     }
 }
