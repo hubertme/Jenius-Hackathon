@@ -28,6 +28,10 @@
 		E436FD7F2221570300122A17 /* MerchantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD7D2221570300122A17 /* MerchantViewController.swift */; };
 		E436FD802221570300122A17 /* MerchantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD7E2221570300122A17 /* MerchantViewController.xib */; };
 		E436FD872221822D00122A17 /* LogoAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E436FD862221822D00122A17 /* LogoAnimation.json */; };
+		E436FD8E222190BB00122A17 /* TableHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD8C222190BB00122A17 /* TableHeaderCell.swift */; };
+		E436FD8F222190BB00122A17 /* TableHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD8D222190BB00122A17 /* TableHeaderCell.xib */; };
+		E436FD922221A15F00122A17 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD902221A15F00122A17 /* ContentCell.swift */; };
+		E436FD932221A15F00122A17 /* ContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD912221A15F00122A17 /* ContentCell.xib */; };
 		ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B92220F95D00DEC9D1 /* Extensions.swift */; };
 		ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */; };
 		ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */; };
@@ -69,6 +73,10 @@
 		E436FD7D2221570300122A17 /* MerchantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantViewController.swift; sourceTree = "<group>"; };
 		E436FD7E2221570300122A17 /* MerchantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantViewController.xib; sourceTree = "<group>"; };
 		E436FD862221822D00122A17 /* LogoAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LogoAnimation.json; sourceTree = "<group>"; };
+		E436FD8C222190BB00122A17 /* TableHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderCell.swift; sourceTree = "<group>"; };
+		E436FD8D222190BB00122A17 /* TableHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderCell.xib; sourceTree = "<group>"; };
+		E436FD902221A15F00122A17 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
+		E436FD912221A15F00122A17 /* ContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCell.xib; sourceTree = "<group>"; };
 		ED0299B92220F95D00DEC9D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmatioViewController.swift; sourceTree = "<group>"; };
 		ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-ViewProperties.swift"; sourceTree = "<group>"; };
@@ -239,6 +247,7 @@
 		E436FD7B222156ED00122A17 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E436FD8A2221907600122A17 /* Cell */,
 				E436FD7D2221570300122A17 /* MerchantViewController.swift */,
 			);
 			path = Controller;
@@ -247,6 +256,7 @@
 		E436FD7C222156EF00122A17 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E436FD8B2221907900122A17 /* Cell */,
 				E436FD7E2221570300122A17 /* MerchantViewController.xib */,
 			);
 			path = View;
@@ -258,6 +268,25 @@
 				E436FD862221822D00122A17 /* LogoAnimation.json */,
 			);
 			path = LottieJson;
+			sourceTree = "<group>";
+		};
+		E436FD8A2221907600122A17 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD8C222190BB00122A17 /* TableHeaderCell.swift */,
+				E436FD902221A15F00122A17 /* ContentCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E436FD8B2221907900122A17 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD8D222190BB00122A17 /* TableHeaderCell.xib */,
+				E436FD912221A15F00122A17 /* ContentCell.xib */,
+			);
+			name = Cell;
+			path = View;
 			sourceTree = "<group>";
 		};
 		ED0299BB2221015800DEC9D1 /* Confirmation */ = {
@@ -392,12 +421,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E436FD5B2220EF7500122A17 /* LoginViewController.xib in Resources */,
+				E436FD932221A15F00122A17 /* ContentCell.xib in Resources */,
 				E436FD442220E54A00122A17 /* LaunchScreen.storyboard in Resources */,
 				E436FD512220EA6A00122A17 /* GoogleService-Info.plist in Resources */,
 				E436FD872221822D00122A17 /* LogoAnimation.json in Resources */,
 				E436FD802221570300122A17 /* MerchantViewController.xib in Resources */,
 				E436FD4C2220E7C100122A17 /* SplashViewController.xib in Resources */,
 				E436FD412220E54A00122A17 /* Assets.xcassets in Resources */,
+				E436FD8F222190BB00122A17 /* TableHeaderCell.xib in Resources */,
 				E436FD712221179200122A17 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +533,7 @@
 				E436FD702221179200122A17 /* RegisterViewController.swift in Sources */,
 				ED925FF92221368100DFB24E /* HistoryViewController.swift in Sources */,
 				E436FD392220E54800122A17 /* SplashViewController.swift in Sources */,
+				E436FD8E222190BB00122A17 /* TableHeaderCell.swift in Sources */,
 				E436FD7622213F0600122A17 /* PaymentViewController.swift in Sources */,
 				ED9260022221559B00DFB24E /* HistoryData.swift in Sources */,
 				E436FD602220F1B300122A17 /* Variables.swift in Sources */,
@@ -509,6 +541,7 @@
 				E436FD7522213F0600122A17 /* PaymentViewController-Layout.swift in Sources */,
 				E436FD7922213F2F00122A17 /* Functions.swift in Sources */,
 				E436FD7F2221570300122A17 /* MerchantViewController.swift in Sources */,
+				E436FD922221A15F00122A17 /* ContentCell.swift in Sources */,
 				ED92601222218FC600DFB24E /* PinEnterViewController-Layout.swift in Sources */,
 				ED92601022218F9F00DFB24E /* PinEnterViewController-ViewProperties.swift in Sources */,
 				E436FD7722213F0600122A17 /* PaymentViewController-ViewProperties.swift in Sources */,
