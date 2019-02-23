@@ -32,11 +32,13 @@
 		E436FD8F222190BB00122A17 /* TableHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD8D222190BB00122A17 /* TableHeaderCell.xib */; };
 		E436FD922221A15F00122A17 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD902221A15F00122A17 /* ContentCell.swift */; };
 		E436FD932221A15F00122A17 /* ContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD912221A15F00122A17 /* ContentCell.xib */; };
+		E436FDC02221F84900122A17 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FDBE2221F84900122A17 /* ChangePasswordViewController.swift */; };
+		E436FDC12221F84900122A17 /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FDBF2221F84900122A17 /* ChangePasswordViewController.xib */; };
+		E436FDC32221FB7F00122A17 /* PinEnterViewController-CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FDC22221FB7F00122A17 /* PinEnterViewController-CollectionView.swift */; };
 		ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B92220F95D00DEC9D1 /* Extensions.swift */; };
 		ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */; };
 		ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */; };
 		ED0299C22221098E00DEC9D1 /* ConfirmationViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299C12221098E00DEC9D1 /* ConfirmationViewController-Layout.swift */; };
-		ED5EF14D2221CB1A001F6530 /* PinEnterViewController-CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5EF14C2221CB1A001F6530 /* PinEnterViewController-CollectionView.swift */; };
 		ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */; };
 		ED925FF92221368100DFB24E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED925FF82221368100DFB24E /* HistoryViewController.swift */; };
 		ED925FFB2221368A00DFB24E /* HistoryViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED925FFA2221368A00DFB24E /* HistoryViewController-ViewProperties.swift */; };
@@ -49,6 +51,19 @@
 		ED92601022218F9F00DFB24E /* PinEnterViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92600F22218F9F00DFB24E /* PinEnterViewController-ViewProperties.swift */; };
 		ED92601222218FC600DFB24E /* PinEnterViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92601122218FC600DFB24E /* PinEnterViewController-Layout.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E436FDB82221C27F00122A17 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C44F77DD340EFA1069A7AB49 /* Pods-Jenius-Hackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jenius-Hackathon.release.xcconfig"; path = "Target Support Files/Pods-Jenius-Hackathon/Pods-Jenius-Hackathon.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,11 +93,19 @@
 		E436FD8D222190BB00122A17 /* TableHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderCell.xib; sourceTree = "<group>"; };
 		E436FD902221A15F00122A17 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		E436FD912221A15F00122A17 /* ContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCell.xib; sourceTree = "<group>"; };
+		E436FD9B2221C27F00122A17 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		E436FD9D2221C27F00122A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E436FDA32221C27F00122A17 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		E436FDA62221C27F00122A17 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		E436FDA92221C27F00122A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		E436FDAB2221C27F00122A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E436FDBE2221F84900122A17 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		E436FDBF2221F84900122A17 /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
+		E436FDC22221FB7F00122A17 /* PinEnterViewController-CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PinEnterViewController-CollectionView.swift"; sourceTree = "<group>"; };
 		ED0299B92220F95D00DEC9D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmatioViewController.swift; sourceTree = "<group>"; };
 		ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-ViewProperties.swift"; sourceTree = "<group>"; };
 		ED0299C12221098E00DEC9D1 /* ConfirmationViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-Layout.swift"; sourceTree = "<group>"; };
-		ED5EF14C2221CB1A001F6530 /* PinEnterViewController-CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PinEnterViewController-CollectionView.swift"; sourceTree = "<group>"; };
 		ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		ED925FF82221368100DFB24E /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		ED925FFA2221368A00DFB24E /* HistoryViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController-ViewProperties.swift"; sourceTree = "<group>"; };
@@ -123,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				F06DF6DC3BC5CACC1CFA3995 /* Pods_Jenius_Hackathon.framework */,
+				E436FDA32221C27F00122A17 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,6 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				E436FD352220E54800122A17 /* Jenius-Hackathon */,
+				E436FD9A2221C27F00122A17 /* UserAnalyticsIntent */,
+				E436FDA52221C27F00122A17 /* UserAnalyticsIntentUI */,
 				E436FD342220E54800122A17 /* Products */,
 				1E6F440A3C766E76B04ACFB9 /* Pods */,
 				ADEDA63E2020B3A579781FB9 /* Frameworks */,
@@ -155,6 +181,7 @@
 				ED8938622220ECBA009A6C5A /* Payment */,
 				ED925FF72221366900DFB24E /* History */,
 				E436FD7A2221567600122A17 /* Merchant */,
+				E436FDBB2221F81800122A17 /* Passwords */,
 				E436FD4D2220E93000122A17 /* Root */,
 				E436FD362220E54800122A17 /* AppDelegate.swift */,
 				E436FD402220E54A00122A17 /* Assets.xcassets */,
@@ -291,6 +318,50 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E436FD9A2221C27F00122A17 /* UserAnalyticsIntent */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD9B2221C27F00122A17 /* IntentHandler.swift */,
+				E436FD9D2221C27F00122A17 /* Info.plist */,
+			);
+			path = UserAnalyticsIntent;
+			sourceTree = "<group>";
+		};
+		E436FDA52221C27F00122A17 /* UserAnalyticsIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				E436FDA62221C27F00122A17 /* IntentViewController.swift */,
+				E436FDA82221C27F00122A17 /* MainInterface.storyboard */,
+				E436FDAB2221C27F00122A17 /* Info.plist */,
+			);
+			path = UserAnalyticsIntentUI;
+			sourceTree = "<group>";
+		};
+		E436FDBB2221F81800122A17 /* Passwords */ = {
+			isa = PBXGroup;
+			children = (
+				E436FDBD2221F82600122A17 /* View */,
+				E436FDBC2221F82500122A17 /* Controller */,
+			);
+			path = Passwords;
+			sourceTree = "<group>";
+		};
+		E436FDBC2221F82500122A17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E436FDBE2221F84900122A17 /* ChangePasswordViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E436FDBD2221F82600122A17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E436FDBF2221F84900122A17 /* ChangePasswordViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		ED0299BB2221015800DEC9D1 /* Confirmation */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,9 +425,9 @@
 		ED92600C22218F1600DFB24E /* PinEnter */ = {
 			isa = PBXGroup;
 			children = (
+				E436FDC22221FB7F00122A17 /* PinEnterViewController-CollectionView.swift */,
 				ED92600D22218F5400DFB24E /* PinEnterViewController.swift */,
 				ED92600F22218F9F00DFB24E /* PinEnterViewController-ViewProperties.swift */,
-				ED5EF14C2221CB1A001F6530 /* PinEnterViewController-CollectionView.swift */,
 				ED92601122218FC600DFB24E /* PinEnterViewController-Layout.swift */,
 			);
 			path = PinEnter;
@@ -375,6 +446,7 @@
 				E436FD312220E54800122A17 /* Resources */,
 				17CD3164F8437A5D51471FF5 /* [CP] Embed Pods Frameworks */,
 				3141667E5A1FC16F9D723A01 /* [CP] Copy Pods Resources */,
+				E436FDB82221C27F00122A17 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -397,6 +469,11 @@
 				TargetAttributes = {
 					E436FD322220E54800122A17 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -426,6 +503,7 @@
 				E436FD5B2220EF7500122A17 /* LoginViewController.xib in Resources */,
 				E436FD932221A15F00122A17 /* ContentCell.xib in Resources */,
 				E436FD442220E54A00122A17 /* LaunchScreen.storyboard in Resources */,
+				E436FDC12221F84900122A17 /* ChangePasswordViewController.xib in Resources */,
 				E436FD512220EA6A00122A17 /* GoogleService-Info.plist in Resources */,
 				E436FD872221822D00122A17 /* LogoAnimation.json in Resources */,
 				E436FD802221570300122A17 /* MerchantViewController.xib in Resources */,
@@ -531,6 +609,7 @@
 				E436FD3F2220E54800122A17 /* Jenius_Hackathon.xcdatamodeld in Sources */,
 				ED0299C22221098E00DEC9D1 /* ConfirmationViewController-Layout.swift in Sources */,
 				ED925FFD2221369300DFB24E /* HistoryViewController-Layout.swift in Sources */,
+				E436FDC02221F84900122A17 /* ChangePasswordViewController.swift in Sources */,
 				E436FD632220F35900122A17 /* UITextField.swift in Sources */,
 				ED92600B22217E5400DFB24E /* HeaderCell.swift in Sources */,
 				E436FD702221179200122A17 /* RegisterViewController.swift in Sources */,
@@ -545,6 +624,7 @@
 				E436FD7922213F2F00122A17 /* Functions.swift in Sources */,
 				E436FD7F2221570300122A17 /* MerchantViewController.swift in Sources */,
 				E436FD922221A15F00122A17 /* ContentCell.swift in Sources */,
+				E436FDC32221FB7F00122A17 /* PinEnterViewController-CollectionView.swift in Sources */,
 				ED92601222218FC600DFB24E /* PinEnterViewController-Layout.swift in Sources */,
 				ED92601022218F9F00DFB24E /* PinEnterViewController-ViewProperties.swift in Sources */,
 				E436FD7722213F0600122A17 /* PaymentViewController-ViewProperties.swift in Sources */,
@@ -556,7 +636,6 @@
 				ED9260062221631D00DFB24E /* HistoryCell.swift in Sources */,
 				ED9260042221564D00DFB24E /* HistoryViewController-TableView.swift in Sources */,
 				ED92600E22218F5400DFB24E /* PinEnterViewController.swift in Sources */,
-				ED5EF14D2221CB1A001F6530 /* PinEnterViewController-CollectionView.swift in Sources */,
 				ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,6 +649,14 @@
 				E436FD432220E54A00122A17 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E436FDA82221C27F00122A17 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E436FDA92221C27F00122A17 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -695,9 +782,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F1D517AD29A2B856A3AA5C30 /* Pods-Jenius-Hackathon.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RCS84LVYUK;
+				DEVELOPMENT_TEAM = 8WF8BJSYNB;
 				INFOPLIST_FILE = "Jenius-Hackathon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -715,9 +803,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C44F77DD340EFA1069A7AB49 /* Pods-Jenius-Hackathon.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RCS84LVYUK;
+				DEVELOPMENT_TEAM = 8WF8BJSYNB;
 				INFOPLIST_FILE = "Jenius-Hackathon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
