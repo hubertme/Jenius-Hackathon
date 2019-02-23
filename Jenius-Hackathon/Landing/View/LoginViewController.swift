@@ -75,6 +75,7 @@ class LoginViewController: UIViewController {
         self.passwordTextField.makeSingleLine()
         self.passwordTextField.delegate = self
         
+        self.signInButton.alpha = 0
         self.signInButton.setTitleColor(mainColor, for: .normal)
         self.signInButton.clipsToBounds = true
         self.signInButton.layer.cornerRadius = 8
@@ -83,6 +84,10 @@ class LoginViewController: UIViewController {
     @objc private func dismissAllTextFieldsKeyboard() {
         self.emailTextField.resignFirstResponder()
         self.passwordTextField.resignFirstResponder()
+        
+        UIView.animate(withDuration: 1) {
+            self.signInButton.alpha = self.checkIfAllTextFieldsFilled() ? 1 : 0
+        }
     }
     
     private func handleSignInWith(email: String, password: String) {
@@ -101,6 +106,13 @@ class LoginViewController: UIViewController {
             }, animated: true, completion: nil)
         }
     }
+    
+    private func checkIfAllTextFieldsFilled() -> Bool {
+        if self.emailTextField.text != "" && self.passwordTextField.text != "" {
+            return true
+        }
+        return false
+    }
 }
 
 extension LoginViewController: UITextFieldDelegate {
@@ -109,6 +121,10 @@ extension LoginViewController: UITextFieldDelegate {
             let _ = self.passwordTextField.text == "" ? self.passwordTextField.becomeFirstResponder() : textField.resignFirstResponder()
         } else {
             textField.resignFirstResponder()
+        }
+        
+        UIView.animate(withDuration: 1) {
+            self.signInButton.alpha = self.checkIfAllTextFieldsFilled() ? 1 : 0
         }
         return true
     }
