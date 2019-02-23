@@ -15,6 +15,8 @@ extension PinEnterViewController {
         
         self.setupForgotPinLabel()
         self.setupUsePasswordButton()
+        
+        self.setupNumberInput()
     }
     
     private func setupEneterPinLabel() {
@@ -53,5 +55,9 @@ extension PinEnterViewController {
         usePasswordButton.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(usePasswordButton)
+    }
+    
+    private func setupNumberInput() {
+        numberInputView = PinInputView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
     }
 }

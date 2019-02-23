@@ -16,6 +16,8 @@ class PinEnterViewController: UIViewController {
     var forgotPinLabel: UILabel!
     var usePasswordButton: UIButton!
     
+    var numberInputView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -71,10 +73,14 @@ class PinInputView: UIView {
         super.init(frame: frame)
         
         numbers.shuffle()
+        
+        self.generateButtons()
     }
     
     func generateButtons() {
-        
+        numbers.forEach { (num) in
+            
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
