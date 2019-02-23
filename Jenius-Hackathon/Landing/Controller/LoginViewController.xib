@@ -24,8 +24,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, welcome back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2d-h4-8hd">
-                    <rect key="frame" x="40" y="120" width="215" height="32"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, welcome back!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2d-h4-8hd">
+                    <rect key="frame" x="40" y="120" width="295" height="32"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -100,6 +100,7 @@
                 <constraint firstItem="5Xq-mZ-jmf" firstAttribute="top" secondItem="2YA-Sv-xgf" secondAttribute="bottom" constant="28" id="EbF-Kr-685"/>
                 <constraint firstItem="2YA-Sv-xgf" firstAttribute="top" secondItem="DFa-vO-DeJ" secondAttribute="bottom" constant="2" id="GWU-Ze-Q04"/>
                 <constraint firstItem="QZI-2b-fMw" firstAttribute="top" secondItem="5Xq-mZ-jmf" secondAttribute="bottom" constant="2" id="JCe-M7-EaL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Y2d-h4-8hd" secondAttribute="trailing" constant="40" id="PGo-dh-iDf"/>
                 <constraint firstItem="Y2d-h4-8hd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="Xc7-rB-eGy"/>
                 <constraint firstItem="5Xq-mZ-jmf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="Z95-UX-ijc"/>
                 <constraint firstItem="DFa-vO-DeJ" firstAttribute="top" secondItem="Hv2-nj-eDE" secondAttribute="bottom" constant="27" id="ZDT-H7-6b3"/>

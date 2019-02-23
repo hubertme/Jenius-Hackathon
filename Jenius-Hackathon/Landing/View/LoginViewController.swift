@@ -31,6 +31,12 @@ class LoginViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupElements()
+        
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
     }
     
     // MARK: - Actions
@@ -53,7 +59,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func handleRegisterButtonTapped(_ sender: UIButton) {
-        print("Register button tapped!")
+        let registerVC = RegisterViewController()
+        self.navigationController?.pushViewController(registerVC, animated: true)
     }
     
     // MARK: - Private methods
