@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Lottie
 
 class MerchantViewController: UIViewController {
     
@@ -19,15 +18,6 @@ class MerchantViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = mainColor
-        let animationView = LOTAnimationView(name: "LogoAnimation")
-        animationView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
-        animationView.contentMode = .scaleAspectFit
-        animationView.center = self.view.center
-        animationView.loopAnimation = true
-        
-        self.view.addSubview(animationView)
-        animationView.play()
     }
     
     // MARK: - Actions
