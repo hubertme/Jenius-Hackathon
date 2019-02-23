@@ -43,8 +43,11 @@ class RegisterViewController: UIViewController {
         let password = textFields[TextFieldOrder.password.rawValue].text!
         let fullName = textFields[TextFieldOrder.fullName.rawValue].text!
         let phone = textFields[TextFieldOrder.phone.rawValue].text!
+        let rePassword = textFields[TextFieldOrder.rePassword.rawValue].text!
         
-        self.handleUserRegistration(email: email, password: password, fullName: fullName, phone: phone)
+        if self.isRegistrationDataValid(email: email, password: password, rePassword: rePassword) {
+            self.handleUserRegistration(email: email, password: password, fullName: fullName, phone: phone)
+        }
     }
     
     // MARK: - Private methods
@@ -101,6 +104,29 @@ class RegisterViewController: UIViewController {
         return true
     }
     
+    private func isRegistrationDataValid(email: String, password: String, rePassword: String) -> Bool {
+        if !(isValidEmail(email)) {
+            self.present(createAlertWithOkAction(title: "Invalid email", message: "Please enter a valid email\nEx: name@email.com") { (_) in
+                self.textFields[TextFieldOrder.email.rawValue].text = ""
+                self.textFields[TextFieldOrder.email.rawValue].becomeFirstResponder()
+            }, animated: true, completion: nil)
+            return false
+        } else if password.count < 6 {
+            self.present(createAlertWithOkAction(title: "Password too short", message: "Please enter a password with 6 or more characters") { (_) in
+                self.textFields[TextFieldOrder.password.rawValue].text = ""
+                self.textFields[TextFieldOrder.password.rawValue].becomeFirstResponder()
+            }, animated: true, completion: nil)
+            return false
+        } else if password != rePassword {
+            self.present(createAlertWithOkAction(title: "Password mismatch", message: "Please retype your password") { (_) in
+                self.textFields[TextFieldOrder.rePassword.rawValue].text = ""
+                self.textFields[TextFieldOrder.rePassword.rawValue].becomeFirstResponder()
+            }, animated: true, completion: nil)
+            return false
+        }
+        return true
+    }
+    
     private func handleUserRegistration(email: String, password: String, fullName: String, phone: String) {
         Auth.auth().createUser(withEmail: email, password: password) { (userAuth, error) in
             if let error = error {
@@ -118,7 +144,9 @@ class RegisterViewController: UIViewController {
             db.collection("users").document(Auth.auth().currentUser?.uid ?? "noIdFound").setData(docData, completion: { (error) in
                 if let error = error {
                     print("Error adding to firestore with error \(error.localizedDescription)")
+                    
                     // Handle if fail to save to Firestore
+                    
                     return
                 }
                 

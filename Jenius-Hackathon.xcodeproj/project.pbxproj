@@ -25,6 +25,8 @@
 		E436FD7622213F0600122A17 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD7322213F0600122A17 /* PaymentViewController.swift */; };
 		E436FD7722213F0600122A17 /* PaymentViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD7422213F0600122A17 /* PaymentViewController-ViewProperties.swift */; };
 		E436FD7922213F2F00122A17 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD7822213F2E00122A17 /* Functions.swift */; };
+		E436FD7F2221570300122A17 /* MerchantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD7D2221570300122A17 /* MerchantViewController.swift */; };
+		E436FD802221570300122A17 /* MerchantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD7E2221570300122A17 /* MerchantViewController.xib */; };
 		ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B92220F95D00DEC9D1 /* Extensions.swift */; };
 		ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */; };
 		ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */; };
@@ -58,6 +60,8 @@
 		E436FD7322213F0600122A17 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		E436FD7422213F0600122A17 /* PaymentViewController-ViewProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaymentViewController-ViewProperties.swift"; sourceTree = "<group>"; };
 		E436FD7822213F2E00122A17 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		E436FD7D2221570300122A17 /* MerchantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantViewController.swift; sourceTree = "<group>"; };
+		E436FD7E2221570300122A17 /* MerchantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantViewController.xib; sourceTree = "<group>"; };
 		ED0299B92220F95D00DEC9D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmatioViewController.swift; sourceTree = "<group>"; };
 		ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-ViewProperties.swift"; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 				E436FD572220EF5200122A17 /* Landing */,
 				ED8938622220ECBA009A6C5A /* Payment */,
 				ED925FF72221366900DFB24E /* History */,
+				E436FD7A2221567600122A17 /* Merchant */,
 				E436FD4D2220E93000122A17 /* Root */,
 				E436FD362220E54800122A17 /* AppDelegate.swift */,
 				E436FD402220E54A00122A17 /* Assets.xcassets */,
@@ -207,6 +212,31 @@
 				E436FD622220F35900122A17 /* UITextField.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		E436FD7A2221567600122A17 /* Merchant */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD7C222156EF00122A17 /* View */,
+				E436FD7B222156ED00122A17 /* Controller */,
+			);
+			path = Merchant;
+			sourceTree = "<group>";
+		};
+		E436FD7B222156ED00122A17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD7D2221570300122A17 /* MerchantViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E436FD7C222156EF00122A17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD7E2221570300122A17 /* MerchantViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		ED0299BB2221015800DEC9D1 /* Confirmation */ = {
@@ -330,6 +360,7 @@
 				E436FD5B2220EF7500122A17 /* LoginViewController.xib in Resources */,
 				E436FD442220E54A00122A17 /* LaunchScreen.storyboard in Resources */,
 				E436FD512220EA6A00122A17 /* GoogleService-Info.plist in Resources */,
+				E436FD802221570300122A17 /* MerchantViewController.xib in Resources */,
 				E436FD4C2220E7C100122A17 /* ViewController.xib in Resources */,
 				E436FD412220E54A00122A17 /* Assets.xcassets in Resources */,
 				E436FD712221179200122A17 /* RegisterViewController.xib in Resources */,
@@ -439,6 +470,7 @@
 				ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */,
 				E436FD7522213F0600122A17 /* PaymentViewController-Layout.swift in Sources */,
 				E436FD7922213F2F00122A17 /* Functions.swift in Sources */,
+				E436FD7F2221570300122A17 /* MerchantViewController.swift in Sources */,
 				E436FD7722213F0600122A17 /* PaymentViewController-ViewProperties.swift in Sources */,
 				E436FD5A2220EF7500122A17 /* LoginViewController.swift in Sources */,
 				ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */,
