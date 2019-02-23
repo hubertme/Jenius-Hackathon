@@ -152,6 +152,7 @@ class RegisterViewController: UIViewController {
                 
                 self.present(createAlertWithOkAction(title: "Hello Onboard", message: "Welcome to Jenius merchant!") { (_) in
                     let nextVC = MainTabBarController()
+                    nextVC.selectedIndex = 1
                     self.present(nextVC, animated: true, completion: nil)
                 }, animated: true, completion: nil)
             })

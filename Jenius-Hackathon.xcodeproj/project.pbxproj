@@ -36,6 +36,8 @@
 		ED925FF92221368100DFB24E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED925FF82221368100DFB24E /* HistoryViewController.swift */; };
 		ED925FFB2221368A00DFB24E /* HistoryViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED925FFA2221368A00DFB24E /* HistoryViewController-ViewProperties.swift */; };
 		ED925FFD2221369300DFB24E /* HistoryViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED925FFC2221369300DFB24E /* HistoryViewController-Layout.swift */; };
+		ED9260022221559B00DFB24E /* HistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9260012221559B00DFB24E /* HistoryData.swift */; };
+		ED9260042221564D00DFB24E /* HistoryViewController-TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9260032221564D00DFB24E /* HistoryViewController-TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		ED925FF82221368100DFB24E /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		ED925FFA2221368A00DFB24E /* HistoryViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController-ViewProperties.swift"; sourceTree = "<group>"; };
 		ED925FFC2221369300DFB24E /* HistoryViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController-Layout.swift"; sourceTree = "<group>"; };
+		ED9260012221559B00DFB24E /* HistoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryData.swift; sourceTree = "<group>"; };
+		ED9260032221564D00DFB24E /* HistoryViewController-TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController-TableView.swift"; sourceTree = "<group>"; };
 		F06DF6DC3BC5CACC1CFA3995 /* Pods_Jenius_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jenius_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D517AD29A2B856A3AA5C30 /* Pods-Jenius-Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jenius-Hackathon.debug.xcconfig"; path = "Target Support Files/Pods-Jenius-Hackathon/Pods-Jenius-Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -270,11 +274,37 @@
 		ED925FF72221366900DFB24E /* History */ = {
 			isa = PBXGroup;
 			children = (
+				ED925FFF2221554100DFB24E /* Controller */,
+				ED9260002221554800DFB24E /* View */,
+				ED925FFE2221553B00DFB24E /* Model */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		ED925FFE2221553B00DFB24E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED9260012221559B00DFB24E /* HistoryData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED925FFF2221554100DFB24E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				ED925FF82221368100DFB24E /* HistoryViewController.swift */,
 				ED925FFA2221368A00DFB24E /* HistoryViewController-ViewProperties.swift */,
 				ED925FFC2221369300DFB24E /* HistoryViewController-Layout.swift */,
+				ED9260032221564D00DFB24E /* HistoryViewController-TableView.swift */,
 			);
-			path = History;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ED9260002221554800DFB24E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +479,7 @@
 				ED925FF92221368100DFB24E /* HistoryViewController.swift in Sources */,
 				E436FD392220E54800122A17 /* SplashViewController.swift in Sources */,
 				E436FD7622213F0600122A17 /* PaymentViewController.swift in Sources */,
+				ED9260022221559B00DFB24E /* HistoryData.swift in Sources */,
 				E436FD602220F1B300122A17 /* Variables.swift in Sources */,
 				ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */,
 				E436FD7522213F0600122A17 /* PaymentViewController-Layout.swift in Sources */,
@@ -460,6 +491,7 @@
 				ED925FFB2221368A00DFB24E /* HistoryViewController-ViewProperties.swift in Sources */,
 				ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */,
 				E436FD372220E54800122A17 /* AppDelegate.swift in Sources */,
+				ED9260042221564D00DFB24E /* HistoryViewController-TableView.swift in Sources */,
 				ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
