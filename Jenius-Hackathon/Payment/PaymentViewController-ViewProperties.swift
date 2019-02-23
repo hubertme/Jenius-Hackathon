@@ -35,7 +35,7 @@ extension PaymentViewController {
     private func setupTitleLabel() {
         titleLabel = UILabel()
         titleLabel.text = "JENIUS Café"
-        titleLabel.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
+        titleLabel.font = UIFont.systemFont(ofSize: 25, weight: .semibold)
         titleLabel.textColor = textGray
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         
@@ -50,12 +50,15 @@ extension PaymentViewController {
         self.titleContainer.addSubview(merchantIcon)
     }
     
+    
     private func setupInputLabel() {
         inputLabel = UILabel()
         inputLabel.text = "Input transaction amount"
-        inputLabel.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
+        inputLabel.font = UIFont.systemFont(ofSize: 24, weight: .regular)
         inputLabel.textColor = mainColor
         inputLabel.translatesAutoresizingMaskIntoConstraints = false
+        inputLabel.numberOfLines = 0
+        inputLabel.lineBreakMode = .byWordWrapping
         
         self.view.addSubview(inputLabel)
     }
@@ -63,25 +66,27 @@ extension PaymentViewController {
     private func setupInputDesc() {
         inputDesc = UILabel()
         inputDesc.text = "Enter total amount of transaction"
-        inputDesc.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+        inputDesc.font = UIFont.systemFont(ofSize: 18, weight: .regular)
         inputDesc.textColor = textGray
         inputDesc.translatesAutoresizingMaskIntoConstraints = false
+        inputDesc.numberOfLines = 0
+        inputDesc.lineBreakMode = .byWordWrapping
         
-        self.view.addSubview(inputLabel)
+        self.view.addSubview(inputDesc)
     }
     
     private func setupAmountTextField() {
         amountTextField = UITextField()
         amountTextField.placeholder = "Amount"
         amountTextField.textAlignment = .left
-        amountTextField.font = UIFont.systemFont(ofSize: 15)
+        amountTextField.font = UIFont.systemFont(ofSize: 14)
+        amountTextField.textColor = .darkGray
         amountTextField.delegate = self
+        amountTextField.addBottomBorder()
         amountTextField.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(amountTextField)
     }
 }
 
-extension PaymentViewController: UITextFieldDelegate {
-    
-}
+

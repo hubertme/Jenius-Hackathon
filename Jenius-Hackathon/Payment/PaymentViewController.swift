@@ -26,3 +26,7 @@ class PaymentViewController: UIViewController {
         self.layoutUI()
     }
 }
+
+extension PaymentViewController: UITextFieldDelegate {
+    
+}

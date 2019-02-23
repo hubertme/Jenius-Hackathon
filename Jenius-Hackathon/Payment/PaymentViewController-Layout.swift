@@ -13,13 +13,17 @@ extension PaymentViewController {
         self.layoutTitleContainer()
         self.layoutTitleLabel()
         self.layoutMerchantIcon()
+        
+        self.layoutInputLabel()
+        self.layoutInputDesc()
+        self.layoutAmountTextField()
     }
     
     private func layoutTitleContainer() {
         [titleContainer.leadingAnchor.constraint(equalTo: view.leadingAnchor),
          titleContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         titleContainer.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-        titleContainer.heightAnchor.constraint(equalToConstant: 40)].forEach({$0.isActive = true})
+        titleContainer.heightAnchor.constraint(equalToConstant: 60)].forEach({$0.isActive = true})
     }
     
     private func layoutTitleLabel() {
@@ -34,5 +38,24 @@ extension PaymentViewController {
         merchantIcon.widthAnchor.constraint(equalToConstant: size),
         merchantIcon.heightAnchor.constraint(equalToConstant: size)].forEach({$0.isActive = true})
         
+    }
+    
+    private func layoutInputLabel() {
+        [inputLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+        inputLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+        inputLabel.topAnchor.constraint(equalTo: titleContainer.bottomAnchor, constant: 30)].forEach({$0.isActive = true})
+    }
+    
+    private func layoutInputDesc() {
+        [inputDesc.leadingAnchor.constraint(equalTo: inputLabel.leadingAnchor),
+        inputDesc.trailingAnchor.constraint(equalTo: inputLabel.trailingAnchor),
+        inputDesc.topAnchor.constraint(equalTo: inputLabel.bottomAnchor, constant: 5)].forEach({$0.isActive = true})
+    }
+    
+    private func layoutAmountTextField() {
+        [amountTextField.leadingAnchor.constraint(equalTo: inputLabel.leadingAnchor),
+        amountTextField.trailingAnchor.constraint(equalTo: inputLabel.trailingAnchor),
+        amountTextField.topAnchor.constraint(equalTo: inputDesc.bottomAnchor, constant: 15),
+        amountTextField.heightAnchor.constraint(equalToConstant: 25)].forEach({$0.isActive = true})
     }
 }
