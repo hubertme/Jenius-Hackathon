@@ -77,15 +77,27 @@ class LoginViewController: UIViewController {
     }
     
     private func handleSignInWith(email: String, password: String) {
-//        Auth.auth().signIn(withEmail: <#T##String#>, password: <#T##String#>, completion: <#T##AuthDataResultCallback?##AuthDataResultCallback?##(AuthDataResult?, Error?) -> Void#>)
-        print("Test sign in with email \(email) and password \(password)")
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] (user, error) in
+            guard let strongSelf = self else { return }
+            
+            if let error = error {
+                print("Error signing in with: \(error.localizedDescription)")
+                strongSelf.present(createAlertWithOkAction(title: "Error in signing in", message: "Please retry logging in"), animated: true, completion: nil)
+                return
+            }
+            strongSelf.present(createAlertWithOkAction(title: "Signing in", message: "Welcome to Jenius merchant!") { (_) in
+                let nextVC = MainTabBarController()
+//                strongSelf.navigationController?.pushViewController(nextVC, animated: true)
+                strongSelf.present(nextVC, animated: true, completion: nil)
+            }, animated: true, completion: nil)
+        }
     }
 }
 
 extension LoginViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == self.emailTextField {
-            self.passwordTextField.text == "" ? self.passwordTextField.becomeFirstResponder() : textField.resignFirstResponder()
+            let _ = self.passwordTextField.text == "" ? self.passwordTextField.becomeFirstResponder() : textField.resignFirstResponder()
         } else {
             textField.resignFirstResponder()
         }
