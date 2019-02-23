@@ -40,6 +40,15 @@ class MerchantViewController: UIViewController {
         self.contentTableView.register(HeaderCell.nib, forCellReuseIdentifier: HeaderCell.cellDescription)
         self.contentTableView.register(ContentCell.nib, forCellReuseIdentifier: ContentCell.cellDescription)
     }
+    
+    private func signOutCurrentUser() {
+        do {
+            try Auth.auth().signOut()
+            self.dismiss(animated: true, completion: nil)
+        } catch {
+            print("Error signing out with error \(error.localizedDescription)")
+        }
+    }
 }
 
 extension MerchantViewController: UITableViewDataSource {
@@ -104,6 +113,7 @@ extension MerchantViewController: UITableViewDataSource {
                 contentCell.criteriaLabel.text = contentTitle[1][indexPath.row-1]
                 contentCell.accessoryType = .disclosureIndicator
             } else if indexPath.section == 3 {
+                contentCell.selectionStyle = .default
                 contentCell.contentLabel.alpha = 0
                 contentCell.criteriaLabel.text = contentTitle[2][indexPath.row-1]
                 contentCell.criteriaLabel.textColor = .red
@@ -117,5 +127,20 @@ extension MerchantViewController: UITableViewDataSource {
 }
 
 extension MerchantViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row != 0 {
+            if indexPath.section == 2 {
+                
+            } else if indexPath.section == 3 {
+                let alertController = createAlertWithOkAction(title: "Leave?", message: "Are you sure want to sign out?", okTitle: "Yes", { (_) in
+                    self.signOutCurrentUser()
+                })
+                let noAction = UIAlertAction(title: "No", style: .cancel, handler: nil)
+                alertController.addAction(noAction)
+                self.present(alertController, animated: true, completion: {
+                    tableView.deselectRow(at: indexPath, animated: true)
+                })
+            }
+        }
+    }
 }
