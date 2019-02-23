@@ -81,7 +81,7 @@ extension ConfirmationViewController {
     private func layoutAccountTextField() {
         [accountTextField.leadingAnchor.constraint(equalTo: inputLabel.leadingAnchor),
          accountTextField.trailingAnchor.constraint(equalTo: checkButton.leadingAnchor, constant: -10),
-         accountTextField.centerYAnchor.constraint(equalTo: checkButton.centerYAnchor),
+         accountTextField.bottomAnchor.constraint(equalTo: checkButton.bottomAnchor),
          accountTextField.heightAnchor.constraint(equalToConstant: 25)].forEach({$0.isActive = true})
     }
     

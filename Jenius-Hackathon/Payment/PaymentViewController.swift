@@ -34,7 +34,6 @@ class PaymentViewController: UIViewController {
         if enteredAmountIsValid() {
             let confirmationVC = ConfirmationViewController() //Should pass the entered amount as parameter ❗️
             self.navigationController?.pushViewController(confirmationVC, animated: true)
-            
         }
     }
     

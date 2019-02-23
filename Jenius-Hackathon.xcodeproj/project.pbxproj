@@ -181,15 +181,7 @@
 			path = Global;
 			sourceTree = "<group>";
 		};
-        E436FD612220F34900122A17 /* Extension */ = {
-            isa = PBXGroup;
-            children = (
-                E436FD622220F35900122A17 /* UITextField.swift */,
-            );
-            path = Extension;
-            sourceTree = "<group>";
-        };
-		ED8938622220ECBA009A6C5A /* Payment */ = {
+		E436FD612220F34900122A17 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				E436FD622220F35900122A17 /* UITextField.swift */,
