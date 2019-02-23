@@ -172,8 +172,8 @@
 		E436FD5C2220EF7A00122A17 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E436FD592220EF7500122A17 /* LoginViewController.xib */,
-				E436FD6F2221179200122A17 /* RegisterViewController.xib */,
+				E436FD582220EF7500122A17 /* LoginViewController.swift */,
+				E436FD6E2221179200122A17 /* RegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,8 +181,8 @@
 		E436FD5D2220EF7B00122A17 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E436FD582220EF7500122A17 /* LoginViewController.swift */,
-				E436FD6E2221179200122A17 /* RegisterViewController.swift */,
+				E436FD592220EF7500122A17 /* LoginViewController.xib */,
+				E436FD6F2221179200122A17 /* RegisterViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";

@@ -14,7 +14,7 @@ class HistoryViewController: UIViewController {
     var transactionDayLabel: UILabel!
     var transactionAmountLabel: UILabel!
     
-    var showingLabel: UILabel!
+    var historyListLabel: UILabel!
     var downloadButton: UIButton!
     
     var transactionTableView: UITableView!

@@ -6,4 +6,22 @@
 //  Copyright © 2019 Hubert Wang. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension HistoryViewController {
+    func layoutUI() {
+        
+    }
+    
+    func layoutTransactionContainer() {
+//        transactionContainer.topAnchor.constraint(equalTo: <#T##NSLayoutAnchor<NSLayoutYAxisAnchor>#>)
+    }
+    
+    func layoutTransactionDay() {
+        
+    }
+    
+    func layoutTransactionLabe() {
+        
+    }
+}

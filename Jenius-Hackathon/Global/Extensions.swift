@@ -34,6 +34,6 @@ extension UIViewController {
         logoImgView.clipsToBounds = false
         logoImgView.widthAnchor.constraint(equalToConstant: 120).isActive = true
         logoImgView.heightAnchor.constraint(equalToConstant: 120).isActive = true
-        self.navigationController?.navigationBar.topItem?.titleView = logoImgView
+        self.navigationItem.titleView = logoImgView
     }
 }
