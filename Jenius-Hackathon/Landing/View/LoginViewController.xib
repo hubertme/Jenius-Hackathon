@@ -97,10 +97,21 @@
                         <constraint firstAttribute="height" constant="1" id="j3f-wF-ks8"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ob-AM-6i7">
+                    <rect key="frame" x="213" y="396" width="122" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="Forget password?">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="handleRegisterButtonTapped:" destination="-1" eventType="touchUpInside" id="KrC-Kt-TKy"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2YA-Sv-xgf" secondAttribute="trailing" constant="40" id="65y-Cd-Zc6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0ob-AM-6i7" secondAttribute="trailing" constant="40" id="7l1-Ub-edC"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TZs-vq-MPq" secondAttribute="trailing" constant="30" id="9CQ-0j-KhG"/>
                 <constraint firstItem="Y2d-h4-8hd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="AWh-xx-PXG"/>
                 <constraint firstItem="bjy-UG-JgO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="D4p-tj-Su7"/>
@@ -116,6 +127,7 @@
                 <constraint firstItem="bjy-UG-JgO" firstAttribute="top" secondItem="TZs-vq-MPq" secondAttribute="bottom" constant="8" id="Zbf-Rh-ni4"/>
                 <constraint firstItem="Hv2-nj-eDE" firstAttribute="top" secondItem="Y2d-h4-8hd" secondAttribute="bottom" constant="30" id="hRs-85-oee"/>
                 <constraint firstItem="2YA-Sv-xgf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="hWz-uf-7gY"/>
+                <constraint firstItem="0ob-AM-6i7" firstAttribute="top" secondItem="QZI-2b-fMw" secondAttribute="bottom" constant="8" id="iPI-Us-ggL"/>
                 <constraint firstItem="QZI-2b-fMw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="iSk-tO-Bxc"/>
                 <constraint firstItem="Hv2-nj-eDE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="oLf-gi-7YM"/>
                 <constraint firstItem="Ln8-yX-KTI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="pA8-HG-A7i"/>
