@@ -13,6 +13,7 @@
 		E436FD412220E54A00122A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E436FD402220E54A00122A17 /* Assets.xcassets */; };
 		E436FD442220E54A00122A17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E436FD422220E54A00122A17 /* LaunchScreen.storyboard */; };
 		E436FD4C2220E7C100122A17 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD4B2220E7C100122A17 /* ViewController.xib */; };
+		E436FD512220EA6A00122A17 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E436FD502220EA6A00122A17 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E436FD432220E54A00122A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E436FD452220E54A00122A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E436FD4B2220E7C100122A17 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		E436FD502220EA6A00122A17 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				E436FD402220E54A00122A17 /* Assets.xcassets */,
 				E436FD422220E54A00122A17 /* LaunchScreen.storyboard */,
 				E436FD452220E54A00122A17 /* Info.plist */,
+				E436FD502220EA6A00122A17 /* GoogleService-Info.plist */,
 				E436FD3D2220E54800122A17 /* Jenius_Hackathon.xcdatamodeld */,
 			);
 			path = "Jenius-Hackathon";
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E436FD442220E54A00122A17 /* LaunchScreen.storyboard in Resources */,
+				E436FD512220EA6A00122A17 /* GoogleService-Info.plist in Resources */,
 				E436FD4C2220E7C100122A17 /* ViewController.xib in Resources */,
 				E436FD412220E54A00122A17 /* Assets.xcassets in Resources */,
 			);
