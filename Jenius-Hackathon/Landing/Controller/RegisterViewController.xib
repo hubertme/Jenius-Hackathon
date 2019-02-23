@@ -13,7 +13,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Jenius_Hackathon" customModuleProvider="target">
             <connections>
                 <outlet property="containerView" destination="YSg-IU-bq4" id="mHR-9K-Q7o"/>
+                <outlet property="registerButton" destination="b4Z-up-MAj" id="WZg-ce-qId"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="textFields" destination="OWe-lx-etO" collectionClass="NSMutableArray" id="HPX-JG-aQ4"/>
+                <outletCollection property="textFields" destination="msR-y0-WH7" collectionClass="NSMutableArray" id="b4A-an-lU9"/>
+                <outletCollection property="textFields" destination="Svd-r8-UiW" collectionClass="NSMutableArray" id="jxr-pL-Ayw"/>
+                <outletCollection property="textFields" destination="pwc-zO-wH0" collectionClass="NSMutableArray" id="U9V-1V-P3r"/>
+                <outletCollection property="textFields" destination="Xeg-Jj-VyE" collectionClass="NSMutableArray" id="FmD-30-hbU"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -52,7 +58,7 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Svd-r8-UiW">
+                                <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Svd-r8-UiW">
                                     <rect key="frame" x="40" y="542.66666666666663" width="295" height="35"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="35" id="031-ET-ABT"/>
@@ -61,7 +67,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
                                 </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pwc-zO-wH0">
+                                <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pwc-zO-wH0">
                                     <rect key="frame" x="40" y="625.66666666666663" width="295" height="35"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="35" id="p3y-Fe-H5e"/>
@@ -77,7 +83,7 @@
                                         <constraint firstAttribute="height" constant="50" id="g7E-R9-s2N"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                    <state key="normal" title="Log In">
+                                    <state key="normal" title="Register">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                 </button>
@@ -102,7 +108,7 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="msR-y0-WH7">
+                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your phone number here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="msR-y0-WH7">
                                     <rect key="frame" x="40" y="459.66666666666669" width="295" height="35"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="35" id="Go4-iK-XBj"/>
@@ -111,13 +117,13 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 </textField>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ta-dg-wnd">
-                                    <rect key="frame" x="40" y="688.66666666666663" width="66" height="18"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retype Password" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ta-dg-wnd">
+                                    <rect key="frame" x="40" y="688.66666666666663" width="118" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xeg-Jj-VyE">
+                                <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Retype your password here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xeg-Jj-VyE">
                                     <rect key="frame" x="40" y="708.66666666666663" width="295" height="35"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="35" id="okb-Ce-Enf"/>
@@ -186,7 +192,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="53.600000000000001" y="248.72563718140933"/>
+            <point key="canvasLocation" x="53.600000000000001" y="248.64532019704436"/>
         </view>
     </objects>
 </document>

@@ -8,12 +8,22 @@
 
 import UIKit
 
+enum TextFieldOrder: Int {
+    case fullName = 0
+    case phone = 1
+    case email = 2
+    case password = 3
+    case rePassword = 4
+}
+
 class RegisterViewController: UIViewController {
     
     // MARK: - Attributes
     
     // MARK: - Outlets
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet var textFields: [UITextField]!
+    @IBOutlet weak var registerButton: UIButton!
     
     // MARK: - Life cycle
     override func viewDidLoad() {
@@ -32,5 +42,18 @@ class RegisterViewController: UIViewController {
     private func setupElements() {
         self.view.backgroundColor = mainColor
         self.containerView.backgroundColor = self.view.backgroundColor
+        
+        for textField in textFields {
+            textField.delegate = self
+            textField.makeSingleLine()
+        }
+    }
+}
+
+// MARK: - Extensions
+extension RegisterViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
