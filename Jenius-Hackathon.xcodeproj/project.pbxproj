@@ -40,6 +40,9 @@
 		ED9260042221564D00DFB24E /* HistoryViewController-TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9260032221564D00DFB24E /* HistoryViewController-TableView.swift */; };
 		ED9260062221631D00DFB24E /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9260052221631D00DFB24E /* HistoryCell.swift */; };
 		ED92600B22217E5400DFB24E /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92600A22217E5400DFB24E /* HeaderCell.swift */; };
+		ED92600E22218F5400DFB24E /* PinEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92600D22218F5400DFB24E /* PinEnterViewController.swift */; };
+		ED92601022218F9F00DFB24E /* PinEnterViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92600F22218F9F00DFB24E /* PinEnterViewController-ViewProperties.swift */; };
+		ED92601222218FC600DFB24E /* PinEnterViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92601122218FC600DFB24E /* PinEnterViewController-Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +81,9 @@
 		ED9260032221564D00DFB24E /* HistoryViewController-TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController-TableView.swift"; sourceTree = "<group>"; };
 		ED9260052221631D00DFB24E /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		ED92600A22217E5400DFB24E /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		ED92600D22218F5400DFB24E /* PinEnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinEnterViewController.swift; sourceTree = "<group>"; };
+		ED92600F22218F9F00DFB24E /* PinEnterViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PinEnterViewController-ViewProperties.swift"; sourceTree = "<group>"; };
+		ED92601122218FC600DFB24E /* PinEnterViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PinEnterViewController-Layout.swift"; sourceTree = "<group>"; };
 		F06DF6DC3BC5CACC1CFA3995 /* Pods_Jenius_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jenius_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D517AD29A2B856A3AA5C30 /* Pods-Jenius-Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jenius-Hackathon.debug.xcconfig"; path = "Target Support Files/Pods-Jenius-Hackathon/Pods-Jenius-Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -267,6 +273,7 @@
 		ED8938622220ECBA009A6C5A /* Payment */ = {
 			isa = PBXGroup;
 			children = (
+				ED92600C22218F1600DFB24E /* PinEnter */,
 				E436FD7222213F0600122A17 /* PaymentViewController-Layout.swift */,
 				E436FD7422213F0600122A17 /* PaymentViewController-ViewProperties.swift */,
 				E436FD7322213F0600122A17 /* PaymentViewController.swift */,
@@ -311,6 +318,16 @@
 				ED92600A22217E5400DFB24E /* HeaderCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		ED92600C22218F1600DFB24E /* PinEnter */ = {
+			isa = PBXGroup;
+			children = (
+				ED92600D22218F5400DFB24E /* PinEnterViewController.swift */,
+				ED92600F22218F9F00DFB24E /* PinEnterViewController-ViewProperties.swift */,
+				ED92601122218FC600DFB24E /* PinEnterViewController-Layout.swift */,
+			);
+			path = PinEnter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,6 +509,8 @@
 				E436FD7522213F0600122A17 /* PaymentViewController-Layout.swift in Sources */,
 				E436FD7922213F2F00122A17 /* Functions.swift in Sources */,
 				E436FD7F2221570300122A17 /* MerchantViewController.swift in Sources */,
+				ED92601222218FC600DFB24E /* PinEnterViewController-Layout.swift in Sources */,
+				ED92601022218F9F00DFB24E /* PinEnterViewController-ViewProperties.swift in Sources */,
 				E436FD7722213F0600122A17 /* PaymentViewController-ViewProperties.swift in Sources */,
 				E436FD5A2220EF7500122A17 /* LoginViewController.swift in Sources */,
 				ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */,
@@ -500,6 +519,7 @@
 				E436FD372220E54800122A17 /* AppDelegate.swift in Sources */,
 				ED9260062221631D00DFB24E /* HistoryCell.swift in Sources */,
 				ED9260042221564D00DFB24E /* HistoryViewController-TableView.swift in Sources */,
+				ED92600E22218F5400DFB24E /* PinEnterViewController.swift in Sources */,
 				ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

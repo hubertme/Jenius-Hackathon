@@ -31,5 +31,11 @@ class ConfirmationViewController: UIViewController {
         self.setupUI()
         self.layoutUI()
         
+        payButton.addTarget(self, action: #selector(handlePayButton), for: .touchUpInside)
+    }
+    
+    @objc func handlePayButton() {
+        let pinVC = PinEnterViewController()
+        self.navigationController?.pushViewController(pinVC, animated: true)
     }
 }
