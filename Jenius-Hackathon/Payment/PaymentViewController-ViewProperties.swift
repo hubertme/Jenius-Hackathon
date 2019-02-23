@@ -14,7 +14,9 @@ extension PaymentViewController {
         self.setupTitleLabel()
         self.setupMerchantIcon()
         
-        
+        self.setupInputLabel()
+        self.setupInputDesc()
+        self.setupAmountTextField()
     }
     
     private func setupTitleContainer() {
@@ -34,7 +36,7 @@ extension PaymentViewController {
         titleLabel = UILabel()
         titleLabel.text = "JENIUS Café"
         titleLabel.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
-        titleLabel.textColor = #colorLiteral(red: 0.5293635726, green: 0.5294427276, blue: 0.529346168, alpha: 1)
+        titleLabel.textColor = textGray
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         
         self.titleContainer.addSubview(titleLabel)
@@ -47,4 +49,39 @@ extension PaymentViewController {
         
         self.titleContainer.addSubview(merchantIcon)
     }
+    
+    private func setupInputLabel() {
+        inputLabel = UILabel()
+        inputLabel.text = "Input transaction amount"
+        inputLabel.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
+        inputLabel.textColor = mainColor
+        inputLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(inputLabel)
+    }
+    
+    private func setupInputDesc() {
+        inputDesc = UILabel()
+        inputDesc.text = "Enter total amount of transaction"
+        inputDesc.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+        inputDesc.textColor = textGray
+        inputDesc.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(inputLabel)
+    }
+    
+    private func setupAmountTextField() {
+        amountTextField = UITextField()
+        amountTextField.placeholder = "Amount"
+        amountTextField.textAlignment = .left
+        amountTextField.font = UIFont.systemFont(ofSize: 15)
+        amountTextField.delegate = self
+        amountTextField.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(amountTextField)
+    }
+}
+
+extension PaymentViewController: UITextFieldDelegate {
+    
 }
