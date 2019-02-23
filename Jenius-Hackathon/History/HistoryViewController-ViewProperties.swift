@@ -13,9 +13,9 @@ extension HistoryViewController {
         self.setupTransactionContainer()
         self.setupTransactionDayLabel()
         self.setupTransactionLabel()
-//
-//        self.setupHistoryListLabel()
-//        self.setupDownloadButton()
+
+        self.setupHistoryAmountLabel()
+        self.setupDownloadButton()
     }
     
     //MARK: TOP
@@ -48,19 +48,20 @@ extension HistoryViewController {
     }
     
     //MARK: DOWNLOAD
-    private func setupHistoryListLabel() {
-        historyListLabel = UILabel()
-        historyListLabel.text = "Showing 10 of 14"
-        historyListLabel.textColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-        historyListLabel.font = UIFont.systemFont(ofSize: 13, weight: .regular)
-        historyListLabel.translatesAutoresizingMaskIntoConstraints = false
+    private func setupHistoryAmountLabel() {
+        historyAmountLabel = UILabel()
+        historyAmountLabel.text = "Showing 10 of 14"
+        historyAmountLabel.textColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        historyAmountLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        historyAmountLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        self.view.addSubview(historyListLabel)
+        self.view.addSubview(historyAmountLabel)
     }
     
     private func setupDownloadButton() {
         downloadButton = UIButton()
         downloadButton.setTitle("DOWNLOAD", for: .normal)
+        downloadButton.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
         downloadButton.setTitleColor(#colorLiteral(red: 0.5804243684, green: 0.6846458316, blue: 0.31968683, alpha: 1), for: .normal)
         downloadButton.translatesAutoresizingMaskIntoConstraints = false
         

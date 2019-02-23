@@ -13,6 +13,11 @@ extension HistoryViewController {
         self.layoutTransactionContainer()
         self.layoutTransactionDayLabel()
         self.layoutTransactionLabel()
+        
+        self.layoutHistoryAmountLabel()
+        self.layoutDownloadButton()
+        
+        
     }
     
     private func layoutTransactionContainer() {
@@ -27,8 +32,18 @@ extension HistoryViewController {
          transactionDayLabel.topAnchor.constraint(equalTo: transactionContainer.topAnchor, constant: 15)].forEach({$0.isActive = true})
     }
     
-    func layoutTransactionLabel() {
+    private func layoutTransactionLabel() {
         [transactionAmountLabel.topAnchor.constraint(equalTo: transactionDayLabel.bottomAnchor),
          transactionAmountLabel.centerXAnchor.constraint(equalTo: transactionContainer.centerXAnchor)].forEach({$0.isActive = true})
+    }
+    
+    private func layoutHistoryAmountLabel() {
+        [historyAmountLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
+         historyAmountLabel.topAnchor.constraint(equalTo: transactionContainer.bottomAnchor, constant: 15)].forEach({$0.isActive = true})
+    }
+    
+    private func layoutDownloadButton() {
+        [downloadButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25),
+         downloadButton.centerYAnchor.constraint(equalTo: historyAmountLabel.centerYAnchor)].forEach({$0.isActive = true})
     }
 }
