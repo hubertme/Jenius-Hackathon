@@ -38,6 +38,8 @@
 		ED925FFD2221369300DFB24E /* HistoryViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED925FFC2221369300DFB24E /* HistoryViewController-Layout.swift */; };
 		ED9260022221559B00DFB24E /* HistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9260012221559B00DFB24E /* HistoryData.swift */; };
 		ED9260042221564D00DFB24E /* HistoryViewController-TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9260032221564D00DFB24E /* HistoryViewController-TableView.swift */; };
+		ED9260062221631D00DFB24E /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9260052221631D00DFB24E /* HistoryCell.swift */; };
+		ED92600B22217E5400DFB24E /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92600A22217E5400DFB24E /* HeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		ED925FFC2221369300DFB24E /* HistoryViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController-Layout.swift"; sourceTree = "<group>"; };
 		ED9260012221559B00DFB24E /* HistoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryData.swift; sourceTree = "<group>"; };
 		ED9260032221564D00DFB24E /* HistoryViewController-TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController-TableView.swift"; sourceTree = "<group>"; };
+		ED9260052221631D00DFB24E /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		ED92600A22217E5400DFB24E /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		F06DF6DC3BC5CACC1CFA3995 /* Pods_Jenius_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jenius_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D517AD29A2B856A3AA5C30 /* Pods-Jenius-Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jenius-Hackathon.debug.xcconfig"; path = "Target Support Files/Pods-Jenius-Hackathon/Pods-Jenius-Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -303,6 +307,8 @@
 		ED9260002221554800DFB24E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED9260052221631D00DFB24E /* HistoryCell.swift */,
+				ED92600A22217E5400DFB24E /* HeaderCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -475,6 +481,7 @@
 				ED0299C22221098E00DEC9D1 /* ConfirmationViewController-Layout.swift in Sources */,
 				ED925FFD2221369300DFB24E /* HistoryViewController-Layout.swift in Sources */,
 				E436FD632220F35900122A17 /* UITextField.swift in Sources */,
+				ED92600B22217E5400DFB24E /* HeaderCell.swift in Sources */,
 				E436FD702221179200122A17 /* RegisterViewController.swift in Sources */,
 				ED925FF92221368100DFB24E /* HistoryViewController.swift in Sources */,
 				E436FD392220E54800122A17 /* SplashViewController.swift in Sources */,
@@ -491,6 +498,7 @@
 				ED925FFB2221368A00DFB24E /* HistoryViewController-ViewProperties.swift in Sources */,
 				ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */,
 				E436FD372220E54800122A17 /* AppDelegate.swift in Sources */,
+				ED9260062221631D00DFB24E /* HistoryCell.swift in Sources */,
 				ED9260042221564D00DFB24E /* HistoryViewController-TableView.swift in Sources */,
 				ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */,
 			);
