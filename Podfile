@@ -9,5 +9,6 @@ target 'Jenius-Hackathon' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'lottie-ios'
 
 end
