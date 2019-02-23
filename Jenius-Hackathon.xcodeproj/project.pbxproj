@@ -56,15 +56,39 @@
 		E436FD352220E54800122A17 /* Jenius-Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				E436FD4D2220E93000122A17 /* Root */,
 				E436FD362220E54800122A17 /* AppDelegate.swift */,
-				E436FD4B2220E7C100122A17 /* ViewController.xib */,
-				E436FD382220E54800122A17 /* ViewController.swift */,
 				E436FD402220E54A00122A17 /* Assets.xcassets */,
 				E436FD422220E54A00122A17 /* LaunchScreen.storyboard */,
 				E436FD452220E54A00122A17 /* Info.plist */,
 				E436FD3D2220E54800122A17 /* Jenius_Hackathon.xcdatamodeld */,
 			);
 			path = "Jenius-Hackathon";
+			sourceTree = "<group>";
+		};
+		E436FD4D2220E93000122A17 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD4F2220E94200122A17 /* Controller */,
+				E436FD4E2220E93D00122A17 /* View */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		E436FD4E2220E93D00122A17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD4B2220E7C100122A17 /* ViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E436FD4F2220E94200122A17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD382220E54800122A17 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
