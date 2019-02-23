@@ -30,6 +30,7 @@ class MerchantViewController: UIViewController {
         self.contentTableView.dataSource = self
         
         self.contentTableView.register(HeaderCell.nib, forCellReuseIdentifier: HeaderCell.cellDescription)
+        self.contentTableView.register(ContentCell.nib, forCellReuseIdentifier: ContentCell.cellDescription)
     }
 }
 
@@ -78,8 +79,19 @@ extension MerchantViewController: UITableViewDataSource {
             }
             
             return sectionHeaderCell
+        } else {
+            let contentCell = contentTableView.dequeueReusableCell(withIdentifier: ContentCell.cellDescription, for: indexPath) as! ContentCell
+            
+            if indexPath.section == 1 {
+                
+            } else if indexPath.section == 2 {
+                
+            } else if indexPath.section == 3 {
+                
+            }
+            
+            return contentCell
         }
-        return UITableViewCell()
     }
     
 }

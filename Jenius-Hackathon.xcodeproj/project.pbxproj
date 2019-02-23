@@ -30,6 +30,8 @@
 		E436FD872221822D00122A17 /* LogoAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E436FD862221822D00122A17 /* LogoAnimation.json */; };
 		E436FD8E222190BB00122A17 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD8C222190BB00122A17 /* HeaderCell.swift */; };
 		E436FD8F222190BB00122A17 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD8D222190BB00122A17 /* HeaderCell.xib */; };
+		E436FD922221A15F00122A17 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD902221A15F00122A17 /* ContentCell.swift */; };
+		E436FD932221A15F00122A17 /* ContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD912221A15F00122A17 /* ContentCell.xib */; };
 		ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B92220F95D00DEC9D1 /* Extensions.swift */; };
 		ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */; };
 		ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */; };
@@ -68,6 +70,8 @@
 		E436FD862221822D00122A17 /* LogoAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LogoAnimation.json; sourceTree = "<group>"; };
 		E436FD8C222190BB00122A17 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		E436FD8D222190BB00122A17 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		E436FD902221A15F00122A17 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
+		E436FD912221A15F00122A17 /* ContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCell.xib; sourceTree = "<group>"; };
 		ED0299B92220F95D00DEC9D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmatioViewController.swift; sourceTree = "<group>"; };
 		ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-ViewProperties.swift"; sourceTree = "<group>"; };
@@ -260,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				E436FD8C222190BB00122A17 /* HeaderCell.swift */,
+				E436FD902221A15F00122A17 /* ContentCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				E436FD8D222190BB00122A17 /* HeaderCell.xib */,
+				E436FD912221A15F00122A17 /* ContentCell.xib */,
 			);
 			name = Cell;
 			path = View;
@@ -392,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E436FD5B2220EF7500122A17 /* LoginViewController.xib in Resources */,
+				E436FD932221A15F00122A17 /* ContentCell.xib in Resources */,
 				E436FD442220E54A00122A17 /* LaunchScreen.storyboard in Resources */,
 				E436FD512220EA6A00122A17 /* GoogleService-Info.plist in Resources */,
 				E436FD872221822D00122A17 /* LogoAnimation.json in Resources */,
@@ -510,6 +517,7 @@
 				E436FD7522213F0600122A17 /* PaymentViewController-Layout.swift in Sources */,
 				E436FD7922213F2F00122A17 /* Functions.swift in Sources */,
 				E436FD7F2221570300122A17 /* MerchantViewController.swift in Sources */,
+				E436FD922221A15F00122A17 /* ContentCell.swift in Sources */,
 				E436FD7722213F0600122A17 /* PaymentViewController-ViewProperties.swift in Sources */,
 				E436FD5A2220EF7500122A17 /* LoginViewController.swift in Sources */,
 				ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */,
