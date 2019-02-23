@@ -41,11 +41,28 @@ class PinEnterViewController: UIViewController {
 class DotPasswordInput: UIView {
     
     var dotViews = [UIView]()
+    var counter = 0
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         self.generateDots()
+    }
+    
+    func addPass() {
+        if counter < dotViews.count {
+            dotViews[counter].alpha = 1
+            dotViews[counter].backgroundColor = .white
+            counter = counter >= 5 ? 5 : counter+1
+        }
+    }
+    
+    func deletePass() {
+        if counter >= 0 {
+            dotViews[counter].backgroundColor = .black
+            dotViews[counter].alpha = 0.3
+            counter = counter < 0 ? 0 : counter-1
+        }
     }
     
     func generateDots() {

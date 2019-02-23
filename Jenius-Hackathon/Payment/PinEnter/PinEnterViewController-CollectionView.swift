@@ -10,17 +10,61 @@ import UIKit
 
 extension PinEnterViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return numbersData.count
+        return numbersData.count + 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "numberCell", for: indexPath) as! NumberCell
-        cell.numberLabel.text = "\(numbersData[indexPath.row])"
-        return cell
+        if indexPath.row != numbersData.count {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "numberCell", for: indexPath) as! NumberCell
+            cell.numberLabel.text = "\(numbersData[indexPath.row])"
+            return cell
+        } else {
+            let deleteCell = collectionView.dequeueReusableCell(withReuseIdentifier: "deleteCell", for: indexPath) as! DeleteButtonCell
+            return deleteCell
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width / 3, height: collectionView.frame.height / 4)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row != numbersData.count {
+            let cell = collectionView.cellForItem(at: indexPath) as! NumberCell
+            print(cell.numberLabel.text)
+            dotPasswordView.addPass()
+        } else {
+            let cell = collectionView.cellForItem(at: indexPath) as! DeleteButtonCell
+            dotPasswordView.deletePass()
+        }
+        
+    }
+}
+
+class DeleteButtonCell: UICollectionViewCell {
+    var deleteButton: UIImageView!
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        self.setupUI()
+    }
+    
+    func setupUI() {
+        let deleteIcon = UIImage(named: "icon_back")?.withRenderingMode(.alwaysTemplate)
+        deleteButton = UIImageView(image: deleteIcon)
+        deleteButton.tintColor = .white
+        deleteButton.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(deleteButton)
+        
+        deleteButton.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        deleteButton.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        deleteButton.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        deleteButton.heightAnchor.constraint(equalToConstant: 20).isActive = true
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 
