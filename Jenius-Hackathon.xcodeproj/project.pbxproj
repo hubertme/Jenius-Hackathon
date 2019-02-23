@@ -19,19 +19,12 @@
 		E436FD5B2220EF7500122A17 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD592220EF7500122A17 /* LoginViewController.xib */; };
 		E436FD602220F1B300122A17 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD5F2220F1B300122A17 /* Variables.swift */; };
 		E436FD632220F35900122A17 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD622220F35900122A17 /* UITextField.swift */; };
-<<<<<<< HEAD
-		E436FD692220FF6E00122A17 /* PaymentViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD662220FF6E00122A17 /* PaymentViewController-Layout.swift */; };
-		E436FD6A2220FF6E00122A17 /* PaymentViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD672220FF6E00122A17 /* PaymentViewController-ViewProperties.swift */; };
-		E436FD6B2220FF6E00122A17 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD682220FF6E00122A17 /* PaymentViewController.swift */; };
-		E436FD6D222100EB00122A17 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD6C222100EB00122A17 /* Functions.swift */; };
-=======
 		ED0299B62220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B52220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift */; };
 		ED0299B82220EEAC00DEC9D1 /* PaymentViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B72220EEAC00DEC9D1 /* PaymentViewController-Layout.swift */; };
 		ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B92220F95D00DEC9D1 /* Extensions.swift */; };
 		ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */; };
 		ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */; };
 		ED0299C22221098E00DEC9D1 /* ConfirmationViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299C12221098E00DEC9D1 /* ConfirmationViewController-Layout.swift */; };
->>>>>>> paymentConfirmation
 		ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,19 +43,12 @@
 		E436FD592220EF7500122A17 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		E436FD5F2220F1B300122A17 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		E436FD622220F35900122A17 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		E436FD662220FF6E00122A17 /* PaymentViewController-Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaymentViewController-Layout.swift"; sourceTree = "<group>"; };
-		E436FD672220FF6E00122A17 /* PaymentViewController-ViewProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaymentViewController-ViewProperties.swift"; sourceTree = "<group>"; };
-		E436FD682220FF6E00122A17 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
-		E436FD6C222100EB00122A17 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
-=======
 		ED0299B52220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentViewController-ViewProperties.swift"; sourceTree = "<group>"; };
 		ED0299B72220EEAC00DEC9D1 /* PaymentViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentViewController-Layout.swift"; sourceTree = "<group>"; };
 		ED0299B92220F95D00DEC9D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmatioViewController.swift; sourceTree = "<group>"; };
 		ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-ViewProperties.swift"; sourceTree = "<group>"; };
 		ED0299C12221098E00DEC9D1 /* ConfirmationViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-Layout.swift"; sourceTree = "<group>"; };
->>>>>>> paymentConfirmation
 		ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		F06DF6DC3BC5CACC1CFA3995 /* Pods_Jenius_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jenius_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D517AD29A2B856A3AA5C30 /* Pods-Jenius-Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jenius-Hackathon.debug.xcconfig"; path = "Target Support Files/Pods-Jenius-Hackathon/Pods-Jenius-Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
