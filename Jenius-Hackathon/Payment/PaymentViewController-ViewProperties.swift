@@ -86,6 +86,13 @@ extension PaymentViewController {
         amountTextField.delegate = self
         amountTextField.addBottomBorder()
         amountTextField.translatesAutoresizingMaskIntoConstraints = false
+        amountTextField.keyboardType = .numberPad
+        
+        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 45))
+        toolbar.backgroundColor = .lightGray
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissAllKeyboards))
+        toolbar.items = [UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil) ,doneButton]
+        amountTextField.inputAccessoryView = toolbar
         
         self.view.addSubview(amountTextField)
     }
@@ -99,6 +106,8 @@ extension PaymentViewController {
         
         self.view.addSubview(nextButton)
     }
+    
+    
 }
 
 

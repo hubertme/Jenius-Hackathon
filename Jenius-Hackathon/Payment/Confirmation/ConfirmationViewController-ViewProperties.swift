@@ -141,5 +141,12 @@ extension ConfirmationViewController {
 }
 
 extension ConfirmationViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     
+    @objc func dismissAllKeyboards() {
+        self.accountTextField.resignFirstResponder()
+    }
 }

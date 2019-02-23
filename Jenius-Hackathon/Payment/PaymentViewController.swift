@@ -29,6 +29,9 @@ class PaymentViewController: UIViewController {
         self.layoutUI()
         
         nextButton.addTarget(self, action: #selector(handleNextButton), for: .touchUpInside)
+        
+        let tapGestureDismissKeyboard = UITapGestureRecognizer(target: self, action: #selector(dismissAllKeyboards))
+        self.view.addGestureRecognizer(tapGestureDismissKeyboard)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,5 +53,12 @@ class PaymentViewController: UIViewController {
 }
 
 extension PaymentViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     
+    @objc func dismissAllKeyboards() {
+        self.amountTextField.resignFirstResponder()
+    }
 }
