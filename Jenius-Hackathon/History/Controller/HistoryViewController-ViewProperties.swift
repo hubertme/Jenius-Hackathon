@@ -77,4 +77,22 @@ extension HistoryViewController {
         
         self.downloadButton.addSubview(downloadImage)
     }
+    
+    //MARK: HISTORY TABLE
+    private func setupHistoryTableView() {
+        historyTableView = UITableView()
+        
+        historyTableView.separatorStyle = .none
+        historyTableView.allowsSelection = false
+        historyTableView.bounces = false
+        
+        historyTableView.delegate = self
+        historyTableView.dataSource = self
+        
+//        historyTableView.register(FormCell.self, forCellReuseIdentifier: "formCell")
+        historyTableView.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        self.view.addSubview(historyTableView)
+    }
 }

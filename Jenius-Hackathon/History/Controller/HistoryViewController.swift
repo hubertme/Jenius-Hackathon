@@ -18,7 +18,9 @@ class HistoryViewController: UIViewController {
     var downloadImage: UIImageView!
     var downloadButton: UIButton!
     
-    var transactionTableView: UITableView!
+    var historyTableView: UITableView!
+    
+    var transactionHistory = [HistoryData]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +30,15 @@ class HistoryViewController: UIViewController {
         self.layoutUI()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-//        self.setupLogoImage()
+    func setupHistoryData() {
+//        let transactionsTest = [
+//            Transaction(
+//        ]
+//        transactionHistory = [
+//            HistoryData(month: Date())
+//        
+//        ]
     }
+    
+    
 }

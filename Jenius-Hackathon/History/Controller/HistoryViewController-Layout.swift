@@ -17,7 +17,6 @@ extension HistoryViewController {
         self.layoutHistoryAmountLabel()
         self.layoutDownloadButton()
         self.layoutDownloadImage()
-        
     }
     
     private func layoutTransactionContainer() {
