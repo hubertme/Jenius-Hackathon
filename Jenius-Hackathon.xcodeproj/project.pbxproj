@@ -345,10 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E436FD3F2220E54800122A17 /* Jenius_Hackathon.xcdatamodeld in Sources */,
-<<<<<<< HEAD
 				ED0299C22221098E00DEC9D1 /* ConfirmationViewController-Layout.swift in Sources */,
-=======
->>>>>>> parent of aa2d7c0... Code clean up + add function to create single action alert
 				E436FD632220F35900122A17 /* UITextField.swift in Sources */,
 				ED0299B82220EEAC00DEC9D1 /* PaymentViewController-Layout.swift in Sources */,
 				E436FD392220E54800122A17 /* ViewController.swift in Sources */,
