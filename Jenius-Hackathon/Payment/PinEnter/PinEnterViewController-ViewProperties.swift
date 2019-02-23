@@ -70,6 +70,7 @@ extension PinEnterViewController {
         numberInputView.translatesAutoresizingMaskIntoConstraints = false
         
         numberInputView.register(NumberCell.self, forCellWithReuseIdentifier: "numberCell")
+        numberInputView.register(DeleteButtonCell.self, forCellWithReuseIdentifier: "deleteCell")
         
         self.view.addSubview(numberInputView)
     }
