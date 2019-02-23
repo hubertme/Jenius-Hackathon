@@ -14,16 +14,34 @@ class LoginViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    // MARK: - Outlets
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var registerButton: UIButton!
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = mainColor
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupElements()
     }
     
     // MARK: - Actions
     
     // MARK: - Private methods
-
+    private func setupElements() {
+        self.view.backgroundColor = mainColor
+        
+        self.emailTextField.makeSingleLine()
+        self.passwordTextField.makeSingleLine()
+        
+        self.signInButton.setTitleColor(mainColor, for: .normal)
+    }
+    
 }
