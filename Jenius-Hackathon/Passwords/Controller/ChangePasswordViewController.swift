@@ -61,13 +61,27 @@ class ChangePasswordViewController: UIViewController {
         let reNewPassword = self.reNewPasswordTextField.text!
         
         if newPassword == oldPassword {
-            self.present(createAlertWithOkAction(title: "Same password", message: "Please input a new password that is different from your old one"), animated: true, completion: nil)
+            self.present(createAlertWithOkAction(title: "Same password", message: "Please input a new password that is different from your old one") { (_) in
+                self.newPasswordTextField.text = ""
+                self.reNewPasswordTextField.text = ""
+                self.newPasswordTextField.becomeFirstResponder()
+            }, animated: true, completion: nil)
+            
             return false
         } else if newPassword.count < 6 {
-            self.present(createAlertWithOkAction(title: "Password too short", message: "Please input a 6 characters or more password"), animated: true, completion: nil)
+            self.present(createAlertWithOkAction(title: "Password too short", message: "Please input a 6 characters or more password") { (_) in
+                self.newPasswordTextField.text = ""
+                self.reNewPasswordTextField.text = ""
+                self.newPasswordTextField.becomeFirstResponder()
+            }, animated: true, completion: nil)
+            
             return false
         } else if newPassword != reNewPassword {
-            self.present(createAlertWithOkAction(title: "Password mismatch", message: "Please re-enter your password"), animated: true, completion: nil)
+            self.present(createAlertWithOkAction(title: "Password mismatch", message: "Please re-enter your password") { (_) in
+                self.reNewPasswordTextField.text = ""
+                self.reNewPasswordTextField.becomeFirstResponder()
+            }, animated: true, completion: nil)
+            
             return false
         }
         return true
