@@ -6,4 +6,18 @@
 //  Copyright © 2019 Hubert Wang. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension HistoryViewController {
+    func setupUI() {
+        
+    }
+    
+    private func setupTransactionDayLabel() {
+    
+    }
+    
+    private func setupTransactionLabel() {
+        
+    }
+}
