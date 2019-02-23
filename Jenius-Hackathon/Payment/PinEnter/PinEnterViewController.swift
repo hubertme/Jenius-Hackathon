@@ -62,3 +62,22 @@ class DotPasswordInput: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+class PinInputView: UIView {
+    
+    var numbers = [1,2,3,4,5,6,7,8,9,0]
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        numbers.shuffle()
+    }
+    
+    func generateButtons() {
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
