@@ -7,5 +7,6 @@ target 'Jenius-Hackathon' do
 
   # Pods for Jenius-Hackathon
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 
 end
