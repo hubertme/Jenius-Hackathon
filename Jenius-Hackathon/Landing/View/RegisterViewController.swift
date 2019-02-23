@@ -56,6 +56,7 @@ class RegisterViewController: UIViewController {
         toolbar.items = [UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil) ,doneButton]
         textFields[TextFieldOrder.phone.rawValue].inputAccessoryView = toolbar
         
+        self.registerButton.alpha = 0
         self.registerButton.setTitleColor(mainColor, for: .normal)
         self.registerButton.clipsToBounds = true
         self.registerButton.layer.cornerRadius = 8
@@ -69,6 +70,19 @@ class RegisterViewController: UIViewController {
         for textField in textFields {
             textField.resignFirstResponder()
         }
+        
+        UIView.animate(withDuration: 1) {
+            self.registerButton.alpha = self.checkIfAllTextFieldsFilled() ? 1 : 0
+        }
+    }
+    
+    private func checkIfAllTextFieldsFilled() -> Bool {
+        for textField in textFields {
+            if textField.text == "" {
+                return false
+            }
+        }
+        return true
     }
 }
 
@@ -82,6 +96,11 @@ extension RegisterViewController: UITextFieldDelegate {
             }
         }
         textField.resignFirstResponder()
+        
+        UIView.animate(withDuration: 1) {
+            self.registerButton.alpha = self.checkIfAllTextFieldsFilled() ? 1 : 0
+        }
+        
         return true
     }
 }
