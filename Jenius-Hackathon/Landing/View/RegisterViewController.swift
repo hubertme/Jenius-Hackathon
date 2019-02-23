@@ -78,8 +78,8 @@ extension RegisterViewController: UITextFieldDelegate {
                 textFields[idx].becomeFirstResponder()
                 return true
             }
-            textField.resignFirstResponder()
         }
+        textField.resignFirstResponder()
         return true
     }
 }
