@@ -28,8 +28,8 @@
 		E436FD7F2221570300122A17 /* MerchantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD7D2221570300122A17 /* MerchantViewController.swift */; };
 		E436FD802221570300122A17 /* MerchantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD7E2221570300122A17 /* MerchantViewController.xib */; };
 		E436FD872221822D00122A17 /* LogoAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = E436FD862221822D00122A17 /* LogoAnimation.json */; };
-		E436FD8E222190BB00122A17 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD8C222190BB00122A17 /* HeaderCell.swift */; };
-		E436FD8F222190BB00122A17 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD8D222190BB00122A17 /* HeaderCell.xib */; };
+		E436FD8E222190BB00122A17 /* TableHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD8C222190BB00122A17 /* TableHeaderCell.swift */; };
+		E436FD8F222190BB00122A17 /* TableHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD8D222190BB00122A17 /* TableHeaderCell.xib */; };
 		E436FD922221A15F00122A17 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD902221A15F00122A17 /* ContentCell.swift */; };
 		E436FD932221A15F00122A17 /* ContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD912221A15F00122A17 /* ContentCell.xib */; };
 		ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B92220F95D00DEC9D1 /* Extensions.swift */; };
@@ -42,6 +42,11 @@
 		ED925FFD2221369300DFB24E /* HistoryViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED925FFC2221369300DFB24E /* HistoryViewController-Layout.swift */; };
 		ED9260022221559B00DFB24E /* HistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9260012221559B00DFB24E /* HistoryData.swift */; };
 		ED9260042221564D00DFB24E /* HistoryViewController-TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9260032221564D00DFB24E /* HistoryViewController-TableView.swift */; };
+		ED9260062221631D00DFB24E /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9260052221631D00DFB24E /* HistoryCell.swift */; };
+		ED92600B22217E5400DFB24E /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92600A22217E5400DFB24E /* HeaderCell.swift */; };
+		ED92600E22218F5400DFB24E /* PinEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92600D22218F5400DFB24E /* PinEnterViewController.swift */; };
+		ED92601022218F9F00DFB24E /* PinEnterViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92600F22218F9F00DFB24E /* PinEnterViewController-ViewProperties.swift */; };
+		ED92601222218FC600DFB24E /* PinEnterViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92601122218FC600DFB24E /* PinEnterViewController-Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,8 +73,8 @@
 		E436FD7D2221570300122A17 /* MerchantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantViewController.swift; sourceTree = "<group>"; };
 		E436FD7E2221570300122A17 /* MerchantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantViewController.xib; sourceTree = "<group>"; };
 		E436FD862221822D00122A17 /* LogoAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LogoAnimation.json; sourceTree = "<group>"; };
-		E436FD8C222190BB00122A17 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
-		E436FD8D222190BB00122A17 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		E436FD8C222190BB00122A17 /* TableHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderCell.swift; sourceTree = "<group>"; };
+		E436FD8D222190BB00122A17 /* TableHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderCell.xib; sourceTree = "<group>"; };
 		E436FD902221A15F00122A17 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		E436FD912221A15F00122A17 /* ContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCell.xib; sourceTree = "<group>"; };
 		ED0299B92220F95D00DEC9D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -82,6 +87,11 @@
 		ED925FFC2221369300DFB24E /* HistoryViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController-Layout.swift"; sourceTree = "<group>"; };
 		ED9260012221559B00DFB24E /* HistoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryData.swift; sourceTree = "<group>"; };
 		ED9260032221564D00DFB24E /* HistoryViewController-TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController-TableView.swift"; sourceTree = "<group>"; };
+		ED9260052221631D00DFB24E /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		ED92600A22217E5400DFB24E /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		ED92600D22218F5400DFB24E /* PinEnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinEnterViewController.swift; sourceTree = "<group>"; };
+		ED92600F22218F9F00DFB24E /* PinEnterViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PinEnterViewController-ViewProperties.swift"; sourceTree = "<group>"; };
+		ED92601122218FC600DFB24E /* PinEnterViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PinEnterViewController-Layout.swift"; sourceTree = "<group>"; };
 		F06DF6DC3BC5CACC1CFA3995 /* Pods_Jenius_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jenius_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D517AD29A2B856A3AA5C30 /* Pods-Jenius-Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jenius-Hackathon.debug.xcconfig"; path = "Target Support Files/Pods-Jenius-Hackathon/Pods-Jenius-Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -263,7 +273,7 @@
 		E436FD8A2221907600122A17 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				E436FD8C222190BB00122A17 /* HeaderCell.swift */,
+				E436FD8C222190BB00122A17 /* TableHeaderCell.swift */,
 				E436FD902221A15F00122A17 /* ContentCell.swift */,
 			);
 			path = Cell;
@@ -272,7 +282,7 @@
 		E436FD8B2221907900122A17 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				E436FD8D222190BB00122A17 /* HeaderCell.xib */,
+				E436FD8D222190BB00122A17 /* TableHeaderCell.xib */,
 				E436FD912221A15F00122A17 /* ContentCell.xib */,
 			);
 			name = Cell;
@@ -292,6 +302,7 @@
 		ED8938622220ECBA009A6C5A /* Payment */ = {
 			isa = PBXGroup;
 			children = (
+				ED92600C22218F1600DFB24E /* PinEnter */,
 				E436FD7222213F0600122A17 /* PaymentViewController-Layout.swift */,
 				E436FD7422213F0600122A17 /* PaymentViewController-ViewProperties.swift */,
 				E436FD7322213F0600122A17 /* PaymentViewController.swift */,
@@ -332,8 +343,20 @@
 		ED9260002221554800DFB24E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED9260052221631D00DFB24E /* HistoryCell.swift */,
+				ED92600A22217E5400DFB24E /* HeaderCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		ED92600C22218F1600DFB24E /* PinEnter */ = {
+			isa = PBXGroup;
+			children = (
+				ED92600D22218F5400DFB24E /* PinEnterViewController.swift */,
+				ED92600F22218F9F00DFB24E /* PinEnterViewController-ViewProperties.swift */,
+				ED92601122218FC600DFB24E /* PinEnterViewController-Layout.swift */,
+			);
+			path = PinEnter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,7 +428,7 @@
 				E436FD802221570300122A17 /* MerchantViewController.xib in Resources */,
 				E436FD4C2220E7C100122A17 /* SplashViewController.xib in Resources */,
 				E436FD412220E54A00122A17 /* Assets.xcassets in Resources */,
-				E436FD8F222190BB00122A17 /* HeaderCell.xib in Resources */,
+				E436FD8F222190BB00122A17 /* TableHeaderCell.xib in Resources */,
 				E436FD712221179200122A17 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,10 +529,11 @@
 				ED0299C22221098E00DEC9D1 /* ConfirmationViewController-Layout.swift in Sources */,
 				ED925FFD2221369300DFB24E /* HistoryViewController-Layout.swift in Sources */,
 				E436FD632220F35900122A17 /* UITextField.swift in Sources */,
+				ED92600B22217E5400DFB24E /* HeaderCell.swift in Sources */,
 				E436FD702221179200122A17 /* RegisterViewController.swift in Sources */,
 				ED925FF92221368100DFB24E /* HistoryViewController.swift in Sources */,
 				E436FD392220E54800122A17 /* SplashViewController.swift in Sources */,
-				E436FD8E222190BB00122A17 /* HeaderCell.swift in Sources */,
+				E436FD8E222190BB00122A17 /* TableHeaderCell.swift in Sources */,
 				E436FD7622213F0600122A17 /* PaymentViewController.swift in Sources */,
 				ED9260022221559B00DFB24E /* HistoryData.swift in Sources */,
 				E436FD602220F1B300122A17 /* Variables.swift in Sources */,
@@ -518,13 +542,17 @@
 				E436FD7922213F2F00122A17 /* Functions.swift in Sources */,
 				E436FD7F2221570300122A17 /* MerchantViewController.swift in Sources */,
 				E436FD922221A15F00122A17 /* ContentCell.swift in Sources */,
+				ED92601222218FC600DFB24E /* PinEnterViewController-Layout.swift in Sources */,
+				ED92601022218F9F00DFB24E /* PinEnterViewController-ViewProperties.swift in Sources */,
 				E436FD7722213F0600122A17 /* PaymentViewController-ViewProperties.swift in Sources */,
 				E436FD5A2220EF7500122A17 /* LoginViewController.swift in Sources */,
 				ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */,
 				ED925FFB2221368A00DFB24E /* HistoryViewController-ViewProperties.swift in Sources */,
 				ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */,
 				E436FD372220E54800122A17 /* AppDelegate.swift in Sources */,
+				ED9260062221631D00DFB24E /* HistoryCell.swift in Sources */,
 				ED9260042221564D00DFB24E /* HistoryViewController-TableView.swift in Sources */,
+				ED92600E22218F5400DFB24E /* PinEnterViewController.swift in Sources */,
 				ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,7 +693,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8WF8BJSYNB;
+				DEVELOPMENT_TEAM = RCS84LVYUK;
 				INFOPLIST_FILE = "Jenius-Hackathon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -685,7 +713,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8WF8BJSYNB;
+				DEVELOPMENT_TEAM = RCS84LVYUK;
 				INFOPLIST_FILE = "Jenius-Hackathon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (

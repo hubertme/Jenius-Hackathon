@@ -37,7 +37,7 @@ class MerchantViewController: UIViewController {
         self.contentTableView.tableFooterView = UIView()
         self.contentTableView.bounces = false
         
-        self.contentTableView.register(HeaderCell.nib, forCellReuseIdentifier: HeaderCell.cellDescription)
+        self.contentTableView.register(TableHeaderCell.nib, forCellReuseIdentifier: TableHeaderCell.cellDescription)
         self.contentTableView.register(ContentCell.nib, forCellReuseIdentifier: ContentCell.cellDescription)
     }
     
@@ -78,7 +78,7 @@ extension MerchantViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            let headerCell = contentTableView.dequeueReusableCell(withIdentifier: HeaderCell.cellDescription, for: indexPath) as! HeaderCell
+            let headerCell = contentTableView.dequeueReusableCell(withIdentifier: TableHeaderCell.cellDescription, for: indexPath) as! TableHeaderCell
             headerCell.merchantNameLabel.text = "Jenius Café"
             headerCell.merchantIdLabel.text = "50024014069"
             headerCell.selectionStyle = .none

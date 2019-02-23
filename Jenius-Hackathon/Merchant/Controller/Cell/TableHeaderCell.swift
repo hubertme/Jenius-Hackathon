@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HeaderCell: UITableViewCell {
+class TableHeaderCell: UITableViewCell {
     
     // MARK: - Cell's static
     static var cellDescription: String {
