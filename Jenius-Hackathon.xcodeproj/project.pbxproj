@@ -22,6 +22,7 @@
 		ED0299B62220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B52220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift */; };
 		ED0299B82220EEAC00DEC9D1 /* PaymentViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B72220EEAC00DEC9D1 /* PaymentViewController-Layout.swift */; };
 		ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B92220F95D00DEC9D1 /* Extensions.swift */; };
+		ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */; };
 		ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */; };
 		ED8938612220EC22009A6C5A /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8938602220EC22009A6C5A /* PaymentViewController.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		ED0299B52220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentViewController-ViewProperties.swift"; sourceTree = "<group>"; };
 		ED0299B72220EEAC00DEC9D1 /* PaymentViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentViewController-Layout.swift"; sourceTree = "<group>"; };
 		ED0299B92220F95D00DEC9D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmatioViewController.swift; sourceTree = "<group>"; };
 		ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		ED8938602220EC22009A6C5A /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		F06DF6DC3BC5CACC1CFA3995 /* Pods_Jenius_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jenius_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,17 +177,26 @@
 			path = Global;
 			sourceTree = "<group>";
 		};
-        E436FD612220F34900122A17 /* Extension */ = {
-            isa = PBXGroup;
-            children = (
-                E436FD622220F35900122A17 /* UITextField.swift */,
-            );
-            path = Extension;
-            sourceTree = "<group>";
-        };
+		E436FD612220F34900122A17 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD622220F35900122A17 /* UITextField.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		ED0299BB2221015800DEC9D1 /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */,
+			);
+			path = Confirmation;
+			sourceTree = "<group>";
+		};
 		ED8938622220ECBA009A6C5A /* Payment */ = {
 			isa = PBXGroup;
 			children = (
+				ED0299BB2221015800DEC9D1 /* Confirmation */,
 				ED8938602220EC22009A6C5A /* PaymentViewController.swift */,
 				ED0299B52220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift */,
 				ED0299B72220EEAC00DEC9D1 /* PaymentViewController-Layout.swift */,
@@ -327,6 +338,7 @@
 				ED8938612220EC22009A6C5A /* PaymentViewController.swift in Sources */,
 				ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */,
 				E436FD5A2220EF7500122A17 /* LoginViewController.swift in Sources */,
+				ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */,
 				ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */,
 				E436FD372220E54800122A17 /* AppDelegate.swift in Sources */,
 				ED0299B62220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift in Sources */,
@@ -469,7 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8WF8BJSYNB;
+				DEVELOPMENT_TEAM = RCS84LVYUK;
 				INFOPLIST_FILE = "Jenius-Hackathon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -489,7 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8WF8BJSYNB;
+				DEVELOPMENT_TEAM = RCS84LVYUK;
 				INFOPLIST_FILE = "Jenius-Hackathon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (

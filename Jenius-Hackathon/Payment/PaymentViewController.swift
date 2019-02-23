@@ -13,11 +13,11 @@ class PaymentViewController: UIViewController {
     var titleContainer: UIView!
     var titleLabel: UILabel!
     var merchantIcon: UIImageView!
-    
+
     var inputLabel: UILabel!
     var inputDesc: UILabel!
     var amountTextField: UITextField!
-    
+
     var nextButton: UIButton!
     
     override func viewDidLoad() {
@@ -26,6 +26,20 @@ class PaymentViewController: UIViewController {
         
         self.setupUI()
         self.layoutUI()
+        
+        nextButton.addTarget(self, action: #selector(handleNextButton), for: .touchUpInside)
+    }
+    
+    @objc func handleNextButton() {
+        if enteredAmountIsValid() {
+            let confirmationVC = ConfirmationViewController()
+            self.navigationController?.pushViewController(confirmationVC, animated: true)
+            
+        }
+    }
+    
+    func enteredAmountIsValid() -> Bool {
+        return true
     }
 }
 
