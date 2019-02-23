@@ -23,5 +23,8 @@ func createAlertWithOkAction(title: String, message: String, okTitle: String = "
     let okAction = UIAlertAction(title: okTitle, style: .default, handler: completion)
     alertController.addAction(okAction)
     
+    let notification = UINotificationFeedbackGenerator()
+    notification.notificationOccurred(.success)
+    
     return alertController
 }
