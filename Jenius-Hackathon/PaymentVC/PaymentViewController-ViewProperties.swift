@@ -19,7 +19,7 @@ extension PaymentViewController {
         titleContainer = UIView()
         titleContainer.backgroundColor = .white
         titleContainer.translatesAutoresizingMaskIntoConstraints = false
-        
+
         titleContainer.layer.shadowColor = UIColor.darkGray.cgColor
         titleContainer.layer.shadowOffset = CGSize(width: 0, height: 0.5)
         titleContainer.layer.shadowRadius = 1
@@ -35,7 +35,7 @@ extension PaymentViewController {
         titleLabel.textColor = #colorLiteral(red: 0.5293635726, green: 0.5294427276, blue: 0.529346168, alpha: 1)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        self.view.addSubview(titleLabel)
+        self.titleContainer.addSubview(titleLabel)
     }
     
     private func setupMerchantIcon()  {
@@ -43,6 +43,6 @@ extension PaymentViewController {
         merchantIcon = UIImageView(image: iconImg)
         merchantIcon.translatesAutoresizingMaskIntoConstraints = false
         
-        self.view.addSubview(merchantIcon)
+        self.titleContainer.addSubview(merchantIcon)
     }
 }

@@ -16,9 +16,10 @@ extension PaymentViewController {
     }
     
     private func layoutTitleContainer() {
-        [titleContainer.widthAnchor.constraint(equalToConstant: view.frame.width),
-        titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-        titleLabel.heightAnchor.constraint(equalToConstant: 40)].forEach({$0.isActive = true})
+        [titleContainer.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+         titleContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+        titleContainer.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+        titleContainer.heightAnchor.constraint(equalToConstant: 40)].forEach({$0.isActive = true})
     }
     
     private func layoutTitleLabel() {

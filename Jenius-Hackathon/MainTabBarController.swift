@@ -22,7 +22,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         historyVC.tabBarItem = UITabBarItem(title: "TransactionHistory", image: historyMenuIcon, selectedImage: historyMenuIcon)
         let historyNavCon = UINavigationController(rootViewController: historyVC)
         
-        let paymentVC = UIViewController() //should be custom class
+        let paymentVC = PaymentViewController()
         let paymentMenuIcon = UIImage(named: "paymentIcon")
         paymentVC.title = "Payment"
         paymentVC.tabBarItem = UITabBarItem(title: "Payment", image: paymentMenuIcon, selectedImage: paymentMenuIcon)
@@ -36,7 +36,6 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
 
         let viewCons = [historyNavCon, paymentNavcon, merchantNavCon]
         self.tabBar.tintColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1) //Change accordingly
-        self.tabBar.selectedItem = tabBar.items![1]
         self.viewControllers = viewCons
     }
 }
