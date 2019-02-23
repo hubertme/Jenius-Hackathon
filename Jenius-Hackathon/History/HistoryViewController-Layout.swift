@@ -10,18 +10,25 @@ import UIKit
 
 extension HistoryViewController {
     func layoutUI() {
-        
+        self.layoutTransactionContainer()
+        self.layoutTransactionDayLabel()
+        self.layoutTransactionLabel()
     }
     
-    func layoutTransactionContainer() {
-//        transactionContainer.topAnchor.constraint(equalTo: <#T##NSLayoutAnchor<NSLayoutYAxisAnchor>#>)
+    private func layoutTransactionContainer() {
+        [transactionContainer.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+        transactionContainer.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+        transactionContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+        transactionContainer.heightAnchor.constraint(equalToConstant: 100)].forEach({$0.isActive = true})
     }
     
-    func layoutTransactionDay() {
-        
+    private func layoutTransactionDayLabel() {
+        [transactionDayLabel.centerXAnchor.constraint(equalTo: transactionContainer.centerXAnchor),
+         transactionDayLabel.topAnchor.constraint(equalTo: transactionContainer.topAnchor, constant: 15)].forEach({$0.isActive = true})
     }
     
-    func layoutTransactionLabe() {
-        
+    func layoutTransactionLabel() {
+        [transactionAmountLabel.topAnchor.constraint(equalTo: transactionDayLabel.bottomAnchor),
+         transactionAmountLabel.centerXAnchor.constraint(equalTo: transactionContainer.centerXAnchor)].forEach({$0.isActive = true})
     }
 }

@@ -13,9 +13,9 @@ extension HistoryViewController {
         self.setupTransactionContainer()
         self.setupTransactionDayLabel()
         self.setupTransactionLabel()
-        
-        self.setupHistoryListLabel()
-        self.setupDownloadButton()
+//
+//        self.setupHistoryListLabel()
+//        self.setupDownloadButton()
     }
     
     //MARK: TOP
@@ -30,7 +30,7 @@ extension HistoryViewController {
     private func setupTransactionDayLabel() {
         transactionDayLabel = UILabel()
         transactionDayLabel.text = "Today's Transaction"
-        transactionDayLabel.font = UIFont.systemFont(ofSize: 12, weight: .light)
+        transactionDayLabel.font = UIFont.systemFont(ofSize: 15, weight: .light)
         transactionDayLabel.textColor = .white
         transactionDayLabel.translatesAutoresizingMaskIntoConstraints = false
         
@@ -40,13 +40,14 @@ extension HistoryViewController {
     private func setupTransactionLabel() {
         transactionAmountLabel = UILabel()
         transactionAmountLabel.text = "Rp 2.000.231"
-        transactionAmountLabel.font = UIFont.systemFont(ofSize: 20, weight: .regular)
+        transactionAmountLabel.font = UIFont.systemFont(ofSize: 30, weight: .regular)
         transactionAmountLabel.textColor = .white
         transactionAmountLabel.translatesAutoresizingMaskIntoConstraints = false
         
         self.transactionContainer.addSubview(transactionAmountLabel)
     }
     
+    //MARK: DOWNLOAD
     private func setupHistoryListLabel() {
         historyListLabel = UILabel()
         historyListLabel.text = "Showing 10 of 14"

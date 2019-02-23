@@ -21,11 +21,15 @@ class HistoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
+        
+        self.setupUI()
+        self.layoutUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.setupLogoImage()
+//        self.setupLogoImage()
     }
 }
