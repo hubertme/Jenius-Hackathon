@@ -37,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setupFirebase() {
         FirebaseApp.configure()
+        db = Firestore.firestore()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
