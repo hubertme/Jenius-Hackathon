@@ -21,6 +21,8 @@ class ChangePasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboardFromAllTextFields))
+        self.view.addGestureRecognizer(tapGesture)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -70,11 +72,16 @@ class ChangePasswordViewController: UIViewController {
         }
         return true
     }
-
-}
-
-extension ChangePasswordViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    
+    @objc private func dismissKeyboardFromAllTextFields() {
+        self.currentPasswordTextField.resignFirstResponder()
+        self.newPasswordTextField.resignFirstResponder()
+        self.reNewPasswordTextField.resignFirstResponder()
+        
+        self.animateDoneButton()
+    }
+    
+    private func animateDoneButton() {
         if self.currentPasswordTextField.text != "" && self.newPasswordTextField.text != "" && self.reNewPasswordTextField.text != "" {
             UIView.animate(withDuration: 1) {
                 self.doneButton.alpha = 1
@@ -86,6 +93,13 @@ extension ChangePasswordViewController: UITextFieldDelegate {
                 self.doneButton.isUserInteractionEnabled = false
             }
         }
+    }
+
+}
+
+extension ChangePasswordViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.animateDoneButton()
         textField.resignFirstResponder()
         return true
     }
