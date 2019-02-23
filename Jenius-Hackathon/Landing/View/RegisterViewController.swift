@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 enum TextFieldOrder: Int {
     case fullName = 0
@@ -37,6 +38,13 @@ class RegisterViewController: UIViewController {
     }
     
     // MARK: - Actions
+    @IBAction func handleRegisterButtonTapped(_ sender: UIButton) {
+        let email = textFields[TextFieldOrder.email.rawValue].text!
+        let password = textFields[TextFieldOrder.password.rawValue].text!
+        let fullName = textFields[TextFieldOrder.fullName.rawValue].text!
+        
+        self.handleUserRegistration(email: email, password: password, fullName: fullName)
+    }
     
     // MARK: - Private methods
     private func setupElements() {
@@ -90,6 +98,22 @@ class RegisterViewController: UIViewController {
             }
         }
         return true
+    }
+    
+    private func handleUserRegistration(email: String, password: String, fullName: String) {
+        Auth.auth().createUser(withEmail: email, password: password) { (userAuth, error) in
+            if let error = error {
+                print("Failed to register with error: \(error.localizedDescription)")
+                self.present(createAlertWithOkAction(title: "Failed to register", message: "Please try again"), animated: true, completion: nil)
+                return
+            }
+            print("Successfully registered user with uid: \(userAuth?.user.uid ?? "N/A"), email: \(userAuth?.user.email ?? "N/A") and name: \(userAuth?.user.displayName ?? "N/A")")
+            
+            self.present(createAlertWithOkAction(title: "Hello Onboard", message: "Welcome to Jenius merchant!") { (_) in
+                let nextVC = MainTabBarController()
+                self.present(nextVC, animated: true, completion: nil)
+            }, animated: true, completion: nil)
+        }
     }
 }
 
