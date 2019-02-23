@@ -21,12 +21,18 @@ class ChangePasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.setupElements()
+    }
+    
+    // MARK: - Actions
+    @IBAction func handleDoneButtonTapped(_ sender: UIButton) {
+        if isValidDataInputted() {
+            
+        }
     }
     
     // MARK: - Private methods
@@ -43,6 +49,24 @@ class ChangePasswordViewController: UIViewController {
         self.newPasswordTextField.makeSingleLine()
         self.reNewPasswordTextField.delegate = self
         self.reNewPasswordTextField.makeSingleLine()
+    }
+    
+    private func isValidDataInputted() -> Bool {
+        let oldPassword = self.currentPasswordTextField.text!
+        let newPassword = self.newPasswordTextField.text!
+        let reNewPassword = self.reNewPasswordTextField.text!
+        
+        if newPassword == oldPassword {
+            self.present(createAlertWithOkAction(title: "Same password", message: "Please input a new password that is different from your old one"), animated: true, completion: nil)
+            return false
+        } else if newPassword.count < 6 {
+            self.present(createAlertWithOkAction(title: "Password too short", message: "Please input a 6 characters or more password"), animated: true, completion: nil)
+            return false
+        } else if newPassword != reNewPassword {
+            self.present(createAlertWithOkAction(title: "Password mismatch", message: "Please re-enter your password"), animated: true, completion: nil)
+            return false
+        }
+        return true
     }
 
 }
