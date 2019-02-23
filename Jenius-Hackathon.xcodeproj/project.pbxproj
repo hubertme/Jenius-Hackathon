@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		E436FD372220E54800122A17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD362220E54800122A17 /* AppDelegate.swift */; };
 		E436FD392220E54800122A17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD382220E54800122A17 /* ViewController.swift */; };
-		E436FD3C2220E54800122A17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E436FD3A2220E54800122A17 /* Main.storyboard */; };
 		E436FD3F2220E54800122A17 /* Jenius_Hackathon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E436FD3D2220E54800122A17 /* Jenius_Hackathon.xcdatamodeld */; };
 		E436FD412220E54A00122A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E436FD402220E54A00122A17 /* Assets.xcassets */; };
 		E436FD442220E54A00122A17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E436FD422220E54A00122A17 /* LaunchScreen.storyboard */; };
+		E436FD4C2220E7C100122A17 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD4B2220E7C100122A17 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E436FD332220E54800122A17 /* Jenius-Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jenius-Hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E436FD362220E54800122A17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E436FD382220E54800122A17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E436FD3B2220E54800122A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E436FD3E2220E54800122A17 /* Jenius_Hackathon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jenius_Hackathon.xcdatamodel; sourceTree = "<group>"; };
 		E436FD402220E54A00122A17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E436FD432220E54A00122A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E436FD452220E54A00122A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E436FD4B2220E7C100122A17 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				E436FD362220E54800122A17 /* AppDelegate.swift */,
+				E436FD4B2220E7C100122A17 /* ViewController.xib */,
 				E436FD382220E54800122A17 /* ViewController.swift */,
-				E436FD3A2220E54800122A17 /* Main.storyboard */,
 				E436FD402220E54A00122A17 /* Assets.xcassets */,
 				E436FD422220E54A00122A17 /* LaunchScreen.storyboard */,
 				E436FD452220E54A00122A17 /* Info.plist */,
@@ -126,8 +126,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E436FD442220E54A00122A17 /* LaunchScreen.storyboard in Resources */,
+				E436FD4C2220E7C100122A17 /* ViewController.xib in Resources */,
 				E436FD412220E54A00122A17 /* Assets.xcassets in Resources */,
-				E436FD3C2220E54800122A17 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E436FD3A2220E54800122A17 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E436FD3B2220E54800122A17 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E436FD422220E54A00122A17 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
