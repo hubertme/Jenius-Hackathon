@@ -16,7 +16,7 @@ extension HistoryViewController {
         
         self.layoutHistoryAmountLabel()
         self.layoutDownloadButton()
-        
+        self.layoutDownloadImage()
         
     }
     
@@ -45,5 +45,12 @@ extension HistoryViewController {
     private func layoutDownloadButton() {
         [downloadButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25),
          downloadButton.centerYAnchor.constraint(equalTo: historyAmountLabel.centerYAnchor)].forEach({$0.isActive = true})
+    }
+    
+    private func layoutDownloadImage() {
+        [downloadImage.trailingAnchor.constraint(equalTo: downloadButton.leadingAnchor, constant: -3),
+        downloadImage.widthAnchor.constraint(equalToConstant: 15),
+        downloadImage.heightAnchor.constraint(equalToConstant: 15),
+        downloadImage.centerYAnchor.constraint(equalTo: downloadButton.centerYAnchor)].forEach({$0.isActive = true})
     }
 }

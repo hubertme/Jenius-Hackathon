@@ -16,6 +16,7 @@ extension HistoryViewController {
 
         self.setupHistoryAmountLabel()
         self.setupDownloadButton()
+        self.setupDownloadImage()
     }
     
     //MARK: TOP
@@ -66,5 +67,14 @@ extension HistoryViewController {
         downloadButton.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(downloadButton)
+    }
+    
+    private func setupDownloadImage() {
+        let downloadIcon = UIImage(named: "icon_download")
+        downloadImage = UIImageView(image: downloadIcon)
+        downloadImage.contentMode = .scaleAspectFit
+        downloadImage.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.downloadButton.addSubview(downloadImage)
     }
 }
