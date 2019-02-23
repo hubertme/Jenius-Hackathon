@@ -22,12 +22,19 @@ class PaymentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.backgroundColor = .white
         
         self.setupUI()
         self.layoutUI()
         
         nextButton.addTarget(self, action: #selector(handleNextButton), for: .touchUpInside)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.setupLogoImage()
     }
     
     @objc func handleNextButton() {

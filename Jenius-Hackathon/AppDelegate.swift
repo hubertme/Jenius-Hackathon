@@ -28,7 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func setupNavBar() {
-        //Tinggal tambah logo COCreate ❗️
         UINavigationBar.appearance().barTintColor = mainColor
         UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]

@@ -38,6 +38,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         let merchantNavCon = UINavigationController(rootViewController: merchantVC)
 
         let viewCons = [historyNavCon, paymentNavcon, merchantNavCon]
+        
         self.tabBar.tintColor = mainColor
         self.viewControllers = viewCons
     }
