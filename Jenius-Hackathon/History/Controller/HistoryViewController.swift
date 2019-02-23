@@ -31,13 +31,9 @@ class HistoryViewController: UIViewController {
     }
     
     func setupHistoryData() {
-//        let transactionsTest = [
-//            Transaction(
-//        ]
-//        transactionHistory = [
-//            HistoryData(month: Date())
-//        
-//        ]
+        let transactionList = [
+            Transaction(refNum: "12312312300123", datePurchased: Date(), total: <#T##Int?#>)
+        ]
     }
     
     
