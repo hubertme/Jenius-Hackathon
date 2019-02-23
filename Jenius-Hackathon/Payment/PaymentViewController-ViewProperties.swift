@@ -17,6 +17,8 @@ extension PaymentViewController {
         self.setupInputLabel()
         self.setupInputDesc()
         self.setupAmountTextField()
+        
+        self.setupNextButton()
     }
     
     private func setupTitleContainer() {
@@ -86,6 +88,16 @@ extension PaymentViewController {
         amountTextField.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(amountTextField)
+    }
+    
+    private func setupNextButton() {
+        nextButton = UIButton()
+        nextButton.setTitle("NEXT", for: .normal)
+        nextButton.tintColor = .white
+        nextButton.backgroundColor = #colorLiteral(red: 0.7405559421, green: 0.8699820042, blue: 0.5067372322, alpha: 1)
+        nextButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(nextButton)
     }
 }
 

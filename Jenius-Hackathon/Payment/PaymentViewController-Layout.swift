@@ -17,8 +17,11 @@ extension PaymentViewController {
         self.layoutInputLabel()
         self.layoutInputDesc()
         self.layoutAmountTextField()
+        
+        self.layoutNextButton()
     }
     
+    //MARK: Top Title
     private func layoutTitleContainer() {
         [titleContainer.leadingAnchor.constraint(equalTo: view.leadingAnchor),
          titleContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -40,6 +43,7 @@ extension PaymentViewController {
         
     }
     
+    //MARK: Inputs
     private func layoutInputLabel() {
         [inputLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
         inputLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
@@ -57,5 +61,12 @@ extension PaymentViewController {
         amountTextField.trailingAnchor.constraint(equalTo: inputLabel.trailingAnchor),
         amountTextField.topAnchor.constraint(equalTo: inputDesc.bottomAnchor, constant: 15),
         amountTextField.heightAnchor.constraint(equalToConstant: 25)].forEach({$0.isActive = true})
+    }
+    
+    private func layoutNextButton() {
+        [nextButton.leadingAnchor.constraint(equalTo: inputLabel.leadingAnchor),
+        nextButton.trailingAnchor.constraint(equalTo: inputLabel.trailingAnchor),
+        nextButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -5),
+        nextButton.heightAnchor.constraint(equalToConstant: 45)].forEach({$0.isActive = true})
     }
 }
