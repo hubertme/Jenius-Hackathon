@@ -15,6 +15,8 @@ extension PinEnterViewController {
         
         self.layoutForgotPinLabel()
         self.layoutUsePasswordButton()
+        
+        self.layoutNumberInput()
     }
     
     private func layoutEnterPinLabel() {
@@ -37,5 +39,12 @@ extension PinEnterViewController {
     private func layoutUsePasswordButton() {
         [usePasswordButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
          usePasswordButton.topAnchor.constraint(equalTo: forgotPinLabel.bottomAnchor, constant: 5)].forEach({$0.isActive = true})
+    }
+    
+    private func layoutNumberInput() {
+        [numberInputView.topAnchor.constraint(equalTo: usePasswordButton.bottomAnchor, constant: 10),
+         numberInputView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+         numberInputView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+         numberInputView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)].forEach({$0.isActive = true})
     }
 }

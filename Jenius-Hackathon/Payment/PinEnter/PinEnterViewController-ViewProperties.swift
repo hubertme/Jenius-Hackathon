@@ -58,6 +58,19 @@ extension PinEnterViewController {
     }
     
     private func setupNumberInput() {
-        numberInputView = PinInputView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        
+        numberInputView = UICollectionView(frame: view.frame, collectionViewLayout: layout)
+        numberInputView.dataSource = self
+        numberInputView.delegate = self
+        numberInputView.backgroundColor = .clear
+        numberInputView.contentInsetAdjustmentBehavior = .never
+        numberInputView.translatesAutoresizingMaskIntoConstraints = false
+        
+        numberInputView.register(NumberCell.self, forCellWithReuseIdentifier: "numberCell")
+        
+        self.view.addSubview(numberInputView)
     }
 }

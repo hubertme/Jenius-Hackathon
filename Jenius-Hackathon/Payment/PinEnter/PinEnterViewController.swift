@@ -10,17 +10,19 @@ import UIKit
 
 class PinEnterViewController: UIViewController {
     
+    var numbersData = [1,2,3,4,5,6,7,8,9,0]
+    
     var enterPinLabel: UILabel!
     var dotPasswordView: DotPasswordInput!
     
     var forgotPinLabel: UILabel!
     var usePasswordButton: UIButton!
     
-    var numberInputView: UIView!
+    var numberInputView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.numbersData.shuffle()
         self.setupUI()
         self.layoutUI()
         
@@ -68,6 +70,7 @@ class DotPasswordInput: UIView {
 class PinInputView: UIView {
     
     var numbers = [1,2,3,4,5,6,7,8,9,0]
+    var buttons = [UIButton]()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -78,8 +81,18 @@ class PinInputView: UIView {
     }
     
     func generateButtons() {
-        numbers.forEach { (num) in
+        let w = self.frame.width
+        let h = self.frame.height
+        for (num, i) in numbers.enumerated() {
+            let xPos = CGFloat(i).truncatingRemainder(dividingBy: 3) * (w / 3)
+            let yPos = (CGFloat(i) - xPos) / 3
+            let btn = UIButton()
+            btn.setTitle("\(num)", for: .normal)
+            btn.setTitleColor(.white, for: .normal)
+            btn.frame = CGRect(x: xPos, y: yPos, width: w / 3, height: h / 4)
+            buttons.append(btn)
             
+            self.addSubview(btn)
         }
     }
     
