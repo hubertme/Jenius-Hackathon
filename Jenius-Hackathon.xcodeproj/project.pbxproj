@@ -35,6 +35,8 @@
 		E436FDC02221F84900122A17 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FDBE2221F84900122A17 /* ChangePasswordViewController.swift */; };
 		E436FDC12221F84900122A17 /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FDBF2221F84900122A17 /* ChangePasswordViewController.xib */; };
 		E436FDC32221FB7F00122A17 /* PinEnterViewController-CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FDC22221FB7F00122A17 /* PinEnterViewController-CollectionView.swift */; };
+		E436FDC6222206BA00122A17 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FDC4222206BA00122A17 /* ForgetPasswordViewController.swift */; };
+		E436FDC7222206BA00122A17 /* ForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FDC5222206BA00122A17 /* ForgetPasswordViewController.xib */; };
 		ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B92220F95D00DEC9D1 /* Extensions.swift */; };
 		ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */; };
 		ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */; };
@@ -102,6 +104,8 @@
 		E436FDBE2221F84900122A17 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		E436FDBF2221F84900122A17 /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
 		E436FDC22221FB7F00122A17 /* PinEnterViewController-CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PinEnterViewController-CollectionView.swift"; sourceTree = "<group>"; };
+		E436FDC4222206BA00122A17 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		E436FDC5222206BA00122A17 /* ForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordViewController.xib; sourceTree = "<group>"; };
 		ED0299B92220F95D00DEC9D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmatioViewController.swift; sourceTree = "<group>"; };
 		ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-ViewProperties.swift"; sourceTree = "<group>"; };
@@ -350,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				E436FDBE2221F84900122A17 /* ChangePasswordViewController.swift */,
+				E436FDC4222206BA00122A17 /* ForgetPasswordViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -358,6 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				E436FDBF2221F84900122A17 /* ChangePasswordViewController.xib */,
+				E436FDC5222206BA00122A17 /* ForgetPasswordViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -504,6 +510,7 @@
 				E436FD932221A15F00122A17 /* ContentCell.xib in Resources */,
 				E436FD442220E54A00122A17 /* LaunchScreen.storyboard in Resources */,
 				E436FDC12221F84900122A17 /* ChangePasswordViewController.xib in Resources */,
+				E436FDC7222206BA00122A17 /* ForgetPasswordViewController.xib in Resources */,
 				E436FD512220EA6A00122A17 /* GoogleService-Info.plist in Resources */,
 				E436FD872221822D00122A17 /* LogoAnimation.json in Resources */,
 				E436FD802221570300122A17 /* MerchantViewController.xib in Resources */,
@@ -620,6 +627,7 @@
 				ED9260022221559B00DFB24E /* HistoryData.swift in Sources */,
 				E436FD602220F1B300122A17 /* Variables.swift in Sources */,
 				ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */,
+				E436FDC6222206BA00122A17 /* ForgetPasswordViewController.swift in Sources */,
 				E436FD7522213F0600122A17 /* PaymentViewController-Layout.swift in Sources */,
 				E436FD7922213F2F00122A17 /* Functions.swift in Sources */,
 				E436FD7F2221570300122A17 /* MerchantViewController.swift in Sources */,
