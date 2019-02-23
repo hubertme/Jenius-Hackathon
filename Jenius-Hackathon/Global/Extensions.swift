@@ -25,3 +25,15 @@ extension UITextField {
         btmBorder.heightAnchor.constraint(equalToConstant: 1).isActive = true
     }
 }
+
+extension UIViewController {
+    func setupLogoImage() {
+        let logoImg = UIImage(named: "logo_small")
+        let logoImgView = UIImageView(image: logoImg)
+        logoImgView.contentMode = .scaleAspectFit
+        logoImgView.clipsToBounds = false
+        logoImgView.widthAnchor.constraint(equalToConstant: 120).isActive = true
+        logoImgView.heightAnchor.constraint(equalToConstant: 120).isActive = true
+        self.navigationController?.navigationBar.topItem?.titleView = logoImgView
+    }
+}

@@ -22,8 +22,14 @@
 		ED0299B62220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B52220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift */; };
 		ED0299B82220EEAC00DEC9D1 /* PaymentViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B72220EEAC00DEC9D1 /* PaymentViewController-Layout.swift */; };
 		ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B92220F95D00DEC9D1 /* Extensions.swift */; };
+		ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */; };
+		ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */; };
+		ED0299C22221098E00DEC9D1 /* ConfirmationViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299C12221098E00DEC9D1 /* ConfirmationViewController-Layout.swift */; };
 		ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */; };
 		ED8938612220EC22009A6C5A /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8938602220EC22009A6C5A /* PaymentViewController.swift */; };
+		ED925FF92221368100DFB24E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED925FF82221368100DFB24E /* HistoryViewController.swift */; };
+		ED925FFB2221368A00DFB24E /* HistoryViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED925FFA2221368A00DFB24E /* HistoryViewController-ViewProperties.swift */; };
+		ED925FFD2221369300DFB24E /* HistoryViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED925FFC2221369300DFB24E /* HistoryViewController-Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +50,14 @@
 		ED0299B52220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentViewController-ViewProperties.swift"; sourceTree = "<group>"; };
 		ED0299B72220EEAC00DEC9D1 /* PaymentViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentViewController-Layout.swift"; sourceTree = "<group>"; };
 		ED0299B92220F95D00DEC9D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmatioViewController.swift; sourceTree = "<group>"; };
+		ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-ViewProperties.swift"; sourceTree = "<group>"; };
+		ED0299C12221098E00DEC9D1 /* ConfirmationViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-Layout.swift"; sourceTree = "<group>"; };
 		ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		ED8938602220EC22009A6C5A /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		ED925FF82221368100DFB24E /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		ED925FFA2221368A00DFB24E /* HistoryViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController-ViewProperties.swift"; sourceTree = "<group>"; };
+		ED925FFC2221369300DFB24E /* HistoryViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController-Layout.swift"; sourceTree = "<group>"; };
 		F06DF6DC3BC5CACC1CFA3995 /* Pods_Jenius_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jenius_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D517AD29A2B856A3AA5C30 /* Pods-Jenius-Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jenius-Hackathon.debug.xcconfig"; path = "Target Support Files/Pods-Jenius-Hackathon/Pods-Jenius-Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +116,7 @@
 				E436FD5E2220F1A200122A17 /* Global */,
 				E436FD572220EF5200122A17 /* Landing */,
 				ED8938622220ECBA009A6C5A /* Payment */,
+				ED925FF72221366900DFB24E /* History */,
 				E436FD4D2220E93000122A17 /* Root */,
 				E436FD362220E54800122A17 /* AppDelegate.swift */,
 				E436FD402220E54A00122A17 /* Assets.xcassets */,
@@ -175,22 +188,43 @@
 			path = Global;
 			sourceTree = "<group>";
 		};
-        E436FD612220F34900122A17 /* Extension */ = {
-            isa = PBXGroup;
-            children = (
-                E436FD622220F35900122A17 /* UITextField.swift */,
-            );
-            path = Extension;
-            sourceTree = "<group>";
-        };
+		E436FD612220F34900122A17 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD622220F35900122A17 /* UITextField.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		ED0299BB2221015800DEC9D1 /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */,
+				ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */,
+				ED0299C12221098E00DEC9D1 /* ConfirmationViewController-Layout.swift */,
+			);
+			path = Confirmation;
+			sourceTree = "<group>";
+		};
 		ED8938622220ECBA009A6C5A /* Payment */ = {
 			isa = PBXGroup;
 			children = (
+				ED0299BB2221015800DEC9D1 /* Confirmation */,
 				ED8938602220EC22009A6C5A /* PaymentViewController.swift */,
 				ED0299B52220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift */,
 				ED0299B72220EEAC00DEC9D1 /* PaymentViewController-Layout.swift */,
 			);
 			path = Payment;
+			sourceTree = "<group>";
+		};
+		ED925FF72221366900DFB24E /* History */ = {
+			isa = PBXGroup;
+			children = (
+				ED925FF82221368100DFB24E /* HistoryViewController.swift */,
+				ED925FFA2221368A00DFB24E /* HistoryViewController-ViewProperties.swift */,
+				ED925FFC2221369300DFB24E /* HistoryViewController-Layout.swift */,
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,16 +354,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				E436FD3F2220E54800122A17 /* Jenius_Hackathon.xcdatamodeld in Sources */,
+				ED0299C22221098E00DEC9D1 /* ConfirmationViewController-Layout.swift in Sources */,
+				ED925FFD2221369300DFB24E /* HistoryViewController-Layout.swift in Sources */,
 				E436FD632220F35900122A17 /* UITextField.swift in Sources */,
+				ED925FF92221368100DFB24E /* HistoryViewController.swift in Sources */,
 				ED0299B82220EEAC00DEC9D1 /* PaymentViewController-Layout.swift in Sources */,
 				E436FD392220E54800122A17 /* ViewController.swift in Sources */,
 				E436FD602220F1B300122A17 /* Variables.swift in Sources */,
 				ED8938612220EC22009A6C5A /* PaymentViewController.swift in Sources */,
 				ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */,
 				E436FD5A2220EF7500122A17 /* LoginViewController.swift in Sources */,
+				ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */,
+				ED925FFB2221368A00DFB24E /* HistoryViewController-ViewProperties.swift in Sources */,
 				ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */,
 				E436FD372220E54800122A17 /* AppDelegate.swift in Sources */,
 				ED0299B62220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift in Sources */,
+				ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8WF8BJSYNB;
+				DEVELOPMENT_TEAM = RCS84LVYUK;
 				INFOPLIST_FILE = "Jenius-Hackathon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -489,7 +529,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8WF8BJSYNB;
+				DEVELOPMENT_TEAM = RCS84LVYUK;
 				INFOPLIST_FILE = "Jenius-Hackathon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (

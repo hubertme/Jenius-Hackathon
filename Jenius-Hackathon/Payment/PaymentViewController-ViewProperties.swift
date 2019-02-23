@@ -53,7 +53,7 @@ extension PaymentViewController {
     }
     
     
-    private func setupInputLabel() {
+    func setupInputLabel() {
         inputLabel = UILabel()
         inputLabel.text = "Input transaction amount"
         inputLabel.font = UIFont.systemFont(ofSize: 24, weight: .regular)
@@ -65,10 +65,10 @@ extension PaymentViewController {
         self.view.addSubview(inputLabel)
     }
     
-    private func setupInputDesc() {
+    func setupInputDesc() {
         inputDesc = UILabel()
         inputDesc.text = "Enter total amount of transaction"
-        inputDesc.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        inputDesc.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         inputDesc.textColor = textGray
         inputDesc.translatesAutoresizingMaskIntoConstraints = false
         inputDesc.numberOfLines = 0
@@ -77,7 +77,7 @@ extension PaymentViewController {
         self.view.addSubview(inputDesc)
     }
     
-    private func setupAmountTextField() {
+    func setupAmountTextField() {
         amountTextField = UITextField()
         amountTextField.placeholder = "Amount"
         amountTextField.textAlignment = .left
@@ -90,7 +90,7 @@ extension PaymentViewController {
         self.view.addSubview(amountTextField)
     }
     
-    private func setupNextButton() {
+    func setupNextButton() {
         nextButton = UIButton()
         nextButton.setTitle("NEXT", for: .normal)
         nextButton.tintColor = .white

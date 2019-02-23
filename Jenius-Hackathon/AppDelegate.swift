@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        setupNavBar()
         setupFirebase()
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
@@ -24,6 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = rootVC
         window?.makeKeyAndVisible()
         return true
+    }
+    
+    private func setupNavBar() {
+        UINavigationBar.appearance().barTintColor = mainColor
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        UINavigationBar.appearance().isTranslucent = false
     }
     
     private func setupFirebase() {
