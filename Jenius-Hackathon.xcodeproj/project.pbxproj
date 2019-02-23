@@ -17,6 +17,7 @@
 		E436FD512220EA6A00122A17 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E436FD502220EA6A00122A17 /* GoogleService-Info.plist */; };
 		E436FD5A2220EF7500122A17 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD582220EF7500122A17 /* LoginViewController.swift */; };
 		E436FD5B2220EF7500122A17 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FD592220EF7500122A17 /* LoginViewController.xib */; };
+		E436FD602220F1B300122A17 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FD5F2220F1B300122A17 /* Variables.swift */; };
 		ED0299B62220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B52220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift */; };
 		ED0299B82220EEAC00DEC9D1 /* PaymentViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B72220EEAC00DEC9D1 /* PaymentViewController-Layout.swift */; };
 		ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */; };
@@ -36,6 +37,7 @@
 		E436FD502220EA6A00122A17 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E436FD582220EF7500122A17 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E436FD592220EF7500122A17 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		E436FD5F2220F1B300122A17 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		ED0299B52220EEA000DEC9D1 /* PaymentViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentViewController-ViewProperties.swift"; sourceTree = "<group>"; };
 		ED0299B72220EEAC00DEC9D1 /* PaymentViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentViewController-Layout.swift"; sourceTree = "<group>"; };
 		ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		E436FD352220E54800122A17 /* Jenius-Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				E436FD5E2220F1A200122A17 /* Global */,
 				E436FD572220EF5200122A17 /* Landing */,
 				ED8938622220ECBA009A6C5A /* PaymentVC */,
 				E436FD4D2220E93000122A17 /* Root */,
@@ -156,6 +159,14 @@
 				E436FD582220EF7500122A17 /* LoginViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E436FD5E2220F1A200122A17 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				E436FD5F2220F1B300122A17 /* Variables.swift */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 		ED8938622220ECBA009A6C5A /* PaymentVC */ = {
@@ -295,6 +306,7 @@
 				E436FD3F2220E54800122A17 /* Jenius_Hackathon.xcdatamodeld in Sources */,
 				ED0299B82220EEAC00DEC9D1 /* PaymentViewController-Layout.swift in Sources */,
 				E436FD392220E54800122A17 /* ViewController.swift in Sources */,
+				E436FD602220F1B300122A17 /* Variables.swift in Sources */,
 				ED8938612220EC22009A6C5A /* PaymentViewController.swift in Sources */,
 				E436FD5A2220EF7500122A17 /* LoginViewController.swift in Sources */,
 				ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */,
