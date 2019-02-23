@@ -6,4 +6,25 @@
 //  Copyright © 2019 Hubert Wang. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class HistoryViewController: UIViewController { //Use uitableviewcontroller
+    
+    var todayTransactionLabel: UILabel!
+    var transactionDayLabel: UILabel!
+    
+    var showingLabel: UILabel!
+    var downloadButton: UIButton!
+    
+    var transactionTableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.setupLogoImage()
+    }
+}
