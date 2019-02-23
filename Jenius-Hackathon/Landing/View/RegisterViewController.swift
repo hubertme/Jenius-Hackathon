@@ -56,7 +56,8 @@ class RegisterViewController: UIViewController {
         toolbar.items = [UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil) ,doneButton]
         textFields[TextFieldOrder.phone.rawValue].inputAccessoryView = toolbar
         
-        self.registerButton.alpha = 0
+        self.registerButton.alpha = 0.2
+        self.registerButton.isUserInteractionEnabled = false
         self.registerButton.setTitleColor(mainColor, for: .normal)
         self.registerButton.clipsToBounds = true
         self.registerButton.layer.cornerRadius = 8
@@ -72,7 +73,13 @@ class RegisterViewController: UIViewController {
         }
         
         UIView.animate(withDuration: 1) {
-            self.registerButton.alpha = self.checkIfAllTextFieldsFilled() ? 1 : 0
+            if self.checkIfAllTextFieldsFilled() {
+                self.registerButton.alpha = 1
+                self.registerButton.isUserInteractionEnabled = true
+            } else {
+                self.registerButton.alpha = 0.2
+                self.registerButton.isUserInteractionEnabled = false
+            }
         }
     }
     
@@ -98,7 +105,13 @@ extension RegisterViewController: UITextFieldDelegate {
         textField.resignFirstResponder()
         
         UIView.animate(withDuration: 1) {
-            self.registerButton.alpha = self.checkIfAllTextFieldsFilled() ? 1 : 0
+            if self.checkIfAllTextFieldsFilled() {
+                self.registerButton.alpha = 1
+                self.registerButton.isUserInteractionEnabled = true
+            } else {
+                self.registerButton.alpha = 0.2
+                self.registerButton.isUserInteractionEnabled = false
+            }
         }
         
         return true
