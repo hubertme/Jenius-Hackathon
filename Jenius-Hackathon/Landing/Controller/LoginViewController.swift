@@ -54,6 +54,11 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(registerVC, animated: true)
     }
     
+    @IBAction func handleForgetButtonTapped(_ sender: UIButton) {
+        let forgetPasswordVC = ForgetPasswordViewController()
+        self.navigationController?.pushViewController(forgetPasswordVC, animated: true)
+    }
+    
     // MARK: - Private methods
     private func setupElements() {
         self.view.backgroundColor = mainColor
