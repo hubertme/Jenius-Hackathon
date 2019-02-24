@@ -14,7 +14,7 @@ class MerchantViewController: UIViewController {
     // MARK: - Attributes
     let contentTitle: [[String]] = [
         ["Email", "Phone"],
-        ["Change password", "Authorized devices"],
+        ["Change password", "Authorized devices", "My merchant analytics"],
         ["Log out"],
     ]
     
