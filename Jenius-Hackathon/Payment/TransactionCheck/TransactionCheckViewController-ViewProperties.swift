@@ -17,6 +17,11 @@ extension TransactionCheckViewController {
         self.setupSuccessImage()
         self.setupSuccessLabel()
         self.setupDateLabel()
+        
+        self.setupTransactionLabel()
+        self.setupRefLabel()
+        
+        self.setupDoneButton()
     }
     
     private func setupTitleContainer() {
@@ -63,7 +68,7 @@ extension TransactionCheckViewController {
         successLabel = UILabel()
         successLabel.text = "Transaksi Berhasil!"
         successLabel.textColor = #colorLiteral(red: 0.7405376434, green: 0.870012939, blue: 0.5019586086, alpha: 1)
-        successLabel.font = UIFont.systemFont(ofSize: 20, weight: .regular)
+        successLabel.font = UIFont.systemFont(ofSize: 22, weight: .semibold)
         successLabel.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(successLabel)
@@ -75,9 +80,39 @@ extension TransactionCheckViewController {
         dateLabel = UILabel()
         dateLabel.text = dateFormatter.string(from: Date())
         dateLabel.textColor = textGray
-        dateLabel.font = UIFont.systemFont(ofSize: 16, weight: .light)
+        dateLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         dateLabel.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(dateLabel)
+    }
+    
+    func setupTransactionLabel() {
+        transactionLabel = UILabel()
+        transactionLabel.textColor = textGray
+        transactionLabel.text = "\(self.enteredAmount ?? "Rp. 100000") ke JENIUS Café"
+        transactionLabel.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+        transactionLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(transactionLabel)
+    }
+    
+    func setupRefLabel() {
+        refLabel = UILabel()
+        refLabel.textColor = textGray
+        refLabel.text = "No. Ref 88891237771"
+        refLabel.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        refLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(refLabel)
+    }
+    
+    func setupDoneButton() {
+        doneButton = UIButton()
+        doneButton.setTitle("DONE", for: .normal)
+        doneButton.tintColor = .white
+        doneButton.backgroundColor = #colorLiteral(red: 0.7405559421, green: 0.8699820042, blue: 0.5067372322, alpha: 1)
+        doneButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(doneButton)
     }
 }

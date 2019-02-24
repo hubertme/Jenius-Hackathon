@@ -43,6 +43,7 @@ class ConfirmationViewController: UIViewController {
     
     @objc func handlePayButton() {
         let pinVC = PinEnterViewController()
+        pinVC.enteredAmount = self.amountLabel.text
         self.navigationController?.pushViewController(pinVC, animated: true)
     }
     

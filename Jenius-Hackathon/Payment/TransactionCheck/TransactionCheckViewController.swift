@@ -17,6 +17,12 @@ class TransactionCheckViewController: UIViewController {
     var successLabel: UILabel!
     var dateLabel: UILabel!
     
+    var transactionLabel: UILabel!
+    var refLabel: UILabel!
+    var doneButton: UIButton!
+    
+    var enteredAmount: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white

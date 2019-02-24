@@ -17,6 +17,10 @@ extension TransactionCheckViewController {
         self.layoutSuccessImage()
         self.layoutSuccessLabel()
         self.layoutDateLabel()
+        
+        self.layoutTransactionLabel()
+        self.layoutRefLabel()
+        self.layoutDoneButton()
     }
     
     //MARK: Top Title
@@ -42,10 +46,10 @@ extension TransactionCheckViewController {
     }
     
     func layoutSuccessImage() {
-        [successImageView.topAnchor.constraint(equalTo: titleContainer.bottomAnchor, constant: 50),
+        [successImageView.topAnchor.constraint(equalTo: titleContainer.bottomAnchor, constant: 60),
         successImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        successImageView.widthAnchor.constraint(equalToConstant: 100),
-        successImageView.heightAnchor.constraint(equalToConstant: 100)].forEach({$0.isActive = true})
+        successImageView.widthAnchor.constraint(equalToConstant: 130),
+        successImageView.heightAnchor.constraint(equalToConstant: 130)].forEach({$0.isActive = true})
     }
     
     func layoutSuccessLabel() {
@@ -56,5 +60,23 @@ extension TransactionCheckViewController {
     func layoutDateLabel() {
         [dateLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
          dateLabel.topAnchor.constraint(equalTo: successLabel.bottomAnchor, constant: 10)].forEach({$0.isActive = true})
+    }
+    
+    func layoutTransactionLabel() {
+        [transactionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        transactionLabel.topAnchor.constraint(equalTo: dateLabel.bottomAnchor, constant: 20)].forEach({$0.isActive
+         = true})
+    }
+    
+    func layoutRefLabel()  {
+        [refLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+         refLabel.topAnchor.constraint(equalTo: transactionLabel.bottomAnchor, constant: 10)].forEach({$0.isActive = true})
+    }
+    
+    func layoutDoneButton() {
+        [doneButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+         doneButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+         doneButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -5),
+         doneButton.heightAnchor.constraint(equalToConstant: 45)].forEach({$0.isActive = true})
     }
 }
