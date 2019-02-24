@@ -42,13 +42,19 @@ class PaymentViewController: UIViewController {
     
     @objc func handleNextButton() {
         if enteredAmountIsValid() {
-            let confirmationVC = ConfirmationViewController() //Should pass the entered amount as parameter ❗️
+            guard let amount = Int(amountTextField.text!) else {
+                let alert = createAlertWithOkAction(title: "We are sorry", message: "Please enter the valid amount")
+                self.present(alert, animated: true)
+                return
+            }
+            let confirmationVC = ConfirmationViewController()
+            confirmationVC.enteredAmount = amount
             self.navigationController?.pushViewController(confirmationVC, animated: true)
         }
     }
     
     func enteredAmountIsValid() -> Bool {
-        return true
+        return amountTextField.text != nil || amountTextField.text != "0"
     }
 }
 

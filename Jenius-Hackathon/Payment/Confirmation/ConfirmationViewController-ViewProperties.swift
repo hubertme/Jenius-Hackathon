@@ -69,7 +69,7 @@ extension ConfirmationViewController {
     
     func setupAmountLabel() {
         amountLabel = UILabel()
-        amountLabel.text = "Rp. 100.000"
+        amountLabel.text = "Rp. \(self.enteredAmount ?? 0)"
         amountLabel.font = UIFont.systemFont(ofSize: 25, weight: .semibold)
         amountLabel.textColor = textGray
         amountLabel.translatesAutoresizingMaskIntoConstraints = false
