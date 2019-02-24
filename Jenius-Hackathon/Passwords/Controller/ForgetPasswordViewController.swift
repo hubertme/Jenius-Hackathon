@@ -29,6 +29,19 @@ class ForgetPasswordViewController: UIViewController {
         self.setupElements()
     }
     
+    // MARK: - Actions
+    @IBAction func handleDoneButtonTapped(_ sender: UIButton) {
+        let email = self.emailTextField.text!
+        if isValidEmail(email) {
+            
+        } else {
+            self.present(createAlertWithOkAction(title: "Inavlid email format", message: "Please enter a valid email format") { (_) in
+                self.emailTextField.text = ""
+                self.emailTextField.becomeFirstResponder()
+            }, animated: true, completion: nil)
+        }
+    }
+    
     // MARK: - Private methods
     private func setupElements() {
         self.view.backgroundColor = mainColor
