@@ -18,8 +18,9 @@ class ForgetPasswordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissAllKeyboard))
+        self.view.addGestureRecognizer(tapGesture)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,6 +55,11 @@ class ForgetPasswordViewController: UIViewController {
                 self.doneButton.isUserInteractionEnabled = false
             }
         }
+    }
+    
+    @objc private func dismissAllKeyboard() {
+        self.emailTextField.resignFirstResponder()
+        self.animateDoneButton()
     }
 }
 
