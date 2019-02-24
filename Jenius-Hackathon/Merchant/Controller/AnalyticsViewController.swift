@@ -10,6 +10,8 @@ import UIKit
 
 class AnalyticsViewController: UIViewController {
     
+    let contentTitles = ["Willingness to pay", "Rush hour", "Gender", "Age range", "What's next", "Customer satisfaction"]
+    
     // MARK: - Outlets
     @IBOutlet weak var contentTableView: UITableView!
     
@@ -28,7 +30,33 @@ class AnalyticsViewController: UIViewController {
     
     // MARK: - Private methods
     private func setupElements() {
+        self.contentTableView.tableFooterView = UIView()
+        self.contentTableView.delegate = self
+        self.contentTableView.dataSource = self
         
+        self.contentTableView.register(TableHeaderCell.nib, forCellReuseIdentifier: TableHeaderCell.cellDescription)
+        self.contentTableView.register(AnalyticsContentCell.nib, forCellReuseIdentifier: AnalyticsContentCell.cellDescription)
     }
+    
+}
 
+extension AnalyticsViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return contentTitles.count + 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row == 0 {
+            let headerCell = contentTableView.dequeueReusableCell(withIdentifier: TableHeaderCell.cellDescription, for: indexPath) as! TableHeaderCell
+            headerCell.merchantNameLabel.text = "Jenius Café"
+            headerCell.merchantIdLabel.text = "February 2019"
+            return headerCell
+        } else {
+            let imageCell = contentTableView.dequeueReusableCell(withIdentifier: AnalyticsContentCell.cellDescription, for: indexPath) as! AnalyticsContentCell
+            imageCell.criteriaLabel.text = contentTitles[indexPath.row - 1]
+            imageCell.chartImageView.image = UIImage(named: "data\(indexPath.row)")
+            return imageCell
+        }
+        return UITableViewCell()
+    }
 }

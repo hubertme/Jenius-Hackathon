@@ -25,31 +25,21 @@
                         <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="nbQ-mz-VTS">
-                        <rect key="frame" x="82.5" y="59.5" width="210" height="20.5"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merchant ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOs-fF-fix">
-                                <rect key="frame" x="0.0" y="0.0" width="98" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTG-NW-kmt">
-                                <rect key="frame" x="102" y="0.0" width="108" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTG-NW-kmt">
+                        <rect key="frame" x="32" y="63" width="311" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="RTG-NW-kmt" secondAttribute="trailing" constant="16" id="07x-Ff-K7S"/>
                     <constraint firstItem="UCu-lI-W2T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="30J-CD-uk1"/>
                     <constraint firstAttribute="trailing" secondItem="UCu-lI-W2T" secondAttribute="trailing" constant="8" id="31y-Xn-RLq"/>
-                    <constraint firstItem="nbQ-mz-VTS" firstAttribute="top" secondItem="UCu-lI-W2T" secondAttribute="bottom" constant="4" id="cjY-QN-bSi"/>
+                    <constraint firstItem="RTG-NW-kmt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="AEM-Yz-XA9"/>
                     <constraint firstItem="UCu-lI-W2T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="dIO-Bd-hGL"/>
-                    <constraint firstAttribute="bottom" secondItem="nbQ-mz-VTS" secondAttribute="bottom" constant="29.5" id="hQR-bB-l1S"/>
-                    <constraint firstItem="nbQ-mz-VTS" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="xrq-2k-wd1"/>
+                    <constraint firstAttribute="bottom" secondItem="RTG-NW-kmt" secondAttribute="bottom" constant="26" id="fp4-6S-FFC"/>
+                    <constraint firstItem="RTG-NW-kmt" firstAttribute="top" secondItem="UCu-lI-W2T" secondAttribute="bottom" constant="7.5" id="y4T-E1-SDT"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

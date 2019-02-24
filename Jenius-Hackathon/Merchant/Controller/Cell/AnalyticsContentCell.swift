@@ -19,11 +19,15 @@ class AnalyticsContentCell: UITableViewCell {
     }
     
     // MARK: - Outlets
+    @IBOutlet weak var criteriaLabel: UILabel!
+    @IBOutlet weak var chartImageView: UIImageView!
     
     // MARK: - Life cycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.selectionStyle = .none
+        
+        chartImageView.contentMode = .scaleAspectFit
     }
     
 }
