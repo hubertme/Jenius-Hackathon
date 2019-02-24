@@ -54,23 +54,23 @@ extension TransactionCheckViewController {
     
     func layoutSuccessLabel() {
         [successLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-         successLabel.topAnchor.constraint(equalTo: successImageView.bottomAnchor, constant: 10)].forEach({$0.isActive = true})
+         successLabel.topAnchor.constraint(equalTo: successImageView.bottomAnchor, constant: 5)].forEach({$0.isActive = true})
     }
     
     func layoutDateLabel() {
         [dateLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-         dateLabel.topAnchor.constraint(equalTo: successLabel.bottomAnchor, constant: 10)].forEach({$0.isActive = true})
+         dateLabel.topAnchor.constraint(equalTo: successLabel.bottomAnchor, constant: 5)].forEach({$0.isActive = true})
     }
     
     func layoutTransactionLabel() {
         [transactionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        transactionLabel.topAnchor.constraint(equalTo: dateLabel.bottomAnchor, constant: 20)].forEach({$0.isActive
+        transactionLabel.topAnchor.constraint(equalTo: dateLabel.bottomAnchor, constant: 25)].forEach({$0.isActive
          = true})
     }
     
     func layoutRefLabel()  {
         [refLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-         refLabel.topAnchor.constraint(equalTo: transactionLabel.bottomAnchor, constant: 10)].forEach({$0.isActive = true})
+         refLabel.topAnchor.constraint(equalTo: transactionLabel.bottomAnchor, constant: 5)].forEach({$0.isActive = true})
     }
     
     func layoutDoneButton() {
