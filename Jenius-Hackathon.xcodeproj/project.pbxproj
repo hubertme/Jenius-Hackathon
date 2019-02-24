@@ -43,6 +43,7 @@
 		ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */; };
 		ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */; };
 		ED0299C22221098E00DEC9D1 /* ConfirmationViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299C12221098E00DEC9D1 /* ConfirmationViewController-Layout.swift */; };
+		ED15E6792222214700E85C28 /* TransactionCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED15E6782222214700E85C28 /* TransactionCheckViewController.swift */; };
 		ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */; };
 		ED925FF92221368100DFB24E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED925FF82221368100DFB24E /* HistoryViewController.swift */; };
 		ED925FFB2221368A00DFB24E /* HistoryViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED925FFA2221368A00DFB24E /* HistoryViewController-ViewProperties.swift */; };
@@ -114,6 +115,7 @@
 		ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmatioViewController.swift; sourceTree = "<group>"; };
 		ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-ViewProperties.swift"; sourceTree = "<group>"; };
 		ED0299C12221098E00DEC9D1 /* ConfirmationViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-Layout.swift"; sourceTree = "<group>"; };
+		ED15E6782222214700E85C28 /* TransactionCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCheckViewController.swift; sourceTree = "<group>"; };
 		ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		ED925FF82221368100DFB24E /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		ED925FFA2221368A00DFB24E /* HistoryViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController-ViewProperties.swift"; sourceTree = "<group>"; };
@@ -384,9 +386,18 @@
 			path = Confirmation;
 			sourceTree = "<group>";
 		};
+		ED15E6772222210400E85C28 /* TransactionCheck */ = {
+			isa = PBXGroup;
+			children = (
+				ED15E6782222214700E85C28 /* TransactionCheckViewController.swift */,
+			);
+			path = TransactionCheck;
+			sourceTree = "<group>";
+		};
 		ED8938622220ECBA009A6C5A /* Payment */ = {
 			isa = PBXGroup;
 			children = (
+				ED15E6772222210400E85C28 /* TransactionCheck */,
 				ED92600C22218F1600DFB24E /* PinEnter */,
 				E436FD7222213F0600122A17 /* PaymentViewController-Layout.swift */,
 				E436FD7422213F0600122A17 /* PaymentViewController-ViewProperties.swift */,
@@ -649,6 +660,7 @@
 				ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */,
 				E436FD372220E54800122A17 /* AppDelegate.swift in Sources */,
 				ED9260062221631D00DFB24E /* HistoryCell.swift in Sources */,
+				ED15E6792222214700E85C28 /* TransactionCheckViewController.swift in Sources */,
 				E436FDCA22221D7E00122A17 /* AnalyticsViewController.swift in Sources */,
 				ED9260042221564D00DFB24E /* HistoryViewController-TableView.swift in Sources */,
 				ED92600E22218F5400DFB24E /* PinEnterViewController.swift in Sources */,
