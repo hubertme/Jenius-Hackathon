@@ -51,10 +51,6 @@ extension AnalyticsViewController: UITableViewDelegate, UITableViewDataSource {
             headerCell.merchantNameLabel.text = "Jenius Café"
             headerCell.merchantIdLabel.text = "February 2019"
             return headerCell
-        } else if indexPath.row == 4 {
-            
-        } else if indexPath.row == 5 {
-            
         } else {
             let imageCell = contentTableView.dequeueReusableCell(withIdentifier: AnalyticsContentCell.cellDescription, for: indexPath) as! AnalyticsContentCell
             imageCell.criteriaLabel.text = contentTitles[indexPath.row - 1]
