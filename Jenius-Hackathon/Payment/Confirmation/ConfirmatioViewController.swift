@@ -24,6 +24,12 @@ class ConfirmationViewController: UIViewController {
     
     var payButton: UIButton!
     
+    var enteredAmount: Int? {
+        didSet {
+            print(self.amountLabel)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
