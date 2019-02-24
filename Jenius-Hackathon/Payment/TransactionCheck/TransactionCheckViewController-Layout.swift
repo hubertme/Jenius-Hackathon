@@ -16,6 +16,7 @@ extension TransactionCheckViewController {
         
         self.layoutSuccessImage()
         self.layoutSuccessLabel()
+        self.layoutDateLabel()
     }
     
     //MARK: Top Title
@@ -41,7 +42,7 @@ extension TransactionCheckViewController {
     }
     
     func layoutSuccessImage() {
-        [successImageView.topAnchor.constraint(equalTo: titleContainer.bottomAnchor, constant: 30),
+        [successImageView.topAnchor.constraint(equalTo: titleContainer.bottomAnchor, constant: 50),
         successImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         successImageView.widthAnchor.constraint(equalToConstant: 100),
         successImageView.heightAnchor.constraint(equalToConstant: 100)].forEach({$0.isActive = true})
@@ -50,5 +51,10 @@ extension TransactionCheckViewController {
     func layoutSuccessLabel() {
         [successLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
          successLabel.topAnchor.constraint(equalTo: successImageView.bottomAnchor, constant: 10)].forEach({$0.isActive = true})
+    }
+    
+    func layoutDateLabel() {
+        [dateLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+         dateLabel.topAnchor.constraint(equalTo: successLabel.bottomAnchor, constant: 10)].forEach({$0.isActive = true})
     }
 }

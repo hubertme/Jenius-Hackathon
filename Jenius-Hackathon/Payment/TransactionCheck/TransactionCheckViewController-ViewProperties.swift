@@ -16,6 +16,7 @@ extension TransactionCheckViewController {
         
         self.setupSuccessImage()
         self.setupSuccessLabel()
+        self.setupDateLabel()
     }
     
     private func setupTitleContainer() {
@@ -62,9 +63,21 @@ extension TransactionCheckViewController {
         successLabel = UILabel()
         successLabel.text = "Transaksi Berhasil!"
         successLabel.textColor = #colorLiteral(red: 0.7405376434, green: 0.870012939, blue: 0.5019586086, alpha: 1)
-        successLabel.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        successLabel.font = UIFont.systemFont(ofSize: 20, weight: .regular)
         successLabel.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(successLabel)
+    }
+    
+    func setupDateLabel() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd MMM yyyy - hh.mm a"
+        dateLabel = UILabel()
+        dateLabel.text = dateFormatter.string(from: Date())
+        dateLabel.textColor = textGray
+        dateLabel.font = UIFont.systemFont(ofSize: 16, weight: .light)
+        dateLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(dateLabel)
     }
 }

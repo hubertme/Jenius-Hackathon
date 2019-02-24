@@ -15,6 +15,7 @@ class TransactionCheckViewController: UIViewController {
     
     var successImageView: UIImageView!
     var successLabel: UILabel!
+    var dateLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
