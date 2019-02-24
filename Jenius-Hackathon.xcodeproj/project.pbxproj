@@ -39,6 +39,8 @@
 		E436FDC7222206BA00122A17 /* ForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FDC5222206BA00122A17 /* ForgetPasswordViewController.xib */; };
 		E436FDCA22221D7E00122A17 /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FDC822221D7E00122A17 /* AnalyticsViewController.swift */; };
 		E436FDCB22221D7E00122A17 /* AnalyticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FDC922221D7E00122A17 /* AnalyticsViewController.xib */; };
+		E436FDD02222216C00122A17 /* AnalyticsContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FDCE2222216C00122A17 /* AnalyticsContentCell.swift */; };
+		E436FDD12222216C00122A17 /* AnalyticsContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FDCF2222216C00122A17 /* AnalyticsContentCell.xib */; };
 		ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B92220F95D00DEC9D1 /* Extensions.swift */; };
 		ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */; };
 		ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */; };
@@ -111,6 +113,8 @@
 		E436FDC5222206BA00122A17 /* ForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordViewController.xib; sourceTree = "<group>"; };
 		E436FDC822221D7E00122A17 /* AnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
 		E436FDC922221D7E00122A17 /* AnalyticsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnalyticsViewController.xib; sourceTree = "<group>"; };
+		E436FDCE2222216C00122A17 /* AnalyticsContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsContentCell.swift; sourceTree = "<group>"; };
+		E436FDCF2222216C00122A17 /* AnalyticsContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnalyticsContentCell.xib; sourceTree = "<group>"; };
 		ED0299B92220F95D00DEC9D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmatioViewController.swift; sourceTree = "<group>"; };
 		ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-ViewProperties.swift"; sourceTree = "<group>"; };
@@ -316,6 +320,7 @@
 			children = (
 				E436FD8C222190BB00122A17 /* TableHeaderCell.swift */,
 				E436FD902221A15F00122A17 /* ContentCell.swift */,
+				E436FDCE2222216C00122A17 /* AnalyticsContentCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 			children = (
 				E436FD8D222190BB00122A17 /* TableHeaderCell.xib */,
 				E436FD912221A15F00122A17 /* ContentCell.xib */,
+				E436FDCF2222216C00122A17 /* AnalyticsContentCell.xib */,
 			);
 			name = Cell;
 			path = View;
@@ -523,6 +529,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E436FDD12222216C00122A17 /* AnalyticsContentCell.xib in Resources */,
 				E436FD5B2220EF7500122A17 /* LoginViewController.xib in Resources */,
 				E436FD932221A15F00122A17 /* ContentCell.xib in Resources */,
 				E436FD442220E54A00122A17 /* LaunchScreen.storyboard in Resources */,
@@ -651,6 +658,7 @@
 				E436FD7F2221570300122A17 /* MerchantViewController.swift in Sources */,
 				E436FD922221A15F00122A17 /* ContentCell.swift in Sources */,
 				E436FDC32221FB7F00122A17 /* PinEnterViewController-CollectionView.swift in Sources */,
+				E436FDD02222216C00122A17 /* AnalyticsContentCell.swift in Sources */,
 				ED92601222218FC600DFB24E /* PinEnterViewController-Layout.swift in Sources */,
 				ED92601022218F9F00DFB24E /* PinEnterViewController-ViewProperties.swift in Sources */,
 				E436FD7722213F0600122A17 /* PaymentViewController-ViewProperties.swift in Sources */,

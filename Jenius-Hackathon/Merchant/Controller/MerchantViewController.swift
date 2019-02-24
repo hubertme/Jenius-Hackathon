@@ -133,6 +133,9 @@ extension MerchantViewController: UITableViewDelegate {
                 if indexPath.row == 1 {
                     let nextVC = ChangePasswordViewController()
                     self.navigationController?.pushViewController(nextVC, animated: true)
+                } else if indexPath.row == 3 {
+                    let analyticsVC = AnalyticsViewController()
+                    self.navigationController?.pushViewController(analyticsVC, animated: true)
                 }
             } else if indexPath.section == 3 {
                 let alertController = createAlertWithOkAction(title: "Leave?", message: "Are you sure want to sign out?", okTitle: "Yes", { (_) in
