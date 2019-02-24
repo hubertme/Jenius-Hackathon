@@ -28,6 +28,11 @@ class MerchantViewController: UIViewController {
         self.setupElements()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        addJeniusCoCreateLogo(self)
+    }
+    
     // MARK: - Actions
     
     // MARK: - Private methods

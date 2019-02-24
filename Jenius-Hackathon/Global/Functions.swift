@@ -49,3 +49,8 @@ func isValidEmail(_ sender: String) -> Bool {
     let emailTest = NSPredicate(format: "SELF MATCHES[c] %@", emailRegEx)
     return emailTest.evaluate(with: sender)
 }
+
+func addJeniusCoCreateLogo(_ vc: UIViewController) {
+    let jeniusCoCreate = UIBarButtonItem(image: UIImage(named: "co.create"), style: .done, target: nil, action: nil)
+    vc.navigationItem.rightBarButtonItem = jeniusCoCreate
+}

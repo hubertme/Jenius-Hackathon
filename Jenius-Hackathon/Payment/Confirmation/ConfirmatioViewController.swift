@@ -40,6 +40,11 @@ class ConfirmationViewController: UIViewController {
         payButton.addTarget(self, action: #selector(handlePayButton), for: .touchUpInside)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        addJeniusCoCreateLogo(self)
+    }
+    
     @objc func handlePayButton() {
         let pinVC = PinEnterViewController()
         self.navigationController?.pushViewController(pinVC, animated: true)

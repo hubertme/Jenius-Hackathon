@@ -36,7 +36,7 @@ class PaymentViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        addJeniusCoCreateLogo(self)
         self.setupLogoImage()
     }
     

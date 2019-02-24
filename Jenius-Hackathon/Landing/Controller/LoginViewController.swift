@@ -33,13 +33,14 @@ class LoginViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        addJeniusCoCreateLogo(self)
         setupElements()
         
-        self.navigationController?.navigationBar.isHidden = true
+//        self.navigationController?.navigationBar.isHidden = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = false
+//        self.navigationController?.navigationBar.isHidden = false
     }
     
     // MARK: - Actions

@@ -32,6 +32,11 @@ class HistoryViewController: UIViewController {
         self.setupHistoryData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        addJeniusCoCreateLogo(self)
+    }
+    
     func setupHistoryData() {
         let transactionList = [
             Transaction(refNum: "12312312300123", datePurchased: Date(), total: 14000),
