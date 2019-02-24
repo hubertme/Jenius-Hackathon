@@ -80,7 +80,7 @@ extension MerchantViewController: UITableViewDataSource {
         if indexPath.section == 0 {
             let headerCell = contentTableView.dequeueReusableCell(withIdentifier: TableHeaderCell.cellDescription, for: indexPath) as! TableHeaderCell
             headerCell.merchantNameLabel.text = "Jenius Café"
-            headerCell.merchantIdLabel.text = "50024014069"
+            headerCell.merchantIdLabel.text = "Merchant ID: 50024014069"
             headerCell.selectionStyle = .none
             return headerCell
             
