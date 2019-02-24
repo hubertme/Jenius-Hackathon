@@ -37,6 +37,8 @@
 		E436FDC32221FB7F00122A17 /* PinEnterViewController-CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FDC22221FB7F00122A17 /* PinEnterViewController-CollectionView.swift */; };
 		E436FDC6222206BA00122A17 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FDC4222206BA00122A17 /* ForgetPasswordViewController.swift */; };
 		E436FDC7222206BA00122A17 /* ForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FDC5222206BA00122A17 /* ForgetPasswordViewController.xib */; };
+		E436FDCA22221D7E00122A17 /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436FDC822221D7E00122A17 /* AnalyticsViewController.swift */; };
+		E436FDCB22221D7E00122A17 /* AnalyticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E436FDC922221D7E00122A17 /* AnalyticsViewController.xib */; };
 		ED0299BA2220F95D00DEC9D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299B92220F95D00DEC9D1 /* Extensions.swift */; };
 		ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */; };
 		ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */; };
@@ -106,6 +108,8 @@
 		E436FDC22221FB7F00122A17 /* PinEnterViewController-CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PinEnterViewController-CollectionView.swift"; sourceTree = "<group>"; };
 		E436FDC4222206BA00122A17 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		E436FDC5222206BA00122A17 /* ForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordViewController.xib; sourceTree = "<group>"; };
+		E436FDC822221D7E00122A17 /* AnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
+		E436FDC922221D7E00122A17 /* AnalyticsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnalyticsViewController.xib; sourceTree = "<group>"; };
 		ED0299B92220F95D00DEC9D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmatioViewController.swift; sourceTree = "<group>"; };
 		ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-ViewProperties.swift"; sourceTree = "<group>"; };
@@ -282,6 +286,7 @@
 			children = (
 				E436FD8A2221907600122A17 /* Cell */,
 				E436FD7D2221570300122A17 /* MerchantViewController.swift */,
+				E436FDC822221D7E00122A17 /* AnalyticsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 			children = (
 				E436FD8B2221907900122A17 /* Cell */,
 				E436FD7E2221570300122A17 /* MerchantViewController.xib */,
+				E436FDC922221D7E00122A17 /* AnalyticsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -518,6 +524,7 @@
 				E436FD412220E54A00122A17 /* Assets.xcassets in Resources */,
 				E436FD8F222190BB00122A17 /* TableHeaderCell.xib in Resources */,
 				E436FD712221179200122A17 /* RegisterViewController.xib in Resources */,
+				E436FDCB22221D7E00122A17 /* AnalyticsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +649,7 @@
 				ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */,
 				E436FD372220E54800122A17 /* AppDelegate.swift in Sources */,
 				ED9260062221631D00DFB24E /* HistoryCell.swift in Sources */,
+				E436FDCA22221D7E00122A17 /* AnalyticsViewController.swift in Sources */,
 				ED9260042221564D00DFB24E /* HistoryViewController-TableView.swift in Sources */,
 				ED92600E22218F5400DFB24E /* PinEnterViewController.swift in Sources */,
 				ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */,
