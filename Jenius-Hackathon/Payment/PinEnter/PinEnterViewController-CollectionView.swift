@@ -33,6 +33,10 @@ extension PinEnterViewController: UICollectionViewDelegateFlowLayout, UICollecti
             let cell = collectionView.cellForItem(at: indexPath) as! NumberCell
             print(cell.numberLabel.text)
             dotPasswordView.addPass()
+            
+            if dotPasswordView.counter == 5 {
+                self.navigationController?.pushViewController(TransactionCheckViewController(), animated: true)
+            }
         } else {
             let cell = collectionView.cellForItem(at: indexPath) as! DeleteButtonCell
             dotPasswordView.deletePass()

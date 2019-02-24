@@ -9,18 +9,24 @@
 import UIKit
 
 class TransactionCheckViewController: UIViewController {
+    var titleContainer: UIView!
+    var titleLabel: UILabel!
+    var merchantIcon: UIImageView!
+    
+    var successImageView: UIImageView!
+    var successLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
+        
         self.setupUI()
         self.layoutUI()
     }
     
-    func setupUI() {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-    }
-    
-    func layoutUI() {
-        
+        self.setupLogoImage()
     }
 }
