@@ -21,6 +21,8 @@ class TransactionCheckViewController: UIViewController {
     var refLabel: UILabel!
     var doneButton: UIButton!
     
+    
+    
     var enteredAmount: String?
     
     override func viewDidLoad() {

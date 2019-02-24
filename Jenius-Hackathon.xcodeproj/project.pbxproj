@@ -102,12 +102,7 @@
 		E436FD8D222190BB00122A17 /* TableHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderCell.xib; sourceTree = "<group>"; };
 		E436FD902221A15F00122A17 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		E436FD912221A15F00122A17 /* ContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCell.xib; sourceTree = "<group>"; };
-		E436FD9B2221C27F00122A17 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
-		E436FD9D2221C27F00122A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E436FDA32221C27F00122A17 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
-		E436FDA62221C27F00122A17 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
-		E436FDA92221C27F00122A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		E436FDAB2221C27F00122A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E436FDBE2221F84900122A17 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		E436FDBF2221F84900122A17 /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
 		E436FDC22221FB7F00122A17 /* PinEnterViewController-CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PinEnterViewController-CollectionView.swift"; sourceTree = "<group>"; };
@@ -173,8 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				E436FD352220E54800122A17 /* Jenius-Hackathon */,
-				E436FD9A2221C27F00122A17 /* UserAnalyticsIntent */,
-				E436FDA52221C27F00122A17 /* UserAnalyticsIntentUI */,
 				E436FD342220E54800122A17 /* Products */,
 				1E6F440A3C766E76B04ACFB9 /* Pods */,
 				ADEDA63E2020B3A579781FB9 /* Frameworks */,
@@ -338,25 +331,6 @@
 			);
 			name = Cell;
 			path = View;
-			sourceTree = "<group>";
-		};
-		E436FD9A2221C27F00122A17 /* UserAnalyticsIntent */ = {
-			isa = PBXGroup;
-			children = (
-				E436FD9B2221C27F00122A17 /* IntentHandler.swift */,
-				E436FD9D2221C27F00122A17 /* Info.plist */,
-			);
-			path = UserAnalyticsIntent;
-			sourceTree = "<group>";
-		};
-		E436FDA52221C27F00122A17 /* UserAnalyticsIntentUI */ = {
-			isa = PBXGroup;
-			children = (
-				E436FDA62221C27F00122A17 /* IntentViewController.swift */,
-				E436FDA82221C27F00122A17 /* MainInterface.storyboard */,
-				E436FDAB2221C27F00122A17 /* Info.plist */,
-			);
-			path = UserAnalyticsIntentUI;
 			sourceTree = "<group>";
 		};
 		E436FDBB2221F81800122A17 /* Passwords */ = {
@@ -693,14 +667,6 @@
 				E436FD432220E54A00122A17 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		E436FDA82221C27F00122A17 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E436FDA92221C27F00122A17 /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
