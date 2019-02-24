@@ -20,6 +20,8 @@ class PinEnterViewController: UIViewController {
     
     var numberInputView: UICollectionView!
     
+    var enteredAmount: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.numbersData.shuffle()

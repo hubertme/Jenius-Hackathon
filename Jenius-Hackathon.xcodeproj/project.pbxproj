@@ -45,6 +45,9 @@
 		ED0299BE2221016D00DEC9D1 /* ConfirmatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */; };
 		ED0299C02221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */; };
 		ED0299C22221098E00DEC9D1 /* ConfirmationViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0299C12221098E00DEC9D1 /* ConfirmationViewController-Layout.swift */; };
+		ED15E6792222214700E85C28 /* TransactionCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED15E6782222214700E85C28 /* TransactionCheckViewController.swift */; };
+		ED15E67B222222D200E85C28 /* TransactionCheckViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED15E67A222222D200E85C28 /* TransactionCheckViewController-ViewProperties.swift */; };
+		ED15E67D222222D900E85C28 /* TransactionCheckViewController-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED15E67C222222D900E85C28 /* TransactionCheckViewController-Layout.swift */; };
 		ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */; };
 		ED925FF92221368100DFB24E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED925FF82221368100DFB24E /* HistoryViewController.swift */; };
 		ED925FFB2221368A00DFB24E /* HistoryViewController-ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED925FFA2221368A00DFB24E /* HistoryViewController-ViewProperties.swift */; };
@@ -118,6 +121,9 @@
 		ED0299BD2221016D00DEC9D1 /* ConfirmatioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmatioViewController.swift; sourceTree = "<group>"; };
 		ED0299BF2221094200DEC9D1 /* ConfirmationViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-ViewProperties.swift"; sourceTree = "<group>"; };
 		ED0299C12221098E00DEC9D1 /* ConfirmationViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfirmationViewController-Layout.swift"; sourceTree = "<group>"; };
+		ED15E6782222214700E85C28 /* TransactionCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCheckViewController.swift; sourceTree = "<group>"; };
+		ED15E67A222222D200E85C28 /* TransactionCheckViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionCheckViewController-ViewProperties.swift"; sourceTree = "<group>"; };
+		ED15E67C222222D900E85C28 /* TransactionCheckViewController-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionCheckViewController-Layout.swift"; sourceTree = "<group>"; };
 		ED89385E2220EA3C009A6C5A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		ED925FF82221368100DFB24E /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		ED925FFA2221368A00DFB24E /* HistoryViewController-ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController-ViewProperties.swift"; sourceTree = "<group>"; };
@@ -390,9 +396,20 @@
 			path = Confirmation;
 			sourceTree = "<group>";
 		};
+		ED15E6772222210400E85C28 /* TransactionCheck */ = {
+			isa = PBXGroup;
+			children = (
+				ED15E6782222214700E85C28 /* TransactionCheckViewController.swift */,
+				ED15E67A222222D200E85C28 /* TransactionCheckViewController-ViewProperties.swift */,
+				ED15E67C222222D900E85C28 /* TransactionCheckViewController-Layout.swift */,
+			);
+			path = TransactionCheck;
+			sourceTree = "<group>";
+		};
 		ED8938622220ECBA009A6C5A /* Payment */ = {
 			isa = PBXGroup;
 			children = (
+				ED15E6772222210400E85C28 /* TransactionCheck */,
 				ED92600C22218F1600DFB24E /* PinEnter */,
 				E436FD7222213F0600122A17 /* PaymentViewController-Layout.swift */,
 				E436FD7422213F0600122A17 /* PaymentViewController-ViewProperties.swift */,
@@ -637,6 +654,7 @@
 				ED925FF92221368100DFB24E /* HistoryViewController.swift in Sources */,
 				E436FD392220E54800122A17 /* SplashViewController.swift in Sources */,
 				E436FD8E222190BB00122A17 /* TableHeaderCell.swift in Sources */,
+				ED15E67B222222D200E85C28 /* TransactionCheckViewController-ViewProperties.swift in Sources */,
 				E436FD7622213F0600122A17 /* PaymentViewController.swift in Sources */,
 				ED9260022221559B00DFB24E /* HistoryData.swift in Sources */,
 				E436FD602220F1B300122A17 /* Variables.swift in Sources */,
@@ -646,6 +664,7 @@
 				E436FD7922213F2F00122A17 /* Functions.swift in Sources */,
 				E436FD7F2221570300122A17 /* MerchantViewController.swift in Sources */,
 				E436FD922221A15F00122A17 /* ContentCell.swift in Sources */,
+				ED15E67D222222D900E85C28 /* TransactionCheckViewController-Layout.swift in Sources */,
 				E436FDC32221FB7F00122A17 /* PinEnterViewController-CollectionView.swift in Sources */,
 				E436FDD02222216C00122A17 /* AnalyticsContentCell.swift in Sources */,
 				ED92601222218FC600DFB24E /* PinEnterViewController-Layout.swift in Sources */,
@@ -657,6 +676,7 @@
 				ED89385F2220EA3C009A6C5A /* MainTabBarController.swift in Sources */,
 				E436FD372220E54800122A17 /* AppDelegate.swift in Sources */,
 				ED9260062221631D00DFB24E /* HistoryCell.swift in Sources */,
+				ED15E6792222214700E85C28 /* TransactionCheckViewController.swift in Sources */,
 				E436FDCA22221D7E00122A17 /* AnalyticsViewController.swift in Sources */,
 				ED9260042221564D00DFB24E /* HistoryViewController-TableView.swift in Sources */,
 				ED92600E22218F5400DFB24E /* PinEnterViewController.swift in Sources */,

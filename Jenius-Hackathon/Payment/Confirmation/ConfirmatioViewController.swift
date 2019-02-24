@@ -38,6 +38,7 @@ class ConfirmationViewController: UIViewController {
         self.layoutUI()
         
         payButton.addTarget(self, action: #selector(handlePayButton), for: .touchUpInside)
+        checkButton.addTarget(self, action: #selector(handleCheckButton), for: .touchUpInside)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,6 +48,11 @@ class ConfirmationViewController: UIViewController {
     
     @objc func handlePayButton() {
         let pinVC = PinEnterViewController()
+        pinVC.enteredAmount = self.amountLabel.text
         self.navigationController?.pushViewController(pinVC, animated: true)
+    }
+    
+    @objc func handleCheckButton() {
+        
     }
 }
