@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ForgetPasswordViewController: UIViewController {
     
@@ -33,7 +34,16 @@ class ForgetPasswordViewController: UIViewController {
     @IBAction func handleDoneButtonTapped(_ sender: UIButton) {
         let email = self.emailTextField.text!
         if isValidEmail(email) {
-            
+            Auth.auth().sendPasswordReset(withEmail: email) { error in
+                if let error = error {
+                    print("Error sending email with \(error.localizedDescription)")
+                    self.present(createAlertWithOkAction(title: "Inactive email", message: "Please enter an active email or register if you never registered to Jenius Merchant"), animated: true, completion: nil)
+                    return
+                }
+                self.present(createAlertWithOkAction(title: "Email sent", message: "Please check your mailbox for the complete instruction to reset your password", { (_) in
+                    self.navigationController?.popToRootViewController(animated: true)
+                }), animated: true, completion: nil)
+            }
         } else {
             self.present(createAlertWithOkAction(title: "Inavlid email format", message: "Please enter a valid email format") { (_) in
                 self.emailTextField.text = ""
